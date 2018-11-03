@@ -1,0 +1,60 @@
+// main: main.scss
+@import "variables";
+@import "mixins";
+
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $color-main-black;
+}
+
+h1, .title-h1 {
+  font-size: $h1-font-size;
+  letter-spacing: -2.2px;
+}
+h2, .title-h2 {
+  font-size: $h2-font-size;
+  letter-spacing: -2px;
+}
+h3, .title-h3 {
+  font-size: $h3-font-size;
+  letter-spacing: -1.6px;
+}
+h4, .title-h4 {
+  font-size: $h4-font-size;
+  letter-spacing: -0.8px;
+}
+h5, .title-h5 {
+  font-size: $h5-font-size;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h6, .title-h6 { font-size: $h6-font-size; }
+
+//
+// Body Text
+//
+
+.bd-text-1, .bd-text-2, .bd-text-3 {
+  margin-top: 0;
+  margin-bottom: $paragraph-margin-bottom;
+}
+.bd-text-1 {
+  font-size: $body-txt-1;
+  line-height: $body-txt-1-line-height;
+}
+.bd-text-3 {
+  font-size: $body-txt-3;
+  line-height: $body-txt-3-line-height;
+}
+.bd-text-2, .bd-text-3{
+  &.high-contrast { @include text-contrast($font-weight-bold, $color-high-contrast); }
+  &.low-contrast { @include text-contrast($font-weight-normal, $color-low-contrast); }
+}

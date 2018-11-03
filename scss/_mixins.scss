@@ -1,0 +1,5 @@
+// Body Text
+@mixin text-contrast($font-weight, $color){
+  font-weight: $font-weight;
+  color: $color;
+}
