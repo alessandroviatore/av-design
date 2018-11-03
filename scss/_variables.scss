@@ -1,6 +1,4 @@
 // main: main.scss
-$spacer:                      1rem !default;
-
 //
 // Color system Bootstrap
 //
@@ -17,6 +15,80 @@ $gray-800:                   #343a40 !default;
 $gray-900:                   #212529 !default;
 $black:                      #000 !default;
 
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
 //
 // Color system My Colors
 //
@@ -28,25 +100,53 @@ $color-low-contrast:         #9B9E9F;
 $color-high-contrast:        $color-main-black;
 $color-gray-high-contrast:   #9B9E9F;
 
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                    $white !default;
+$body-color:                 $gray-900 !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                 $blue !default;
+$link-decoration:            none !default;
+$link-hover-color:           darken($link-color, 15%) !default;
+$link-hover-decoration:      underline !default;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:     1rem !default;
+
+$spacer:                      1rem !default;
+
 // Fonts
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-inter-ui:      'Inter UI', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-base:          $font-family-inter-ui !default;
+$font-family-inter-ui:        'Inter UI', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base:            $font-family-inter-ui !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$small-font-title:            11px !default; // Assumes the browser default, typically `16px`
+$font-small-title:            11px !default; // Assumes the browser default, typically `16px`
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
 
 // Title font-size
 $h1-font-size:                $font-size-base * 5.5 !default; //88px
 $h2-font-size:                $font-size-base * 3 !default; //48px
-$h3-font-size:                $font-size-base * 2.25 !default; //24px
+$h3-font-size:                $font-size-base * 2.25 !default; //36px
 $h4-font-size:                $font-size-base * 1.5 !default; //11px
-$h5-font-size:                $small-font-title !default; //16px
+$h5-font-size:                $font-small-title !default; //16px
 $h6-font-size:                $font-size-base !default;
 
 // Title Variables
@@ -56,5 +156,13 @@ $headings-font-weight:        700 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 
+// Body Text
+$body-txt-1:                  18px;
+$body-txt-2:                  15px;
+$body-txt-3:                  13px;
+
+$body-txt-1-line-height:      $font-size-base * 2; //32px
+$body-txt-2-line-height:      $font-size-base * 1.75; //28px
+$body-txt-3-line-height:      $font-size-base * 1.5; //24px
 
 $headings-color:              $mainblack !default;
