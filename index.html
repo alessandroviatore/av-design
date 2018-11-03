@@ -11,17 +11,24 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light position-fixed mb-5">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo/logo-1-black.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap
+      </a>
+    </nav>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <main role="main">
+      <!-- Sidebar -->
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <ul class="nav flex-column position-fixed mt-5">
+          <li class="nav-item">
+            <a class="nav-link active" href="#typography">Typography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -29,92 +36,66 @@
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
-    </nav>
+    </div>
 
-    <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <div id="typography" class="container mt-5">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <p class="title-h1">h1. Bootstrap heading</p>
+          <p class="title-h1 accent-1">h1. Bootstrap heading</p>
+          <p class="title-h1 accent-2">h1. Bootstrap heading</p>
+          <p class="title-h2">h2. Bootstrap heading</p>
+          <p class="title-h2 accent-1">h2. Bootstrap heading</p>
+          <p class="title-h2 accent-2">h2. Bootstrap heading</p>
+          <p class="title-h3">h3. Bootstrap heading</p>
+          <p class="title-h3 accent-1">h3. Bootstrap heading</p>
+          <p class="title-h3 accent-2">h3. Bootstrap heading</p>
+          <p class="title-h4">h4. Bootstrap heading</p>
+          <p class="title-h4 accent-1">h4. Bootstrap heading</p>
+          <p class="title-h4 accent-2">h4. Bootstrap heading</p>
+          <p class="title-h5 high-contrast">h5. Bootstrap heading</p>
+          <p class="title-h5 low-contrast">h5. Bootstrap heading</p>
         </div>
       </div>
-
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-12">
-            <p class="title-h1">h1. Bootstrap heading</p>
-            <p class="title-h1 accent-1">h1. Bootstrap heading</p>
-            <p class="title-h1 accent-2">h1. Bootstrap heading</p>
-            <p class="title-h2">h2. Bootstrap heading</p>
-            <p class="title-h2 accent-1">h2. Bootstrap heading</p>
-            <p class="title-h2 accent-2">h2. Bootstrap heading</p>
-            <p class="title-h3">h3. Bootstrap heading</p>
-            <p class="title-h3 accent-1">h3. Bootstrap heading</p>
-            <p class="title-h3 accent-2">h3. Bootstrap heading</p>
-            <p class="title-h4">h4. Bootstrap heading</p>
-            <p class="title-h4 accent-1">h4. Bootstrap heading</p>
-            <p class="title-h4 accent-2">h4. Bootstrap heading</p>
-            <p class="title-h5 high-contrast">h5. Bootstrap heading</p>
-            <p class="title-h5 low-contrast">h5. Bootstrap heading</p>
-          </div>
+      <hr class="mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="bd-text-1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <hr class="mt-5 mb-5">
+          <p class="bd-text-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="bd-text-2 high-contrast">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="bd-text-2 low-contrast">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <hr class="mt-5 mb-5">
+          <p class="bd-text-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="bd-text-3 high-contrast">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="bd-text-3 high-contrast">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
-        <hr class="mt-5 mb-5">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="bd-text-1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <hr class="mt-5 mb-5">
-            <p class="bd-text-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="bd-text-2 high-contrast">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="bd-text-2 low-contrast">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <hr class="mt-5 mb-5">
-            <p class="bd-text-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="bd-text-3 high-contrast">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="bd-text-3 high-contrast">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
+      </div>
+    </div> <!-- /container -->
 
     </main>
 
