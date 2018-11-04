@@ -140,6 +140,9 @@ $headings-font-family:        inherit !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+$dt-font-weight:              $font-weight-bold !default;
 
 // Title font-size
 $h1-font-size:                $font-size-base * 5.5 !default; //88px
