@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="87px" viewBox="0 0 87 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo/Ivert/b</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="43.5" cy="43.5" r="43.5"></circle>
+        <path d="M33,30 L0,30 L16.4785436,0 L33,30 Z M66,0 L49.4785436,30 L33,0 L66,0 Z" id="path-3"></path>
+    </defs>
+    <g id="Logo/Ivert/b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="circle">
+            <g id="Oval-2">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="🎨-/-Core-/-White-/-#FFF" mask="url(#mask-2)" fill="#FFFFFF">
+                    <rect id="Rectangle" x="0" y="0" width="87" height="87"></rect>
+                </g>
+            </g>
+            <g id="🎨-/-Java-/-Light-Shade-01-/-#57DFD9" transform="translate(10.000000, 29.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="#8B7DE5" xlink:href="#path-3"></use>
+                <g id="🎨-/-Core-/-Black-/-#1E1E1E" mask="url(#mask-4)" fill="#1E1E1E">
+                    <g transform="translate(-10.421053, -29.117647)">
+                        <rect x="0" y="0" width="87" height="88"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
