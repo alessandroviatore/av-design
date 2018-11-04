@@ -88,6 +88,41 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$breakpoint-min-xs:             0;
+$breakpoint-min-sm:             576px;
+$breakpoint-min-md:             768px;
+$breakpoint-min-lg:             992px;
+$breakpoint-min-xl:             1200px;
+
+// @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+// @include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+// @include _assert-ascending($container-max-widths, "$container-max-widths");
 
 //
 // Color system My Colors
@@ -170,6 +205,7 @@ $body-txt-3-line-height:      $font-size-base * 1.5; //24px
 
 // Spacer
 $spacer-0:                    0;
+$spacer-mobile:               $spacer * 2;
 $spacer-small:                $spacer * 3.125; //50px
 $spacer-medium:               $spacer * 5; //80px
 $spacer-large:                $spacer * 7.5; //120px
