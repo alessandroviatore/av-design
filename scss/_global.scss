@@ -1,7 +1,40 @@
 // main: main.scss
 // @import "variables";
 
+// Text colors
 .accent-1 { color: $color-accent-1; }
 .accent-2 { color: $color-accent-2; }
 .high-contrast { color: $color-high-contrast; }
 .low-contrast { color: $color-low-contrast; }
+
+// Extra Spacer
+
+//Padding top/bottom 50px
+.spacer-small-p-t { @include spacer-p ($spacer-small, $spacer-0); }
+.spacer-small-p-b { @include spacer-p ($spacer-0, $spacer-small); }
+.spacer-small-p-tb { @include spacer-p ($spacer-small, $spacer-small); }
+
+//Padding top/bottom 80px
+.spacer-medium-p-t { @include spacer-p ($spacer-medium, $spacer-0); }
+.spacer-medium-p-b { @include spacer-p ($spacer-0, $spacer-medium); }
+.spacer-medium-p-tb { @include spacer-p ($spacer-medium, $spacer-medium); }
+
+//Padding top/bottom 120px
+.spacer-large-p-t { @include spacer-p ($spacer-large, $spacer-0,); }
+.spacer-large-p-b { @include spacer-p ($spacer-0, $spacer-large); }
+.spacer-large-p-tb { @include spacer-p ($spacer-large, $spacer-large); }
+
+//Margin top/bottom 50px
+.spacer-small-m-t { @include spacer-m ($spacer-small, $spacer-0); }
+.spacer-small-m-b { @include spacer-m ($spacer-0, $spacer-small); }
+.spacer-small-m-tb { @include spacer-m ($spacer-small, $spacer-small); }
+
+//Margin top/bottom 80px
+.spacer-medium-m-t { @include spacer-m ($spacer-medium, $spacer-0); }
+.spacer-medium-m-b { @include spacer-m ($spacer-0, $spacer-medium); }
+.spacer-medium-m-tb { @include spacer-m ($spacer-medium, $spacer-medium); }
+
+//Margin top/bottom 120px
+.spacer-large-m-t { @include spacer-m ($spacer-large, $spacer-0); }
+.spacer-large-m-b { @include spacer-m ($spacer-0, $spacer-large); }
+.spacer-large-m-tb { @include spacer-m ($spacer-large, $spacer-large); }

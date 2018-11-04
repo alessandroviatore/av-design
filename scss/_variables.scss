@@ -168,4 +168,10 @@ $body-txt-1-line-height:      $font-size-base * 2; //32px
 $body-txt-2-line-height:      $font-size-base * 1.75; //28px
 $body-txt-3-line-height:      $font-size-base * 1.5; //24px
 
+// Spacer
+$spacer-0:                    0;
+$spacer-small:                $spacer * 3.125; //50px
+$spacer-medium:               $spacer * 5; //80px
+$spacer-large:                $spacer * 7.5; //120px
+
 $headings-color:              $mainblack !default;
