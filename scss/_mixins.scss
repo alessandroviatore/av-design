@@ -3,6 +3,16 @@
   font-weight: $font-weight;
   color: $color;
 }
+// Spacer Padding
+@mixin spacer-p($spacer-top, $spacer-bottom){
+  padding-top: $spacer-top;
+  padding-bottom: $spacer-bottom;
+}
+// Spacer Padding
+@mixin spacer-m($spacer-top, $spacer-bottom){
+  margin-top: $spacer-top;
+  margin-bottom: $spacer-bottom;
+}
 
 // Hover mixin and `$enable-hover-media-query` are deprecated.
 //
