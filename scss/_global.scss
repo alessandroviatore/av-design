@@ -35,7 +35,7 @@
 //Large 120px
 .spacer-large-p-t { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-large, $spacer-0,); } }
 .spacer-large-p-b { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-0, $spacer-large); } }
-.spacer-small-p-tb { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-large, $spacer-large); } }
+.spacer-large-p-tb { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-large, $spacer-large); } }
 
 //Padding Done
 
