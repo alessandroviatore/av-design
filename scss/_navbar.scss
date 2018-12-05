@@ -1,0 +1,11 @@
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: $color-low-contrast;
+    }
+    .active > .nav-link {
+      color: $color-main-black;
+      text-decoration: underline;
+    }
+  }
+}

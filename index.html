@@ -11,105 +11,35 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light bd-navbar mb-5">
-      <a class="navbar-brand" href="../index.html">
-        <img src="images/logo/logo-1-black.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        AV Design
-      </a>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container pb-3 pt-3">
+        <a class="navbar-brand" href="../index.html">
+          <img src="images/logo/logo-2-black.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <main role="main">
-      <!-- Sidebar -->
-    <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
-        <ul class="nav flex-column position-fixed mt-5">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#typography">Typography</a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link ml-3 my-1" href="components/text-block-1.html">Block Text 1</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-2.html">Block Text 2</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-3.html">Block Text 3</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-4.html">Block Text 4</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-5.html">Block Text 5</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-6.html">Block Text 6</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-6.html">Block Text 7</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-6.html">Block Text 8</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-9.html">Block Text 9</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-10.html">Block Text 10</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-11.html">Block Text 11</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-12.html">Block Text 12</a>
-            </nav>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
 
-    <div id="typography" class="container mt-5">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-12">
-          <p class="title-h1">h1. heading</p>
-          <p class="title-h1 accent-1">h1. heading</p>
-          <p class="title-h1 accent-2">h1. heading</p>
-          <p class="title-h2">h2. heading</p>
-          <p class="title-h2 accent-1">h2. heading</p>
-          <p class="title-h2 accent-2">h2. heading</p>
-          <p class="title-h3">h3. heading</p>
-          <p class="title-h3 accent-1">h3. heading</p>
-          <p class="title-h3 accent-2">h3. heading</p>
-          <p class="title-h4">h4. heading</p>
-          <p class="title-h4 accent-1">h4. heading</p>
-          <p class="title-h4 accent-2">h4. heading</p>
-          <p class="title-h5 high-contrast">h5. heading</p>
-          <p class="title-h5 low-contrast">h5. heading</p>
-        </div>
-      </div>
-      <hr class="mt-5 mb-5">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="bd-text-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <hr class="mt-5 mb-5">
-          <p class="bd-text-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="bd-text-2 high-contrast">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="bd-text-2 low-contrast">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <hr class="mt-5 mb-5">
-          <p class="bd-text-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="bd-text-3 high-contrast">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="bd-text-3 high-contrast">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </div> <!-- /container -->
+    <main role="main">
+
 
     </main>
 
