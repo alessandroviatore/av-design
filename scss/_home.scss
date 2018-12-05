@@ -1,0 +1,33 @@
+
+//hero-carousel
+.hero-carousel {
+  .carousel-container {
+    position: relative;
+  }
+  .carousel-inner {
+    max-height: 550px;
+    max-width: 90%;
+  }
+  // Left/right controls for nav
+  .caption {
+    .wrap {
+      background-color: $color-accent-2;
+      max-width: 360px;
+      padding: 40px;
+      position: absolute;
+      right: -17px;
+      bottom: -30px;
+      .text {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .controlers {
+    // Left/right controls for nav
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: relative;
+      width: 10%;
+    }
+  }
+}

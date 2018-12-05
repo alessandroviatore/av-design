@@ -211,3 +211,9 @@ $spacer-medium:               $spacer * 5; //80px
 $spacer-large:                $spacer * 7.5; //120px
 
 $headings-color:              $mainblack !default;
+
+// Carousel
+
+$carousel-control-color:            $color-main-black !default;
+
+$carousel-transition:               transform .6s ease !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
