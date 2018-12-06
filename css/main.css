@@ -7037,13 +7037,35 @@ a.text-dark:hover, a.text-dark:focus {
       position: absolute;
       right: -17px;
       bottom: -30px; } }
-  .hero-carousel .caption .wrap .text {
+.hero-carousel .caption .author {
+  align-items: center; }
+  .hero-carousel .caption .author .info {
     margin-bottom: 0; }
-.hero-carousel .controlers .carousel-control-prev,
-.hero-carousel .controlers .carousel-control-next {
+.hero-carousel .carousel-controlers .carousel-control-prev,
+.hero-carousel .carousel-controlers .carousel-control-next {
   position: relative;
   width: 10%;
   display: inline-block; }
+.hero-carousel .carousel-indicators {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 40px;
+  margin-right: 0;
+  margin-left: 40px;
+  justify-content: start; }
+  .hero-carousel .carousel-indicators li {
+    background-color: rgba(87, 223, 217, 0.5); }
+  .hero-carousel .carousel-indicators .active {
+    background-color: #57DFD9; }
+
+.author .avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px; }
+.author .rounded-circle {
+  width: 100%; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
