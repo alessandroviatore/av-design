@@ -2,7 +2,6 @@
 @import "fonts";
 @import "reboot";
 @import "type";
-@import "global";
 @import "mixins";
 
 
@@ -11,7 +10,7 @@
 // Option A: Include all of Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+@import "global";
 @import "navbar";
 @import "home";
 

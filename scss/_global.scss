@@ -5,7 +5,23 @@
 .accent-1 { color: $color-accent-1; }
 .accent-2 { color: $color-accent-2; }
 .high-contrast { color: $color-high-contrast; }
-.low-contrast { color: $color-low-contrast; }
+.low-contrast { color: $color-gray-high-contrast; }
+
+// Link style
+a {
+  text-decoration: none;
+  color: $color-main-black;
+  position: relative;
+  overflow: hidden;
+  display: inline;
+  vertical-align: middle;
+  border-bottom: 0.15rem solid;
+
+  &:hover {
+    color:rgba( $color-main-black, .7 );
+    text-decoration: none;
+  }
+}
 
 // Extra Spacer
 

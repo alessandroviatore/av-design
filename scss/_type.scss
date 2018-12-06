@@ -60,5 +60,5 @@ h6, .title-h6 { font-size: $h6-font-size; }
 }
 .bd-text-2, .bd-text-3{
   &.high-contrast { @include text-contrast($font-weight-bold, $color-high-contrast); }
-  &.low-contrast { @include text-contrast($font-weight-normal, $color-low-contrast); }
+  &.low-contrast { @include text-contrast($font-weight-normal, $color-gray-high-contrast); }
 }

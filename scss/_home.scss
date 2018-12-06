@@ -1,4 +1,6 @@
+.home {
 
+}
 //hero-carousel
 .hero-carousel {
   .carousel-container {
@@ -50,7 +52,7 @@
     margin-left: 40px;
     justify-content: start;
     li {
-      background-color: rgba( $color-accent-1, .5 );
+      background-color: rgba( $color-accent-1, .25 );
     }
     .active {
       background-color: $color-accent-1;
@@ -66,5 +68,69 @@
   }
   .rounded-circle {
     width: 100%;
+  }
+}
+// About me
+.sec-aboutme {
+  background-color: $color-low-contrast;
+  .tab-vertical-nav-link {
+    position: relative;
+    color: $color-gray-high-contrast;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: .25rem;
+      height: 100%;
+      background-color: transparent;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      content: " ";
+    }
+    &:hover {
+      color: $color-main-black;
+    }
+    &.active {
+      &::after {
+        background-color: $color-accent-1;
+      }
+    }
+  }
+  .tab-vertical {
+    position: relative;
+    border-right: 1px solid #dadada;
+    // box-shadow: 26px 0 26px -12px rgba(100, 111, 121, 0.06);
+  }
+  .nav-pills {
+    .nav-link {
+      border: none;
+      border-radius: 0;
+      &.active {
+        color: $color-accent-1;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .tab-jobs {
+    .item {
+      .img-wrap {
+        height: 70px;
+        img {
+          width: 35%;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+      }
+    }
+  }
+  .tabs-skills {
+    .img-wrap {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
