@@ -7024,22 +7024,26 @@ a.text-dark:hover, a.text-dark:focus {
 
 .hero-carousel .carousel-container {
   position: relative; }
-.hero-carousel .carousel-inner {
-  max-height: 550px;
-  max-width: 90%; }
+@media (min-width: 576px) {
+  .hero-carousel .carousel-inner {
+    max-height: 550px;
+    max-width: 90%; } }
 .hero-carousel .caption .wrap {
   background-color: #ADA2FB;
-  max-width: 360px;
-  padding: 40px;
-  position: absolute;
-  right: -17px;
-  bottom: -30px; }
+  padding: 40px; }
+  @media (min-width: 576px) {
+    .hero-carousel .caption .wrap {
+      max-width: 360px;
+      position: absolute;
+      right: -17px;
+      bottom: -30px; } }
   .hero-carousel .caption .wrap .text {
     margin-bottom: 0; }
 .hero-carousel .controlers .carousel-control-prev,
 .hero-carousel .controlers .carousel-control-next {
   position: relative;
-  width: 10%; }
+  width: 10%;
+  display: inline-block; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
