@@ -7028,11 +7028,19 @@ a {
     margin-top: 7.5rem;
     margin-bottom: 7.5rem; } }
 
+.navbar-light .navbar-brand {
+  border: none; }
+.navbar-light .navbar-nav .nav-item {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding: 0.5rem 1rem; }
 .navbar-light .navbar-nav .nav-link {
-  color: #9B9E9F; }
+  color: #9B9E9F;
+  border: none;
+  padding: 0; }
 .navbar-light .navbar-nav .active > .nav-link {
   color: #1E1E1E;
-  text-decoration: underline; }
+  border-bottom: 0.15rem solid; }
 
 .hero-carousel .carousel-container {
   position: relative; }
@@ -7106,6 +7114,8 @@ a {
   .sec-aboutme .nav-pills .nav-link {
     border: none;
     border-radius: 0; }
+    .sec-aboutme .nav-pills .nav-link::before {
+      content: "\2014 \00A0"; }
     .sec-aboutme .nav-pills .nav-link.active {
       color: #57DFD9;
       background-color: transparent; }

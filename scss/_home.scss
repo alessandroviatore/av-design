@@ -107,6 +107,9 @@
     .nav-link {
       border: none;
       border-radius: 0;
+      &::before {
+        content: "\2014 \00A0"; // em dash, nbsp
+      }
       &.active {
         color: $color-accent-1;
         background-color: transparent;
