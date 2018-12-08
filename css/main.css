@@ -7092,33 +7092,53 @@ a {
   .sec-aboutme .tab-vertical-nav-link {
     position: relative;
     color: #9B9E9F; }
-    .sec-aboutme .tab-vertical-nav-link::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: .25rem;
-      height: 100%;
-      background-color: transparent;
-      border-top-left-radius: 0.25rem;
-      border-top-right-radius: 0.25rem;
-      border-bottom-right-radius: 0.25rem;
-      border-bottom-left-radius: 0.25rem;
-      content: " "; }
+    @media (min-width: 992px) {
+      .sec-aboutme .tab-vertical-nav-link::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: .25rem;
+        height: 100%;
+        background-color: transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        content: " "; } }
     .sec-aboutme .tab-vertical-nav-link:hover {
       color: #1E1E1E; }
     .sec-aboutme .tab-vertical-nav-link.active::after {
       background-color: #57DFD9; }
   .sec-aboutme .tab-vertical {
-    position: relative;
-    border-right: 1px solid #dadada; }
-  .sec-aboutme .nav-pills .nav-link {
-    border: none;
-    border-radius: 0; }
-    .sec-aboutme .nav-pills .nav-link::before {
-      content: "\2014 \00A0"; }
-    .sec-aboutme .nav-pills .nav-link.active {
-      color: #57DFD9;
-      background-color: transparent; }
+    position: relative; }
+    @media (min-width: 992px) {
+      .sec-aboutme .tab-vertical {
+        border-right: 1px solid #dadada; } }
+  .sec-aboutme .nav-pills {
+    justify-content: space-between; }
+    .sec-aboutme .nav-pills .nav-link {
+      border: none;
+      border-radius: 0;
+      flex-flow: row; }
+      @media (min-width: 992px) {
+        .sec-aboutme .nav-pills .nav-link {
+          flex-direction: column;
+          width: 100%; } }
+      .sec-aboutme .nav-pills .nav-link::before {
+        content: "\2014 \00A0"; }
+      .sec-aboutme .nav-pills .nav-link.active {
+        color: #57DFD9;
+        background-color: transparent; }
+        .sec-aboutme .nav-pills .nav-link.active::after {
+          overflow: hidden;
+          display: inline;
+          vertical-align: middle;
+          border-bottom: 0.15rem solid; }
+  .sec-aboutme .tab-content .ml-5 {
+    margin-left: 0; }
+    @media (min-width: 992px) {
+      .sec-aboutme .tab-content .ml-5 {
+        margin-left: 3rem; } }
   .sec-aboutme .tab-jobs .item .img-wrap {
     height: 70px; }
     .sec-aboutme .tab-jobs .item .img-wrap img {

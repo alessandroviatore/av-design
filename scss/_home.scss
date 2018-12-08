@@ -76,18 +76,20 @@
   .tab-vertical-nav-link {
     position: relative;
     color: $color-gray-high-contrast;
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: .25rem;
-      height: 100%;
-      background-color: transparent;
-      border-top-left-radius: 0.25rem;
-      border-top-right-radius: 0.25rem;
-      border-bottom-right-radius: 0.25rem;
-      border-bottom-left-radius: 0.25rem;
-      content: " ";
+    @media (min-width: $breakpoint-min-lg) {
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: .25rem;
+        height: 100%;
+        background-color: transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        content: " ";
+      }
     }
     &:hover {
       color: $color-main-black;
@@ -100,23 +102,43 @@
   }
   .tab-vertical {
     position: relative;
-    border-right: 1px solid #dadada;
-    // box-shadow: 26px 0 26px -12px rgba(100, 111, 121, 0.06);
+    @media (min-width: $breakpoint-min-lg) {
+      border-right: 1px solid #dadada;
+    }
   }
   .nav-pills {
+    justify-content: space-between;
     .nav-link {
       border: none;
       border-radius: 0;
+      flex-flow: row;
+      @media (min-width: $breakpoint-min-lg) {
+        flex-direction: column;
+        width: 100%;
+      }
       &::before {
         content: "\2014 \00A0"; // em dash, nbsp
       }
       &.active {
         color: $color-accent-1;
         background-color: transparent;
+        &::after {
+          overflow: hidden;
+          display: inline;
+          vertical-align: middle;
+          border-bottom: 0.15rem solid;
+        }
       }
     }
   }
-
+  .tab-content {
+    .ml-5 {
+      margin-left: 0;
+      @media (min-width: $breakpoint-min-lg) {
+        margin-left: 3rem;
+      }
+    }
+  }
   .tab-jobs {
     .item {
       .img-wrap {
