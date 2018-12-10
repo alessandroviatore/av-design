@@ -73,14 +73,17 @@
 // About me
 .sec-aboutme {
   background-color: $color-low-contrast;
+  .aboutme-content {
+    align-items: center;
+  }
   .tab-vertical-nav-link {
     position: relative;
     color: $color-gray-high-contrast;
     @media (min-width: $breakpoint-min-lg) {
-      &::after {
+      &::before {
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
         width: .25rem;
         height: 100%;
         background-color: transparent;
@@ -95,16 +98,16 @@
       color: $color-main-black;
     }
     &.active {
-      &::after {
+      &::before {
         background-color: $color-accent-1;
       }
     }
   }
   .tab-vertical {
     position: relative;
-    @media (min-width: $breakpoint-min-lg) {
-      border-right: 1px solid #dadada;
-    }
+    // @media (min-width: $breakpoint-min-lg) {
+    //   border-right: 1px solid #dadada;
+    // }
   }
   .nav-pills {
     justify-content: space-between;
@@ -116,9 +119,6 @@
         flex-direction: column;
         width: 100%;
       }
-      &::before {
-        content: "\2014 \00A0"; // em dash, nbsp
-      }
       &.active {
         color: $color-accent-1;
         background-color: transparent;
@@ -128,6 +128,9 @@
           vertical-align: middle;
           border-bottom: 0.15rem solid;
         }
+      }
+      .title-h4 {
+        font-weight: $font-weight-normal;
       }
     }
   }
@@ -156,6 +159,63 @@
       img {
         width: 100%;
       }
+    }
+  }
+
+  .carousel {
+    width: 100%;
+    .carousel-caption {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $color-low-contrast;
+      width: 500px;
+      height: 275px;
+      padding: 0;
+      .item {
+        color: $color-main-black;
+        text-align: left;
+        padding: 40px;
+      }
+    }
+    .controlers {
+      position: absolute;
+      bottom: 175px;
+      left: 500px;
+      width: 50px;
+      .carousel-control {
+        height: 50px;
+        width: 50px;
+        border: none;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        opacity: 1;
+        position: relative;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .carousel-control-prev {
+        background-color: $color-accent-1;
+      }
+      .carousel-control-next {
+        background-color: $color-accent-2;
+      }
+      .carousel-control-prev {
+        left: 0;
+        @if $enable-gradients {
+          background: linear-gradient(90deg, rgba($black, .25), rgba($black, .001));
+        }
+      }
+      .carousel-control-next {
+        right: 0;
+        @if $enable-gradients {
+          background: linear-gradient(270deg, rgba($black, .25), rgba($black, .001));
+        }
+      }
+
     }
   }
 }
