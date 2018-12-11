@@ -8,12 +8,11 @@
 .low-contrast { color: $color-gray-high-contrast; }
 
 // Link style
-a {
+.link {
   text-decoration: none;
   color: $color-main-black;
   position: relative;
   overflow: hidden;
-  display: inline;
   vertical-align: middle;
   border-bottom: 0.15rem solid;
 

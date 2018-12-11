@@ -6902,15 +6902,14 @@ a.text-dark:hover, a.text-dark:focus {
 .low-contrast {
   color: #9B9E9F; }
 
-a {
+.link {
   text-decoration: none;
   color: #1E1E1E;
   position: relative;
   overflow: hidden;
-  display: inline;
   vertical-align: middle;
   border-bottom: 0.15rem solid; }
-  a:hover {
+  .link:hover {
     color: rgba(30, 30, 30, 0.7);
     text-decoration: none; }
 
@@ -7042,148 +7041,160 @@ a {
   color: #1E1E1E;
   border-bottom: 0.15rem solid; }
 
-.hero-carousel .carousel-container {
+.home .hero-carousel .carousel-container {
   position: relative; }
-@media (min-width: 576px) {
-  .hero-carousel .carousel-inner {
+@media (min-width: 768px) {
+  .home .hero-carousel .carousel-inner {
     max-height: 550px;
     max-width: 90%; } }
-.hero-carousel .caption .wrap {
+.home .hero-carousel .caption .wrap {
   background-color: #ADA2FB;
   padding: 40px; }
   @media (min-width: 576px) {
-    .hero-carousel .caption .wrap {
+    .home .hero-carousel .caption .wrap {
       max-width: 360px;
       position: absolute;
       right: -17px;
       bottom: -30px; } }
-.hero-carousel .caption .author {
+.home .hero-carousel .caption .author {
   align-items: center; }
-  .hero-carousel .caption .author .info {
+  .home .hero-carousel .caption .author .info {
     margin-bottom: 0; }
-.hero-carousel .carousel-controlers .carousel-control-prev,
-.hero-carousel .carousel-controlers .carousel-control-next {
-  position: relative;
-  width: 10%;
-  display: inline-block; }
-.hero-carousel .carousel-indicators {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  top: 40px;
-  margin-right: 0;
-  margin-left: 40px;
-  justify-content: start; }
-  .hero-carousel .carousel-indicators li {
+.home .hero-carousel .carousel-indicators {
+  bottom: 30px;
+  top: 60%; }
+  @media (min-width: 576px) {
+    .home .hero-carousel .carousel-indicators {
+      position: relative;
+      right: 0;
+      left: 0;
+      top: 30px;
+      margin-right: 0;
+      margin-left: 0;
+      justify-content: start; } }
+  @media (min-width: 768px) {
+    .home .hero-carousel .carousel-indicators {
+      top: 40px;
+      margin-left: 40px; } }
+  .home .hero-carousel .carousel-indicators li {
     background-color: rgba(87, 223, 217, 0.25); }
-  .hero-carousel .carousel-indicators .active {
+  .home .hero-carousel .carousel-indicators .active {
     background-color: #57DFD9; }
-
-.author .avatar {
+.home .author .avatar {
   width: 40px;
   height: 40px;
   margin-right: 15px; }
-.author .rounded-circle {
+.home .author .rounded-circle {
   width: 100%; }
-
-.sec-aboutme {
+.home .sec-aboutme {
   background-color: #F7F8F9; }
-  .sec-aboutme .aboutme-content {
-    align-items: center; }
-  .sec-aboutme .tab-vertical-nav-link {
+  .home .sec-aboutme .tab-vertical-nav-link {
     position: relative;
     color: #9B9E9F; }
-    @media (min-width: 992px) {
-      .sec-aboutme .tab-vertical-nav-link::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: .25rem;
-        height: 100%;
-        background-color: transparent;
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
-        border-bottom-right-radius: 0.25rem;
-        border-bottom-left-radius: 0.25rem;
-        content: " "; } }
-    .sec-aboutme .tab-vertical-nav-link:hover {
+    .home .sec-aboutme .tab-vertical-nav-link::before {
+      position: absolute;
+      top: 55%;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background-color: transparent;
+      border-radius: 50%;
+      content: " "; }
+    .home .sec-aboutme .tab-vertical-nav-link:hover {
       color: #1E1E1E; }
-    .sec-aboutme .tab-vertical-nav-link.active::before {
+    .home .sec-aboutme .tab-vertical-nav-link.active::before {
       background-color: #57DFD9; }
-  .sec-aboutme .tab-vertical {
+  .home .sec-aboutme .tab-vertical {
     position: relative; }
-  .sec-aboutme .nav-pills {
+  .home .sec-aboutme .nav-pills {
     justify-content: space-between; }
-    .sec-aboutme .nav-pills .nav-link {
+    .home .sec-aboutme .nav-pills .nav-link {
+      width: auto;
       border: none;
       border-radius: 0;
       flex-flow: row; }
-      @media (min-width: 992px) {
-        .sec-aboutme .nav-pills .nav-link {
-          flex-direction: column;
-          width: 100%; } }
-      .sec-aboutme .nav-pills .nav-link.active {
+      .home .sec-aboutme .nav-pills .nav-link.active {
         color: #57DFD9;
         background-color: transparent; }
-        .sec-aboutme .nav-pills .nav-link.active::after {
+        .home .sec-aboutme .nav-pills .nav-link.active::after {
           overflow: hidden;
           display: inline;
           vertical-align: middle;
           border-bottom: 0.15rem solid; }
-      .sec-aboutme .nav-pills .nav-link .title-h4 {
+      .home .sec-aboutme .nav-pills .nav-link .title-h4 {
         font-weight: 400; }
-  .sec-aboutme .tab-content .ml-5 {
+  .home .sec-aboutme .tab-content .ml-5 {
     margin-left: 0; }
     @media (min-width: 992px) {
-      .sec-aboutme .tab-content .ml-5 {
+      .home .sec-aboutme .tab-content .ml-5 {
         margin-left: 3rem; } }
-  .sec-aboutme .tab-jobs .item .img-wrap {
+  .home .sec-aboutme .tab-jobs .item .img-wrap {
     height: 70px; }
-    .sec-aboutme .tab-jobs .item .img-wrap img {
+    .home .sec-aboutme .tab-jobs .item .img-wrap img {
       width: 35%;
       margin-top: auto;
       margin-bottom: auto; }
-  .sec-aboutme .tabs-skills .img-wrap img {
+  .home .sec-aboutme .tabs-skills .img-wrap img {
     width: 100%; }
-  .sec-aboutme .carousel {
+  .home .sec-aboutme .carousle-control {
     width: 100%; }
-    .sec-aboutme .carousel .carousel-caption {
-      position: absolute;
+    .home .sec-aboutme .carousle-control .reduce-size {
+      width: 100%;
+      margin-left: 0; }
+      @media (min-width: 768px) {
+        .home .sec-aboutme .carousle-control .reduce-size {
+          width: 80%;
+          margin-left: 20%; } }
+    .home .sec-aboutme .carousle-control .img-company {
+      display: none;
+      max-height: 700px; }
+      @media (min-width: 768px) {
+        .home .sec-aboutme .carousle-control .img-company {
+          display: block; } }
+    .home .sec-aboutme .carousle-control .carousel-caption {
+      display: block;
+      position: relative;
       left: 0;
       bottom: 0;
-      background: #F7F8F9;
-      width: 500px;
-      height: 275px;
-      padding: 0; }
-      .sec-aboutme .carousel .carousel-caption .item {
+      right: 0; }
+      @media (min-width: 768px) {
+        .home .sec-aboutme .carousle-control .carousel-caption {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: #F7F8F9;
+          width: 500px;
+          height: 275px;
+          padding: 0; } }
+      .home .sec-aboutme .carousle-control .carousel-caption .item {
         color: #1E1E1E;
         text-align: left;
         padding: 40px; }
-    .sec-aboutme .carousel .controlers {
+    .home .sec-aboutme .carousle-control .controlers {
       position: absolute;
-      bottom: 175px;
-      left: 500px;
-      width: 50px; }
-      .sec-aboutme .carousel .controlers .carousel-control {
+      right: 0;
+      top: 0; }
+      @media (min-width: 768px) {
+        .home .sec-aboutme .carousle-control .controlers {
+          bottom: 175px;
+          top: auto;
+          left: 500px;
+          width: 50px; } }
+      .home .sec-aboutme .carousle-control .controlers .carousel-control {
         height: 50px;
         width: 50px;
         border: none; }
-      .sec-aboutme .carousel .controlers .carousel-control-prev,
-      .sec-aboutme .carousel .controlers .carousel-control-next {
+      .home .sec-aboutme .carousle-control .controlers .carousel-control-prev,
+      .home .sec-aboutme .carousle-control .controlers .carousel-control-next {
         opacity: 1;
         position: relative; }
-        .sec-aboutme .carousel .controlers .carousel-control-prev:hover,
-        .sec-aboutme .carousel .controlers .carousel-control-next:hover {
+        .home .sec-aboutme .carousle-control .controlers .carousel-control-prev:hover,
+        .home .sec-aboutme .carousle-control .controlers .carousel-control-next:hover {
           opacity: 0.8; }
-      .sec-aboutme .carousel .controlers .carousel-control-prev {
+      .home .sec-aboutme .carousle-control .controlers .carousel-control-prev {
         background-color: #57DFD9; }
-      .sec-aboutme .carousel .controlers .carousel-control-next {
+      .home .sec-aboutme .carousle-control .controlers .carousel-control-next {
         background-color: #ADA2FB; }
-      .sec-aboutme .carousel .controlers .carousel-control-prev {
-        left: 0; }
-      .sec-aboutme .carousel .controlers .carousel-control-next {
-        right: 0; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)

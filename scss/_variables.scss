@@ -216,3 +216,5 @@ $headings-color:              $mainblack !default;
 
 $carousel-control-color:            $body-bg !default;
 $carousel-transition:               transform .6s ease !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$gutter:                            30px;

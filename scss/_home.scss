@@ -1,221 +1,229 @@
 .home {
-
-}
-//hero-carousel
-.hero-carousel {
-  .carousel-container {
-    position: relative;
-  }
-  .carousel-inner {
-    @media (min-width: $breakpoint-min-sm) {
-      max-height: 550px;
-      max-width: 90%;
-    }
-  }
-  // Left/right controls for nav
-  .caption {
-    .wrap {
-      background-color: $color-accent-2;
-      padding: 40px;
-
-      @media (min-width: $breakpoint-min-sm) {
-        max-width: 360px;
-        position: absolute;
-        right: -17px;
-        bottom: -30px;
-      }
-    }
-    .author {
-      align-items: center;
-      .info {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  .carousel-controlers {
-    // Left/right controls for nav
-    .carousel-control-prev,
-    .carousel-control-next {
+  //hero-carousel
+  .hero-carousel {
+    .carousel-container {
       position: relative;
-      width: 10%;
-      display: inline-block;
+    }
+    .carousel-inner {
+      @media (min-width: $breakpoint-min-md) {
+        max-height: 550px;
+        max-width: 90%;
+      }
+    }
+    // Left/right controls for nav
+    .caption {
+      .wrap {
+        background-color: $color-accent-2;
+        padding: 40px;
+
+        @media (min-width: $breakpoint-min-sm) {
+          max-width: 360px;
+          position: absolute;
+          right: -17px;
+          bottom: -30px;
+        }
+      }
+      .author {
+        align-items: center;
+        .info {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .carousel-indicators {
+      bottom: $gutter;
+      top: 60%;
+      @media (min-width: $breakpoint-min-sm) {
+        position: relative;
+        right: 0;
+        left: 0;
+        top: 30px;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: start;
+      }
+      @media (min-width: $breakpoint-min-md) {
+        top: 40px;
+        margin-left: 40px;
+      }
+      li {
+        background-color: rgba( $color-accent-1, .25 );
+      }
+      .active {
+        background-color: $color-accent-1;
+      }
     }
   }
-  .carousel-indicators {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    top: 40px;
-    margin-right: 0;
-    margin-left: 40px;
-    justify-content: start;
-    li {
-      background-color: rgba( $color-accent-1, .25 );
+  // Author
+  .author {
+    .avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
     }
-    .active {
-      background-color: $color-accent-1;
+    .rounded-circle {
+      width: 100%;
     }
   }
-}
-// Author
-.author {
-  .avatar {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-  }
-  .rounded-circle {
-    width: 100%;
-  }
-}
-// About me
-.sec-aboutme {
-  background-color: $color-low-contrast;
-  .aboutme-content {
-    align-items: center;
-  }
-  .tab-vertical-nav-link {
-    position: relative;
-    color: $color-gray-high-contrast;
-    @media (min-width: $breakpoint-min-lg) {
+  // About me
+  .sec-aboutme {
+    background-color: $color-low-contrast;
+    .tab-vertical-nav-link {
+      position: relative;
+      color: $color-gray-high-contrast;
       &::before {
         position: absolute;
-        top: 0;
+        top: 55%;
         left: 0;
-        width: .25rem;
-        height: 100%;
+        width: 8px;
+        height: 8px;
         background-color: transparent;
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
-        border-bottom-right-radius: 0.25rem;
-        border-bottom-left-radius: 0.25rem;
+        border-radius: 50%;
         content: " ";
       }
-    }
-    &:hover {
-      color: $color-main-black;
-    }
-    &.active {
-      &::before {
-        background-color: $color-accent-1;
-      }
-    }
-  }
-  .tab-vertical {
-    position: relative;
-    // @media (min-width: $breakpoint-min-lg) {
-    //   border-right: 1px solid #dadada;
-    // }
-  }
-  .nav-pills {
-    justify-content: space-between;
-    .nav-link {
-      border: none;
-      border-radius: 0;
-      flex-flow: row;
-      @media (min-width: $breakpoint-min-lg) {
-        flex-direction: column;
-        width: 100%;
+      &:hover {
+        color: $color-main-black;
       }
       &.active {
-        color: $color-accent-1;
-        background-color: transparent;
-        &::after {
-          overflow: hidden;
-          display: inline;
-          vertical-align: middle;
-          border-bottom: 0.15rem solid;
-        }
-      }
-      .title-h4 {
-        font-weight: $font-weight-normal;
-      }
-    }
-  }
-  .tab-content {
-    .ml-5 {
-      margin-left: 0;
-      @media (min-width: $breakpoint-min-lg) {
-        margin-left: 3rem;
-      }
-    }
-  }
-  .tab-jobs {
-    .item {
-      .img-wrap {
-        height: 70px;
-        img {
-          width: 35%;
-          margin-top: auto;
-          margin-bottom: auto;
+        &::before {
+          background-color: $color-accent-1;
         }
       }
     }
-  }
-  .tabs-skills {
-    .img-wrap {
-      img {
-        width: 100%;
-      }
+    .tab-vertical {
+      position: relative;
+      // @media (min-width: $breakpoint-min-lg) {
+      //   border-right: 1px solid #dadada;
+      // }
     }
-  }
-
-  .carousel {
-    width: 100%;
-    .carousel-caption {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      background: $color-low-contrast;
-      width: 500px;
-      height: 275px;
-      padding: 0;
-      .item {
-        color: $color-main-black;
-        text-align: left;
-        padding: 40px;
-      }
-    }
-    .controlers {
-      position: absolute;
-      bottom: 175px;
-      left: 500px;
-      width: 50px;
-      .carousel-control {
-        height: 50px;
-        width: 50px;
+    .nav-pills {
+      justify-content: space-between;
+      .nav-link {
+        width: auto;
         border: none;
+        border-radius: 0;
+        flex-flow: row;
+        &.active {
+          color: $color-accent-1;
+          background-color: transparent;
+          &::after {
+            overflow: hidden;
+            display: inline;
+            vertical-align: middle;
+            border-bottom: 0.15rem solid;
+          }
+        }
+        .title-h4 {
+          font-weight: $font-weight-normal;
+        }
       }
-      .carousel-control-prev,
-      .carousel-control-next {
-        opacity: 1;
+    }
+    .tab-content {
+      .ml-5 {
+        margin-left: 0;
+        @media (min-width: $breakpoint-min-lg) {
+          margin-left: 3rem;
+        }
+      }
+    }
+    .tab-jobs {
+      .item {
+        .img-wrap {
+          height: 70px;
+          img {
+            width: 35%;
+            margin-top: auto;
+            margin-bottom: auto;
+          }
+        }
+      }
+    }
+    .tabs-skills {
+      .img-wrap {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .carousle-control {
+      width: 100%;
+
+      //Image style
+      .reduce-size {
+        width: 100%;
+        margin-left: 0;
+        @media (min-width: $breakpoint-min-md) {
+          width: 80%;
+          margin-left: 20%;
+        }
+      }
+      .img-company {
+        display: none;
+        max-height: 700px;
+        @media (min-width: $breakpoint-min-md) {
+          display: block;
+        }
+      }
+
+      //Captions style
+      .carousel-caption {
+        display: block;
         position: relative;
-        &:hover {
-          opacity: 0.8;
-        }
-      }
-
-      .carousel-control-prev {
-        background-color: $color-accent-1;
-      }
-      .carousel-control-next {
-        background-color: $color-accent-2;
-      }
-      .carousel-control-prev {
         left: 0;
-        @if $enable-gradients {
-          background: linear-gradient(90deg, rgba($black, .25), rgba($black, .001));
-        }
-      }
-      .carousel-control-next {
+        bottom: 0;
         right: 0;
-        @if $enable-gradients {
-          background: linear-gradient(270deg, rgba($black, .25), rgba($black, .001));
+        @media (min-width: $breakpoint-min-md) {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: $color-low-contrast;
+          width: 500px;
+          height: 275px;
+          padding: 0;
+        }
+
+        .item {
+          color: $color-main-black;
+          text-align: left;
+          padding: 40px;
         }
       }
 
+      //Controls
+      .controlers {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media (min-width: $breakpoint-min-md) {
+          bottom: 175px;
+          top: auto;
+          left: 500px;
+          width: 50px;
+        }
+        .carousel-control {
+          height: 50px;
+          width: 50px;
+          border: none;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          opacity: 1;
+          position: relative;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        .carousel-control-prev {
+          background-color: $color-accent-1;
+        }
+        .carousel-control-next {
+          background-color: $color-accent-2;
+        }
+      }
     }
   }
+
 }
