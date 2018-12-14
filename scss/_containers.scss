@@ -1,0 +1,10 @@
+.container-full {
+  @include media-breakpoint-down(xs) {
+    @include container-size($container-full, 0,0);
+  }
+}
+.container-sm {
+  @include media-breakpoint-down(xs) {
+    @include container-size($container-full, $gutter,0);
+  }
+}

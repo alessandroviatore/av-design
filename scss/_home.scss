@@ -55,6 +55,14 @@
       }
     }
   }
+
+  //Section extra padding top/bottom
+  .section {
+    @include media-breakpoint-down(sm) {
+      padding-top: $spacer-mobile + 2;
+      padding-bottom: $spacer-mobile +2;
+    }
+  }
   // Author
   .author {
     .avatar {
