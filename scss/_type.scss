@@ -38,6 +38,15 @@ h5, .title-h5 {
 }
 h6, .title-h6 { font-size: $h6-font-size; }
 
+.intro-text {
+  font-size: $h5-font-size; //11px
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &::before {
+    content: "\2014 \00A0"; // em dash, nbsp
+  }
+}
+
 //
 // Body Text
 //

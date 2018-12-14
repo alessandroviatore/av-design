@@ -85,6 +85,13 @@ h5, .title-h5 {
 h6, .title-h6 {
   font-size: 1rem; }
 
+.intro-text {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+  .intro-text::before {
+    content: "\2014 \00A0"; }
+
 .bd-text-1, .bd-text-2, .bd-text-3 {
   margin-top: 0;
   margin-bottom: 1rem; }
