@@ -7011,15 +7011,24 @@ a.text-dark:hover, a.text-dark:focus {
       border-radius: 0;
       flex-flow: row; }
       .home .sec-aboutme .nav-pills .nav-link.active {
-        color: #57DFD9;
         background-color: transparent; }
+        .home .sec-aboutme .nav-pills .nav-link.active .title-h4 {
+          color: #1E1E1E; }
         .home .sec-aboutme .nav-pills .nav-link.active::after {
           overflow: hidden;
           display: inline;
           vertical-align: middle;
           border-bottom: 0.15rem solid; }
+        .home .sec-aboutme .nav-pills .nav-link.active:hover {
+          opacity: 1; }
+      .home .sec-aboutme .nav-pills .nav-link:hover {
+        opacity: 0.5; }
       .home .sec-aboutme .nav-pills .nav-link .title-h4 {
-        font-weight: 400; }
+        font-weight: 400;
+        color: #9B9E9F; }
+        @media (max-width: 575.98px) {
+          .home .sec-aboutme .nav-pills .nav-link .title-h4 {
+            font-size: 1.3rem; } }
   .home .sec-aboutme .tab-content .ml-5 {
     margin-left: 0; }
     @media (min-width: 992px) {
@@ -7037,7 +7046,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 30px;
     color: #fff;
     height: 100%; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .home .sec-aboutme .tabs-skills .block-accent {
         display: block; } }
     .home .sec-aboutme .tabs-skills .block-accent .title-h2 {

@@ -113,7 +113,9 @@
         border-radius: 0;
         flex-flow: row;
         &.active {
-          color: $color-accent-1;
+          .title-h4 {
+            color: $color-high-contrast;
+          }
           background-color: transparent;
           &::after {
             overflow: hidden;
@@ -121,9 +123,19 @@
             vertical-align: middle;
             border-bottom: 0.15rem solid;
           }
+          &:hover {
+            opacity: 1;
+          }
+        }
+        &:hover {
+          opacity: $opacity-default;
         }
         .title-h4 {
           font-weight: $font-weight-normal;
+          color: $color-gray-high-contrast;
+          @include media-breakpoint-only(xs) {
+            font-size: 1.3rem;
+          }
         }
       }
     }
@@ -155,7 +167,7 @@
         padding: $gutter;
         color: $white;
         height: 100%;
-        @media (min-width: $breakpoint-min-md) {
+        @media (min-width: $breakpoint-min-lg) {
           display: block;
         }
         .title-h2 {
