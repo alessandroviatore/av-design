@@ -7129,6 +7129,36 @@ a.text-dark:hover, a.text-dark:focus {
         background-color: #57DFD9; }
       .home .sec-aboutme .carousle-control .controlers .carousel-control-next {
         background-color: #ADA2FB; }
+.home .sec-works .works-list {
+  padding-left: 0; }
+  .home .sec-works .works-list .item {
+    position: relative;
+    list-style: none;
+    margin-bottom: 5rem; }
+    .home .sec-works .works-list .item .cta {
+      position: absolute;
+      bottom: 0; }
+    .home .sec-works .works-list .item .img-block {
+      margin-bottom: 2rem; }
+      @media (min-width: 768px) {
+        .home .sec-works .works-list .item .img-block {
+          margin-bottom: 0; } }
+  @media (min-width: 768px) {
+    .home .sec-works .works-list .even .img-block {
+      order: 0; } }
+  .home .sec-works .works-list .even .txt-block {
+    order: 0; }
+    @media (min-width: 768px) {
+      .home .sec-works .works-list .even .txt-block {
+        order: 1;
+        padding-left: 5rem; } }
+  .home .sec-works .works-list .odd .img-block {
+    order: 0; }
+    @media (min-width: 768px) {
+      .home .sec-works .works-list .odd .img-block {
+        order: 1; } }
+  .home .sec-works .works-list .odd .txt-block {
+    order: 0; }
 
 .spacer-small-p-tb, .spacer-medium-p-tb, .spacer-large-p-tb {
   padding-top: 2rem;

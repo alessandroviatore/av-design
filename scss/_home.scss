@@ -284,5 +284,50 @@
       }
     }
   }
-
+  // Works
+  .sec-works {
+    .works-list {
+      padding-left: 0;
+      .item {
+        position: relative;
+        list-style: none;
+        margin-bottom: $spacer * 5;
+        .cta {
+          position: absolute;
+          bottom: 0;
+        }
+        .img-block {
+          margin-bottom: $spacer * 2;
+          @media (min-width: $breakpoint-min-md) {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .even {
+        .img-block {
+          @media (min-width: $breakpoint-min-md) {
+            order: 0;
+          }
+        }
+        .txt-block {
+          order: 0;
+          @media (min-width: $breakpoint-min-md) {
+            order: 1;
+            padding-left: $spacer * 5;
+          }
+        }
+      }
+      .odd {
+        .img-block {
+          order: 0;
+          @media (min-width: $breakpoint-min-md) {
+            order: 1;
+          }
+        }
+        .txt-block {
+          order: 0;
+        }
+      }
+    }
+  }
 }
