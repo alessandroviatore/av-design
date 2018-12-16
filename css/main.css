@@ -7159,6 +7159,15 @@ a.text-dark:hover, a.text-dark:focus {
         order: 1; } }
   .home .sec-works .works-list .odd .txt-block {
     order: 0; }
+.home .pre-footer .block-accent {
+  background-color: #1E1E1E;
+  padding: 60px 150px;
+  color: #fff; }
+  .home .pre-footer .block-accent .intro-text {
+    color: #fff; }
+  .home .pre-footer .block-accent .title-h4 {
+    color: #57DFD9;
+    border-color: #57DFD9; }
 
 .spacer-small-p-tb, .spacer-medium-p-tb, .spacer-large-p-tb {
   padding-top: 2rem;

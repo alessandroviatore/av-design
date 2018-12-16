@@ -330,4 +330,21 @@
       }
     }
   }
+
+  // Works
+  .pre-footer {
+    .block-accent {
+      background-color: $color-main-black;
+      padding: $gutter * 2 $gutter * 5;
+      color:$white;
+      .intro-text {
+        color:$white;
+      }
+      .title-h4 {
+        color: $color-accent-1;
+        border-color: $color-accent-1;
+      }
+    }
+  }
+
 }
