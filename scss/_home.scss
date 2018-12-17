@@ -56,6 +56,15 @@
     }
   }
 
+  .block-text-9 {
+    .title-h1 {
+      font-size: $h1-font-size / 2; //88px
+      @media (min-width: $breakpoint-min-lg) {
+        font-size: $h1-font-size; //88px
+      }
+    }
+  }
+
   //Section extra padding top/bottom
   .section {
     @include media-breakpoint-down(sm) {
@@ -329,22 +338,89 @@
         }
       }
     }
-  }
-
-  // Works
-  .pre-footer {
-    .block-accent {
-      background-color: $color-main-black;
-      padding: $gutter * 2 $gutter * 5;
-      color:$white;
-      .intro-text {
-        color:$white;
-      }
-      .title-h4 {
-        color: $color-accent-1;
-        border-color: $color-accent-1;
+    .title-h1 {
+      @include media-breakpoint-only(xs) {
+        font-size: 4rem;
       }
     }
   }
 
+  // Works
+  .discovery-block {
+    width: 100%;
+    .content {
+      background-color: $color-main-black;
+      padding: $gutter;
+      @media (min-width: $breakpoint-min-md) {
+        padding: $gutter * 2 $gutter * 5;
+      }
+      .title-h2 {
+        color: $white;
+      }
+      .socials-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width: $breakpoint-min-md) {
+          max-width: 500px;
+        }
+      }
+      .item {
+        list-style: none;
+        margin-right: $gutter;
+        &:hover {
+          opacity: $opacity-default;
+        }
+        a {
+          color: $color-accent-2;
+        }
+        .fab {
+          font-size: $h2-font-size / 2;
+          padding: 5px;
+          @media (min-width: $breakpoint-min-md) {
+            font-size: $h2-font-size;
+            padding: 10px;
+          }
+        }
+        .scocial-icon {
+          background-color: $white;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  // Works
+  .pre-footer {
+    background: $color-low-contrast;
+    .socials-list {
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      @media (min-width: $breakpoint-min-lg) {
+        display: block;
+      }
+    }
+    .item {
+      list-style: none;
+      margin-right: $gutter;
+      &:hover {
+        opacity: $opacity-default;
+      }
+      a {
+        color: $color-accent-1;
+      }
+      .fab {
+        font-size: $body-txt-1;
+        padding: 5px;
+        @media (min-width: $breakpoint-min-md) {
+          padding: 10px;
+        }
+      }
+    }
+  }
 }
