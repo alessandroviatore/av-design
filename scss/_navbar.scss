@@ -18,5 +18,24 @@
       color: $color-main-black;
       border-bottom: 0.15rem solid;
     }
+    .nav-link {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 30%;
+        left: - $gutter / 2;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        border-radius: 50%;
+        content: " ";
+      }
+      &.active {
+        color: $color-main-black;
+        &::before {
+          background-color: $color-accent-1;
+        }
+      }
+    }
   }
 }
