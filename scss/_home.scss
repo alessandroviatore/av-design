@@ -1,4 +1,14 @@
 .home {
+  background-color: $color-low-contrast;
+  //Common style
+  .list-default {
+    padding-left: 0;
+  }
+  .item {
+    list-style: none;
+    margin-bottom: $gutter / 2;
+  }
+
   //hero-carousel
   .hero-carousel {
     .carousel-container {
@@ -295,8 +305,9 @@
       }
     }
   }
-  // Works
+  // word-spacing: ;
   .sec-works {
+    position: relative;
     .title-h1 {
       @include media-breakpoint-only(xs) {
         font-size: 4rem;
@@ -309,17 +320,15 @@
     }
 
     .works-list {
-      padding-left: 0;
       .item {
         position: relative;
-        list-style: none;
         margin-bottom: $spacer * 5;
         .txt-block {
           margin: auto;
         }
         .cta {
           .link {
-            margin-right: $gutter;
+            margin-right: $gutter / 2;
           }
         }
         .img-block {
@@ -336,6 +345,21 @@
             }
           }
         }
+        .img-block {
+          order: 0;
+          margin-bottom: $spacer * 2;
+          @media (min-width: $breakpoint-min-lg) {
+            order: 1;
+            margin-bottom: 0;
+          }
+        }
+        .txt-block {
+          order: 1;
+          @media (min-width: $breakpoint-min-lg) {
+            order: 0;
+          }
+        }
+
       }
       .even {
         .img-block {
@@ -380,6 +404,27 @@
     }
   }
 
+  .pre-footer {
+    .custom-container {
+      display: flex;
+      justify-content: center;
+    }
+    .wrap {
+      padding: $gutter;
+    }
+    .col-right {
+      display: flex;
+      flex-flow: row;
+    }
+    .col-left {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .content {
+      margin: $gutter * 2  auto;
+    }
+
+  }
   // Works
   .discovery-block {
     width: 100%;
@@ -404,7 +449,6 @@
         }
       }
       .item {
-        list-style: none;
         margin-right: $gutter;
         &:hover {
           opacity: $opacity-default;
@@ -441,7 +485,6 @@
       }
     }
     .item {
-      list-style: none;
       margin-right: $gutter;
       &:hover {
         opacity: $opacity-default;

@@ -32,3 +32,10 @@
 .accent-2 { color: $color-accent-2; }
 .high-contrast { color: $color-high-contrast; }
 .low-contrast { color: $color-gray-high-contrast; }
+
+// background colors
+.bkgrd-neutral { background-color: $white; }
+.bkgrd-accent-1 { background-color: $color-accent-1; }
+.bkgrd-accent-2 { background-color: $color-accent-2; }
+.bkgrd-high-contrast { background-color: $color-gray-high-contrast; }
+.bkgrd-low-contrast { background-color: $color-low-contrast; }
