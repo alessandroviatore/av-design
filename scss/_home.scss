@@ -406,6 +406,15 @@
 
     .cta-banner {
       color: $white;
+      .title-h1 {
+        font-size: $h1-font-size / 2; //88px
+        @media (min-width: $breakpoint-min-md) {
+          font-size: $h2-font-size;
+        }
+        @media (min-width: $breakpoint-min-lg) {
+          font-size: $h1-font-size - 0.5; //88px
+        }
+      }
       .accent-corrner {
         &::before {
           top: -25px;
