@@ -1,8 +1,8 @@
 .home {
-  background-color: $color-low-contrast;
   //Common style
   .list-default {
     padding-left: 0;
+    margin-bottom: 0;
   }
   .item {
     list-style: none;
@@ -313,12 +313,9 @@
         font-size: 4rem;
       }
     }
-    .works-list {
-      .container {
-        padding: 0;
-      }
+    .head {
+      margin-bottom: $gutter;
     }
-
     .works-list {
       .item {
         position: relative;
@@ -386,11 +383,15 @@
           order: 0;
         }
       }
-
-      .head {
-        margin-bottom: $gutter;
+    }
+    .website-list {
+      @media (min-width: $breakpoint-min-md) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
       }
     }
+
     .block-works {
       position: relative;
       .carousel-indicators {
@@ -400,6 +401,41 @@
       .carousel-item {
         position: relative;
         margin-bottom: 0;
+      }
+    }
+
+    .cta-banner {
+      color: $white;
+      .accent-corrner {
+        &::before {
+          top: -25px;
+          left: -25px;
+          position: absolute;
+          background: $white;
+          border-radius: 50%;
+          padding: 25px;
+          font-size: xx-large;
+        }
+      }
+      .box-left,
+      .box-right {
+        position: relative;
+      }
+      .box-left {
+        .accent-corrner {
+          &::before {
+            content: "\f1b4"; // Behance
+            // color: #0057ff;
+          }
+        }
+      }
+      .box-right {
+        .accent-corrner {
+          &::before {
+            content: "\f17d"; // Dribble
+            // color: #c51d60;
+          }
+        }
       }
     }
   }
@@ -423,8 +459,8 @@
     .content {
       margin: $gutter * 2  auto;
     }
-
   }
+
   // Works
   .discovery-block {
     width: 100%;
@@ -473,31 +509,51 @@
   }
 
   // Works
-  .pre-footer {
+  .footer {
     background: $color-low-contrast;
-    .socials-list {
-      padding-left: 0;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      @media (min-width: $breakpoint-min-lg) {
-        display: block;
+    .spacer-large-p-tb {
+      @include media-breakpoint-only(md) {
+        padding-top: $spacer-mobile;
+        padding-bottom: $spacer-mobile;
       }
     }
-    .item {
-      margin-right: $gutter;
-      &:hover {
-        opacity: $opacity-default;
-      }
-      a {
-        color: $color-accent-1;
-      }
-      .fab {
-        font-size: $body-txt-1;
-        padding: 5px;
-        @media (min-width: $breakpoint-min-md) {
-          padding: 10px;
+    .socials-list {
+      display: flex;
+      .item {
+        margin-right: $gutter;
+        margin-bottom: 0;
+        &:hover {
+          opacity: $opacity-default;
         }
+        a {
+          color: $color-main-black;
+        }
+        .fab {
+          font-size: $body-txt-1;
+          padding: 5px;
+          &:first-child {
+            padding-left: 0;
+          }
+          @media (min-width: $breakpoint-min-md) {
+            padding: 10px;
+          }
+        }
+      }
+    }
+    .contacts {
+      margin-bottom: $gutter;
+    }
+    .col-right,
+    .col-left {
+      justify-content: flex-start;
+      @media (min-width: $breakpoint-min-lg) {
+        justify-content: center;
+      }
+    }
+    .col-right {
+      background-color: transparent;
+      @media (min-width: $breakpoint-min-lg) {
+        background-color: $white;
       }
     }
   }
