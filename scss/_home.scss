@@ -25,6 +25,9 @@
         max-height: 550px;
         max-width: 90%;
       }
+      .carousel-item {
+        max-height: 500px;
+      }
     }
     // Left/right controls for nav
     .caption {
@@ -232,7 +235,15 @@
 
       }
     }
-
+    //Hobbies
+    .tabs-hobbies {
+      .title-h2 {
+        font-size: $h3-font-size;
+        @media (min-width: $breakpoint-min-lg) {
+          font-size: $h2-font-size; //88px
+        }
+      }
+    }
     .carousle-control {
       width: 100%;
 

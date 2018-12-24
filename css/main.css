@@ -6946,9 +6946,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-light {
   background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   /*------------------------------------
     Hamburgers Custom
   ------------------------------------*/ }
+  @media (min-width: 768px) {
+    .navbar-light {
+      box-shadow: none; } }
   .navbar-light .navbar-brand {
     border: none; }
   .navbar-light .navbar-nav .nav-item {
@@ -7060,6 +7064,12 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-light .js-header-fix-moment .u-hamburger--white:hover .u-hamburger-inner, .navbar-light .js-header-fix-moment .u-hamburger--white:hover .u-hamburger-inner::before, .navbar-light .js-header-fix-moment .u-hamburger--white:hover .u-hamburger-inner::after {
     background-color: #21c87a; }
 
+.navbar-nav {
+  padding-top: 2rem; }
+  @media (min-width: 768px) {
+    .navbar-nav {
+      padding-top: 0; } }
+
 .home .list-default {
   padding-left: 0;
   margin-bottom: 0; }
@@ -7076,6 +7086,8 @@ a.text-dark:hover, a.text-dark:focus {
   .home .hero-carousel .carousel-inner {
     max-height: 550px;
     max-width: 90%; } }
+.home .hero-carousel .carousel-inner .carousel-item {
+  max-height: 500px; }
 .home .hero-carousel .caption .wrap {
   background-color: #ADA2FB;
   padding: 40px; }
@@ -7211,6 +7223,11 @@ a.text-dark:hover, a.text-dark:focus {
       .home .sec-aboutme .tabs-skills .block-details .software .img-wrap .software-logo {
         padding: 3px;
         border-radius: 50%; }
+  .home .sec-aboutme .tabs-hobbies .title-h2 {
+    font-size: 2.25rem; }
+    @media (min-width: 992px) {
+      .home .sec-aboutme .tabs-hobbies .title-h2 {
+        font-size: 3rem; } }
   .home .sec-aboutme .carousle-control {
     width: 100%; }
     .home .sec-aboutme .carousle-control .reduce-size {

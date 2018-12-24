@@ -1,5 +1,9 @@
 .navbar-light {
   background-color: $white;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  @media (min-width: $breakpoint-min-md) {
+    box-shadow: none;
+  }
   .navbar-brand {
     border: none;
   }
@@ -42,7 +46,6 @@
     color: $navbar-light-color;
     border-color: transparent;
   }
-
   .navbar-toggler-icon {
     background-image: none;
   }
@@ -156,5 +159,10 @@
   .js-header-fix-moment .u-hamburger--white:hover .u-hamburger-inner, .js-header-fix-moment .u-hamburger--white:hover .u-hamburger-inner::before, .js-header-fix-moment .u-hamburger--white:hover .u-hamburger-inner::after {
     background-color: #21c87a;
   }
-
+}
+.navbar-nav {
+  padding-top: $spacer * 2;
+  @media (min-width: $breakpoint-min-md) {
+    padding-top: 0;
+  }
 }
