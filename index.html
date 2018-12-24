@@ -36,17 +36,22 @@
   </head>
   <body class="home" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
     <!-- Nav bar -->
-    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container pb-3 pt-3">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light navbar-expand-md fixed-top">
+      <div class="container pb-3-md pt-3-md">
         <a class="navbar-brand" href="index.html">
           <img src="images/logo/logo-2-b.svg" width="30" height="30" class="d-inline-block align-top" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler u-hamburger u-header__hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon u-hamburger-box">
+            <span class="u-hamburger-inner"></span>
+          </span>
         </button>
 
         <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">Intro</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#aboutme">About me</a>
             </li>
@@ -65,8 +70,8 @@
 
       <!-- Hero -->
       <section class="hero spacer-medium-p-tb bkgrd-neutral">
-        <div id="carouselHero" class="carousel slide hero-carousel spacer-medium-p-tb" data-ride="carousel">
-          <div class="container carousel-container container-full">
+        <div id="carouselHero" class="carousel slide hero-carousel " data-ride="carousel">
+          <div class="container carousel-container container-full spacer-medium-p-tb">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <a href="#works">
@@ -114,7 +119,7 @@
       <section id="intro" data-aos="fade-in" class="section block-text-9 spacer-large-p-tb bkgrd-neutral">
 
         <div class="container container-sm">
-          <div class="row spacer-medium-p-b">
+          <div class="row">
             <div class="col-lg-2">
               <div class="block-info pt-3">
                 <h5 class="title-h5 intro-text">Intro</h5>
@@ -179,7 +184,7 @@
                   </a>
                   <a class="nav-link tab-vertical-nav-link  " id="v-pills-hobbies-tab" data-toggle="pill" href="#v-pills-hobbies" role="tab" aria-controls="v-pills-hobbies" aria-selected="true">
                     <span class="title-h5 low-contrast">03</span>
-                    <h4 class="title-h4 link">Hobby</h4>
+                    <h4 class="title-h4 link">Hobbyes</h4>
                   </a>
                 </div>
                 <!-- End Tab Nav -->
@@ -381,8 +386,8 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="block-intro spacer-large-p-b">
-                <h5 class="title-h5 intro-text pb-3">About me</h5>
-                <h2 class="title-h1">Projects</h2>
+                <h5 class="title-h5 intro-text pb-3">Projects</h5>
+                <h2 class="title-h1">Progetti in evidenza</h2>
               </div>
 
               <!-- Works list -->
@@ -448,18 +453,20 @@
             </div>
           </div>
         </div>
-
+        <hr>
         <!-- Social CTA's -->
         <div data-aos="fade-in" class="cta-banner container-sm spacer-medium-p-tb">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-sm-6 text-center">
+                <h5 class="title-h5">Scopri di più</h5>
                 <div class="wrap d-flex justify-content-sm-center box-left">
                   <!-- <div class="accent-corrner rounded-circl fab"></div> -->
                   <a href="https://www.behance.net/alessandroviatore" target="_blank" class="link title-h1"><i class="fab fa-behance"></i> Behance</a>
                 </div>
               </div>
-              <div class="col-sm-6 text-left">
+              <div class="col-sm-6 text-center">
+                <h5 class="title-h5">Follow me</h5>
                 <div class="wrap d-flex justify-content-md-center box-right">
                   <!-- <div class="accent-corrner rounded-circl fab"></div> -->
                   <a href="https://dribbble.com/AlessandroViatore" target="_blank" class="link title-h1"><i class="fab fa-dribbble"></i> Dribble</a>
@@ -468,7 +475,7 @@
             </div>
           </div>
         </div>
-
+        <hr>
         <div data-aos="fade-in" class="container container-sm spacer-large-p-tb">
           <div class="row">
             <div class="col-lg-12">
@@ -532,17 +539,16 @@
                   </div>
                 </li>
               </ul>
-
               <!-- Web site list -->
-              <div class="block-website spacer-large-p-t">
-                <div class="row align-items-center">
+              <div class="block-website">
+                <hr>
+                <div class="row align-items-center spacer-small-p-tb">
                   <div class="col-md-3">
                     <div class="head">
                       <h5 class="title-h5">Code</h5>
                       <h3 class="title-h3">Website</h3>
                     </div>
                   </div>
-
                   <div class="col-md-8 offset-md-1 website-block">
                     <ul class="list-default website-list">
                       <li data-aos="fade-in" class="item d-flex">
@@ -560,6 +566,7 @@
                     </ul>
                   </div>
                 </div>
+                <hr>
               </div>
 
             </div>

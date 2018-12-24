@@ -11,8 +11,14 @@
 
   //hero-carousel
   .hero-carousel {
+
     .carousel-container {
       position: relative;
+      &.spacer-medium-p-tb {
+        @include media-breakpoint-only(xs) {
+          @include spacer-p ($spacer-medium, $spacer-0);
+        }
+      }
     }
     .carousel-inner {
       @media (min-width: $breakpoint-min-md) {
