@@ -1,0 +1,22 @@
+.container-full {
+  @include media-breakpoint-down(xs) {
+    @include container-size($container-full, 0,0);
+  }
+}
+.container-sm {
+  @include media-breakpoint-down(xs) {
+    @include container-size($container-full, $gutter,0);
+    // Remove the negative margin from default .row, then the horizontal padding
+    // from all immediate children columns (to prevent runaway style inheritance).
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+
+      > .col,
+      > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}

@@ -1,125 +1,677 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Hello, world!</title>
+    <!-- load css for cubeportfolio -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <meta name="keywords" content="Milano, Italia Graphic Designer, Products Designer, UI,UX,CSS,HTML">
+    <meta name="description" content="Alessandro Viatore UI/UX Designer, Milano-Italia Classe-1987." />
+    <!--og tags facbbok-->
+    <meta property="og:url" content="http://www.alessandroviatore.com"/>
+    <meta property="og:type" content="Milano, Italia Graphic Designer, Products Designer, UI,UX,CSS,HTML"/>
+    <meta property="og:title" content="SAlessandro Viatore, Milano, italia Web Designer, Graphic Designer, UI/UX Designer, Frontend "/>
+    <meta property="og:description" content="Alessandro Viatore UI/UX Designer, Milano-Italia Classe-1987."/>
+    <meta property="og:image" content="images/av-facebookJumbo.png"/>
+    <!--og tags facbbok-->
+
+    <title>Alessandro Viatore Designer</title>
   </head>
-  <body>
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light bd-navbar mb-5">
-      <a class="navbar-brand" href="../index.html">
-        <img src="images/logo/logo-1-black.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        AV Design
-      </a>
+  <body class="home" data-spy="scroll" data-target="#my-navabr" data-offset="0">
+    <!-- Nav bar -->
+    <nav id="my-navabr" class="navbar navbar-expand-lg navbar-light navbar-expand-md fixed-top">
+      <div class="container pb-3-md pt-3-md">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo/logo-2-b.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler u-hamburger u-header__hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon u-hamburger-box">
+            <span class="u-hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="#intro">Intro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <main role="main" data-spy="scroll" data-target="#my-navabr">
 
-    <main role="main">
-      <!-- Sidebar -->
-    <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
-        <ul class="nav flex-column position-fixed mt-5">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#typography">Typography</a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link ml-3 my-1" href="components/text-block-1.html">Block Text 1</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-2.html">Block Text 2</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-3.html">Block Text 3</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-4.html">Block Text 4</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-5.html">Block Text 5</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-6.html">Block Text 6</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-6.html">Block Text 7</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-6.html">Block Text 8</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-9.html">Block Text 9</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-10.html">Block Text 10</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-11.html">Block Text 11</a>
-              <a class="nav-link ml-3 my-1" href="components/text-block-12.html">Block Text 12</a>
-            </nav>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
 
-    <div id="typography" class="container mt-5">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-12">
-          <p class="title-h1">h1. heading</p>
-          <p class="title-h1 accent-1">h1. heading</p>
-          <p class="title-h1 accent-2">h1. heading</p>
-          <p class="title-h2">h2. heading</p>
-          <p class="title-h2 accent-1">h2. heading</p>
-          <p class="title-h2 accent-2">h2. heading</p>
-          <p class="title-h3">h3. heading</p>
-          <p class="title-h3 accent-1">h3. heading</p>
-          <p class="title-h3 accent-2">h3. heading</p>
-          <p class="title-h4">h4. heading</p>
-          <p class="title-h4 accent-1">h4. heading</p>
-          <p class="title-h4 accent-2">h4. heading</p>
-          <p class="title-h5 high-contrast">h5. heading</p>
-          <p class="title-h5 low-contrast">h5. heading</p>
+      <!-- Hero -->
+      <section id="intro" class="hero spacer-medium-p-tb bkgrd-neutral">
+        <div id="carouselHero" class="carousel slide hero-carousel " data-ride="carousel">
+          <div class="container carousel-container container-full spacer-medium-p-tb">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#works">
+                  <img class="d-block w-100" src="images/cover-parallax.jpg" alt="Parallax">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="#works">
+                  <img class="d-block w-100" src="images/cover-maven.jpg" alt="Maven">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="#works">
+                  <img class="d-block w-100" src="images/cover-100ui.jpg" alt="100 Daily UI">
+                </a>
+              </div>
+            </div>
+
+            <ol class="carousel-indicators">
+              <li data-target="#carouselHero" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselHero" data-slide-to="1"></li>
+              <li data-target="#carouselHero" data-slide-to="2"></li>
+            </ol>
+
+            <div class="caption">
+              <div class="wrap text-left ml-auto">
+                <p class="text">
+                  Benvenuto nel mio sito, ecco alcuni dei miei lavori
+                </p>
+                <div class="author d-flex">
+                  <div class="avatar">
+                    <img class="rounded-circle" src="images/me-avatar.png" alt="">
+                  </div>
+                  <h5 class="info">
+                    Alessandro Viatore <br>Designer UI
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <hr class="mt-5 mb-5">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="bd-text-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <hr class="mt-5 mb-5">
-          <p class="bd-text-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="bd-text-2 high-contrast">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="bd-text-2 low-contrast">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <hr class="mt-5 mb-5">
-          <p class="bd-text-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="bd-text-3 high-contrast">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="bd-text-3 high-contrast">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </div> <!-- /container -->
+      </section>
 
+      <!-- Intro -->
+      <section data-aos="fade-in" class="section block-text-9 spacer-large-p-tb bkgrd-neutral">
+
+        <div class="container container-sm">
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="block-info pt-3">
+                <h5 class="title-h5 intro-text">Intro</h5>
+                <p class="bd-text-2 low-contrast">Alessandro Viatore, <br>Milano-Italia</p>
+              </div>
+            </div>
+
+            <div class="offset-lg-1 col-lg-9">
+              <div class"block-title mb-5">
+                <h1 class="title-h1 mb-5">
+                  The human touch is what made it. We design as humans. Perfect. We did it
+                </h1>
+              </div>
+              <div class="block-body">
+                <p class="bd-text-1">
+                  Forte passione per il Design!
+                  Nasco e cresco come grafico Pubblicitario, ma il mondo digitale mi ha subito conquistato. La possibilità di Cercare qualcosa di intuitivo e funzionali che l’utente difficilmente dimenticherà.
+                </p>
+                <p class="bd-text-1">
+                  Questa è la principale motivizione che mi spinge sempre a migliorare e migliorarmi.
+                  Precisione ed attenzione ai dettagli con stile pulito ed essenziale sono i punti di forza in cui credo, senza mai smettere d’imparare.
+                  In questo campo cambia tutto infretta, chi si ferma è perduto!
+                </p>
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+      </section> <!-- /container -->
+
+      <!-- About me -->
+      <section id="aboutme" data-aos="fade-in" class="section sec-aboutme spacer-large-p-tb">
+        <div class="container container-sm">
+          <div class="row spacer-medium-p-b">
+            <div class="col-lg-12">
+              <div class="block-intro">
+                <h5 class="title-h5 intro-text pb-3">About me</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="block-title">
+                <h3 class="title-h3">
+                  Skills, esperienze lavorative e Hobbies.
+                </h3>
+              </div>
+            </div>
+
+            <div class="offset-lg-1 col-lg-6">
+              <div class="tab-vertical tab-vertical-md mr-lg-7">
+                <!-- Tab Nav -->
+                <div class="nav d-flex nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link tab-vertical-nav-link  active show" id="v-pills-skills-tab" data-toggle="pill" href="#v-pills-skills" role="tab" aria-controls="v-pills-skills" aria-selected="false">
+                    <span class="title-h5 low-contrast">01</span>
+                    <h4 class="title-h4 link">Skills</h4>
+                  </a>
+                  <a class="nav-link tab-vertical-nav-link " id="v-pills-jobs-tab" data-toggle="pill" href="#v-pills-jobs" role="tab" aria-controls="v-pills-jobs" aria-selected="false">
+                    <span class="title-h5 low-contrast">02</span>
+                    <h4 class="title-h4 link">Companys</h4>
+                  </a>
+                  <a class="nav-link tab-vertical-nav-link  " id="v-pills-hobbies-tab" data-toggle="pill" href="#v-pills-hobbies" role="tab" aria-controls="v-pills-hobbies" aria-selected="true">
+                    <span class="title-h5 low-contrast">03</span>
+                    <h4 class="title-h4 link">Hobbies</h4>
+                  </a>
+                </div>
+                <!-- End Tab Nav -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- Tab Content -->
+              <div class="tab-content" id="v-pills-tabContent">
+                <!-- Tab Skills -->
+                <div class="tab-pane tabs-skills fade active show " id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab">
+                  <div class="row">
+
+                    <div class="col-lg-5">
+                      <!-- Accent Block -->
+                      <div class="content block-accent">
+                        <h2 class="title-h2">Skills and knowledge</h2>
+                      </div>
+                      <!-- End Accent Block-->
+                    </div>
+
+                    <div class="col-lg-6 offset-lg-1">
+                      <!-- Skills Details -->
+                      <div class="content block-details">
+                        <div class="block mb-5">
+                          <h5 class="title-h5 low-contrast mb-4">Design</h5>
+                          <ul class="list-default list-skills">
+                            <li class="item d-flex">
+                              <div class="details">Sketch</div>
+                              <div class="score low-contrast">9/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">Adobe Suite</div>
+                              <div class="score low-contrast">8/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">Design System</div>
+                              <div class="score low-contrast">9/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">Atomic Design</div>
+                              <div class="score low-contrast">7/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">Wireframes/Prototypes</div>
+                              <div class="score low-contrast">7/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">Invision</div>
+                              <div class="score low-contrast">9/10 <small>score</small></div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block mb-5">
+                          <h5 class="title-h5 low-contrast mb-4">Code</h5>
+                          <ul class="list-default list-skills">
+                            <li class="item d-flex">
+                              <div class="details">HTML5</div>
+                              <div class="score low-contrast">8/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">CSS3</div>
+                              <div class="score low-contrast">8/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">Bootstrap</div>
+                              <div class="score low-contrast">8/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">Github</div>
+                              <div class="score low-contrast">6/10 <small>score</small></div>
+                            </li>
+
+                            <li class="item d-flex">
+                              <div class="details">SASS / LESS / SCSS</div>
+                              <div class="score low-contrast">8/10 <small>score</small></div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Skills Details -->
+                    </div>
+
+                  </div>
+                </div>
+                <!-- Tab Jobs -->
+                <div class="tab-pane tab-jobs fade " id="v-pills-jobs" role="tabpanel" aria-labelledby="v-pills-jobs-tab">
+                  <div class="row">
+
+                    <div id="carouselExampleControls" class="carousel carousle-control slide" data-ride="carousel">
+                      <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                          <img class="reduce-size img-company" src="images/cover-jobs-adespresso.jpg" alt="First slide">
+                          <div class="carousel-caption">
+                            <div class="item">
+                              <h5 class="title-h5 low-contrast">2016, Ad oggi</h5>
+                              <div class="img-wrap mb-3 d-flex">
+                                <img class="max-width-9" src="images/logo/adespresso-logo.png" alt="Adespresso">
+                              </div>
+                              <p class="bd-text-2">
+                                <span class="low-contrast">Mansioni svolte:</span> Products Designer, UI/UX Designer, Mantian design system, Design/FrontEnd Blog site</li>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                          <img class="reduce-size img-company" src="images/cover-jobs-oneday.jpg" alt="First slide">
+                          <div class="carousel-caption">
+                            <div class="item">
+                              <h5 class="title-h5 low-contrast">2016⏤2017</h5>
+                              <div class="img-wrap mb-3 d-flex">
+                                <img class="max-width-9" src="images/logo/oneday-logo.png" alt="OnedayGroup SRL">
+                              </div>
+                              <p class="bd-text-2">
+                                <span class="low-contrast">Mansioni svolte:</span> Corporate brochures, social campaigns, Web Design, Gestione contenuti Wordpress e molto altro</li>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                          <img class="reduce-size img-company" src="images/cover-jobs-odp.jpg" alt="Viking Office Products">
+                          <div class="carousel-caption">
+                            <div class="item">
+                              <h5 class="title-h5 low-contrast">2005⏤2016</h5>
+                              <div class="img-wrap mb-3 d-flex">
+                                <img class="max-width-9" src="images/logo/viking-logo.png" alt="Viking SRL">
+                              </div>
+                              <p class="bd-text-2">
+                                <span class="low-contrast">Mansioni svolte:</span> Impaginazione cataloghi, controllo qualità immagini, News letter, Home Page Banners</li>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                      <div class="controlers">
+                        <a class="carousel-control carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- Tab Hobies -->
+                <div class="tab-pane tabs-hobbies fade" id="v-pills-hobbies" role="tabpanel" aria-labelledby="v-pills-hobbies-tab">
+
+                  <div class="row">
+                    <div class="col-md-12 col-lg-7">
+                      <div class="block-header spacer-medium-p-tb">
+                        <h2 class="title-h2">
+                          Muisca,Sport, cucina il mio mix Perfetto.
+                        </h2>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-12 col-lg-4">
+                          <div class="block-body spacer-medium-p-b">
+                            <p class="bd-text-2 low-contrast">
+                              Mi piace cucinare con buona musica, poi smaltire con dello sano sport per sentirsi meno in colpa!
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-lg-7 offset-lg-1">
+                          <div class="block-body spacer-medium-p-b">
+                            Amo lo sport, soprattuto gli sport made in US. Pratico il Football Americano da svariati anni, sono stato membro della nazionale italiana.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 offset-lg-1">
+                      <div class="block-image">
+                        <div class="image-wrap pb-3">
+                          <!-- <img class="img-fluid" src="data:image/png;base64" style="max-height: 870px; height: 470px; width: 100%; background-size: auto; background-repeat: no-repeat; background-position: left center; background-image: url(../images/photos/img-001.jpg);"> -->
+                          <img class="img-fluid" src="images/football-pict.jpg">
+                        </div>
+                        <h5 class="title-h5">Seamen Milano #4</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Works -->
+      <section id="works" data-aos="fade-in" class="section sec-works spacer-large-p-tb bkgrd-neutral">
+
+        <div data-aos="fade-in" class="container container-sm">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="block-intro spacer-large-p-b">
+                <h5 class="title-h5 intro-text pb-3">Projects</h5>
+                <h2 class="title-h1">Progetti in evidenza</h2>
+              </div>
+
+              <!-- Works list -->
+              <ul class="list-default works-list">
+                <li data-aos="fade-in" class="item">
+                  <div class="row">
+                    <!-- Txt block -->
+                    <div class="col-lg-3 txt-block">
+                      <div class="head">
+                        <h5 class="title-h5">UI Design</h5>
+                        <h3 class="title-h3">Parallax IOS Screen</h3>
+                      </div>
+                      <div class="content">
+                        <p class="bd-txt-2"><span class="low-contrast">Info:</span> App concept</p>
+                        <p class="bd-txt-2"><span class="low-contrast">Softwares:</span> Photoshop</p>
+                        <p class="bd-txt-2"><span class="low-contrast">Pubblicato:</span> 13.02.2016</p>
+                      </div>
+                      <div class="cta">
+                        <a href="https://www.behance.net/gallery/33976438/PARALLAX" target="_blank" class="link">Vedi progetto</a>
+                        <a href="https://ui8.net/products/parallax-ios-screen" target="_blank" class="link accent-2">Buy it 🎉 </a>
+                      </div>
+                    </div>
+
+                    <!-- Img block -->
+                    <div class="col-lg-8 offset-lg-1 img-block">
+                      <div class="img-wrap">
+                        <a href="https://www.behance.net/gallery/33976438/PARALLAX" target="_blank" class="link">
+                          <img src="images/cover-parallax.jpg" class="w-100" alt="Parallax">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li data-aos="fade-in" class="item">
+                  <div class="row">
+                    <!-- Txt block -->
+                    <div class="col-lg-3 txt-block">
+                      <div class="head">
+                        <h5 class="title-h5">IU/UX Design</h5>
+                        <h3 class="title-h3">Maven</h3>
+                      </div>
+                      <div class="content">
+                        <p class="bd-text-2"><span class="low-contrast">Info:</span> Web/App Platform</p>
+                        <p class="bd-text-2"><span class="low-contrast">Softwares:</span> Photoshop</p>
+                        <p class="bd-text-2"><span class="low-contrast">Pubblicato:</span> 13 febbraio 2016</p>
+                      </div>
+                      <div class="cta">
+                        <a href="https://www.behance.net/gallery/33976438/PARALLAX" target="_blank" class="link">Vedi progetto</a>
+                      </div>
+                    </div>
+
+                    <!-- Img block -->
+                    <div class="col-lg-8 offset-lg-1 img-block">
+                      <div class="img-wrap">
+                        <a href="https://www.behance.net/gallery/33976438/PARALLAX" target="_blank" class="link">
+                          <img src="images/cover-maven.jpg" class="w-100" alt="Maven">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- Social CTA's -->
+        <div data-aos="fade-in" class="cta-banner container-sm spacer-medium-p-tb">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 text-center">
+                <h5 class="title-h5">Scopri di più</h5>
+                <div class="wrap d-flex justify-content-sm-center box-left">
+                  <!-- <div class="accent-corrner rounded-circl fab"></div> -->
+                  <a href="https://www.behance.net/alessandroviatore" target="_blank" class="link title-h1"><i class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+              <div class="col-sm-6 text-center">
+                <h5 class="title-h5">Follow me</h5>
+                <div class="wrap d-flex justify-content-md-center box-right">
+                  <!-- <div class="accent-corrner rounded-circl fab"></div> -->
+                  <a href="https://dribbble.com/AlessandroViatore" target="_blank" class="link title-h1"><i class="fab fa-dribbble"></i> Dribble</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div data-aos="fade-in" class="container container-sm spacer-large-p-tb">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <!-- Works list -->
+              <ul class="list-default works-list">
+                <li data-aos="fade-in" class="item">
+                  <div class="row">
+                    <!-- Txt block -->
+                    <div class="col-lg-3 txt-block">
+                      <div class="head">
+                        <h5 class="title-h5">UI Design</h5>
+                        <h3 class="title-h3">100 Days UI Challenge</h3>
+                      </div>
+                      <div class="content">
+                        <p class="bd-text-2"><span class="low-contrast">Info:</span> 100 giorni, 100 diversi elementi UI mobile e web</p>
+                        <p class="bd-text-2"><span class="low-contrast">Softwares:</span> Photoshop</p>
+                        <p class="bd-text-2"><span class="low-contrast">Pubblicato:</span> 01.02.2016</p>
+                      </div>
+                      <div class="cta">
+                        <a href="https://www.behance.net/gallery/33552849/Daily-UI-challenge-part-2" target="_blank" class="link">Vedi progetto</a>
+                      </div>
+                    </div>
+
+                    <!-- Img block -->
+                    <div class="col-lg-8 offset-lg-1 img-block">
+                      <div class="img-wrap">
+                        <a href="https://www.behance.net/gallery/33552849/Daily-UI-challenge-part-2" target="_blank" class="link">
+                          <img src="images/cover-100ui.jpg" class="w-100" alt="Parallax">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li data-aos="fade-in" class="item">
+                  <div class="row">
+                    <!-- Txt block -->
+                    <div class="col-lg-3 txt-block">
+                      <div class="head">
+                        <h5 class="title-h5">Branding</h5>
+                        <h3 class="title-h3">Karem Caffe</h3>
+                      </div>
+                      <div class="content">
+                        <p class="bd-text-2"><span class="low-contrast">Info:</span> Brand caffe concept</p>
+                        <p class="bd-text-2"><span class="low-contrast">Softwares:</span> Photoshop</p>
+                        <p class="bd-text-2"><span class="low-contrast">Pubblicato:</span> Pubblicato: 27.03.2016</p>
+                      </div>
+                      <div class="cta">
+                        <a href="https://www.behance.net/gallery/24855289/Karem-Caffe" target="_blank" class="link">Vedi progetto</a>
+                      </div>
+                    </div>
+
+                    <!-- Img block -->
+                    <div class="col-lg-8 offset-lg-1 img-block">
+                      <div class="img-wrap">
+                        <a href="https://www.behance.net/gallery/24855289/Karem-Caffe" target="_blank" class="link">
+                          <img src="images/cover-karem.jpg" class="w-100" alt="Karem Caffe">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- Web site list -->
+              <div class="block-website">
+                <hr>
+                <div class="row align-items-center spacer-small-p-tb">
+                  <div class="col-md-3">
+                    <div class="head">
+                      <h5 class="title-h5">Code</h5>
+                      <h3 class="title-h3">Website</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-8 offset-md-1 website-block">
+                    <ul class="list-default website-list">
+                      <li data-aos="fade-in" class="item d-flex">
+                        <a href="http://www.alessandroviatore.com/xociable-landing/" target="_blank" class="link">Xociable</a>
+                      </li>
+                      <li data-aos="fade-in" class="item d-flex">
+                        <a href="http://www.alessandroviatore.com/crossfitgym/" target="_blank" class="link">CrossFit Corsico</a>
+                      </li>
+                      <li data-aos="fade-in" class="item d-flex">
+                        <a href="http://www.alessandroviatore.com/turtletattoo/" target="_blank" class="link">Turtle Tattoo</a>
+                      </li>
+                      <li data-aos="fade-in" class="item d-flex">
+                        <a href="http://www.alessandroviatore.com/seamenmilano/" target="_blank" class="link">Seamen Milano</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <hr>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
     </main>
 
-    <footer class="container">
-      <p>&copy; Company 2017-2018</p>
+    <footer id="footer" class="footer text-left ">
+      <div class="container container-sm">
+        <div class="row">
+          <div class="col-lg-1 spacer-large-p-tb ">
+            <div class="col-brand">
+              <p>
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/logo/logo-2-b.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 spacer-large-p-tb col-left">
+            <div class="content">
+              <div class="head">
+                <h5 class="title-h5 intro-text pb-3">Keep in touch</h5>
+                <h3 class="titel-h3">
+                  Spero sia stato di vostro gradimento quello che avete visto.
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 spacer-large-p-tb col-right d-flex">
+            <div class="content">
+              <div class="contacts">
+                <h5 class="low-contrast">Email</h5>
+                <p class="bd-text-1">
+                  <a class="bd-text-1 link" href="mailto:alessandroviatore@gmail.com">alessandroviatore@gmail.com</a>
+                </p>
+              </div>
+              <div class="socials">
+                <h5 class="low-contrast">Follow me</h5>
+                <ul class="list-default socials-list">
+                  <li class="item">
+                    <div class="scocial-icon">
+                      <a href="https://www.behance.net/alessandroviatore" target="_blank"><i class="fab fa-behance"></i></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="scocial-icon">
+                      <a href="https://dribbble.com/AlessandroViatore"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- load jquery -->
+    <!-- load latest jquery from google resources-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131461741-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131461741-1');
+    </script>
+
   </body>
 </html>

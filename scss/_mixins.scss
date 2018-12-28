@@ -14,6 +14,15 @@
   margin-bottom: $spacer-bottom;
 }
 
+// Containers
+@mixin container-size($size, $paddings, $margins){
+  width: $size;
+  padding-left: $paddings;
+  padding-right: $paddings;
+  margin-left: $margins;
+  margin-right: $margins;
+}
+
 // Hover mixin and `$enable-hover-media-query` are deprecated.
 //
 // Originally added during our alphas and maintained during betas, this mixin was

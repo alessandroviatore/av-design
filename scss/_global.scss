@@ -1,66 +1,41 @@
 // main: main.scss
-@import "variables";
+
+// Link style
+.link {
+  text-decoration: none;
+  color: $color-main-black;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  border-bottom: 0.15rem solid;
+
+  &:hover {
+    color:rgba( $color-main-black, .7 );
+    text-decoration: none;
+  }
+  &.accent-1 {
+    &:hover {
+      color:rgba( $color-accent-1, .7 );
+      text-decoration: none;
+    }
+  }
+  &.accent-2 {
+    &:hover {
+      color:rgba( $color-accent-2, .7 );
+      text-decoration: none;
+    }
+  }
+}
 
 // Text colors
 .accent-1 { color: $color-accent-1; }
 .accent-2 { color: $color-accent-2; }
 .high-contrast { color: $color-high-contrast; }
-.low-contrast { color: $color-low-contrast; }
+.low-contrast { color: $color-gray-high-contrast; }
 
-// Extra Spacer
-
-//Padding General Mobile bottom/top
-.spacer-small-p-tb, .spacer-medium-p-tb, .spacer-large-p-tb {
-  @include spacer-p ($spacer-mobile, $spacer-mobile);
-}
-//Padding General Mobile top
-.spacer-small-p-t, .spacer-medium-p-t, .spacer-large-p-t {
-  @include spacer-p ($spacer-mobile, $spacer-0);
-}
-//Padding General Bottom top
-.spacer-small-p-b, .spacer-medium-p-b, .spacer-large-p-b {
-  @include spacer-p ($spacer-0, $spacer-mobile);
-}
-
-//Small 50px
-.spacer-small-p-t { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-small, $spacer-0); } }
-.spacer-small-p-b { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-0, $spacer-small); } }
-.spacer-small-p-tb { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-small, $spacer-small); } }
-
-//Medium 80px
-.spacer-medium-p-t { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-medium, $spacer-0); } }
-.spacer-medium-p-b { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-0, $spacer-medium); } }
-.spacer-medium-p-tb { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-medium, $spacer-medium); } }
-
-//Large 120px
-.spacer-large-p-t { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-large, $spacer-0,); } }
-.spacer-large-p-b { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-0, $spacer-large); } }
-.spacer-large-p-tb { @media (min-width: $breakpoint-min-md) { @include spacer-p ($spacer-large, $spacer-large); } }
-
-//Padding Done
-
-//Margin General Mobile bottom/top
-.spacer-small-m-tb, .spacer-medium-m-tb, .spacer-large-m-tb {
-  @include spacer-m ($spacer-mobile, $spacer-mobile);
-}
-.spacer-small-m-t, .spacer-medium-m-t, .spacer-large-m-t {
-  @include spacer-m ($spacer-mobile, $spacer-0);
-}
-.spacer-small-m-b, .spacer-medium-m-b, .spacer-large-m-b {
-  @include spacer-m ($spacer-mobile, $spacer-0);
-}
-
-//Small 50px
-.spacer-small-m-t { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-small, $spacer-0); } }
-.spacer-small-m-b { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-0, $spacer-small); } }
-.spacer-small-m-tb { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-small, $spacer-small); } }
-
-//Medium 80px
-.spacer-medium-m-t { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-medium, $spacer-0); } }
-.spacer-medium-m-b { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-0, $spacer-medium); } }
-.spacer-medium-m-tb { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-medium, $spacer-medium); } }
-
-//Large 120px
-.spacer-large-m-t { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-large, $spacer-0); } }
-.spacer-large-m-b { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-0, $spacer-large); } }
-.spacer-large-m-tb { @media (min-width: $breakpoint-min-md) { @include spacer-m ($spacer-large, $spacer-large); } }
+// background colors
+.bkgrd-neutral { background-color: $white; }
+.bkgrd-accent-1 { background-color: $color-accent-1; }
+.bkgrd-accent-2 { background-color: $color-accent-2; }
+.bkgrd-high-contrast { background-color: $color-gray-high-contrast; }
+.bkgrd-low-contrast { background-color: $color-low-contrast; }

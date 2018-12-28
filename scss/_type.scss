@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6,
 h1, .title-h1 {
   font-size: $h1-font-size; //88px
   letter-spacing: -2.2px;
+  @media (min-width: $breakpoint-min-lg) {
+    display: block;
+  }
 }
 h2, .title-h2 {
   font-size: $h2-font-size; //48px
@@ -37,6 +40,15 @@ h5, .title-h5 {
   text-transform: uppercase;
 }
 h6, .title-h6 { font-size: $h6-font-size; }
+
+.intro-text {
+  font-size: $h5-font-size; //11px
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &::before {
+    content: "\2014 \00A0"; // em dash, nbsp
+  }
+}
 
 //
 // Body Text
@@ -60,5 +72,5 @@ h6, .title-h6 { font-size: $h6-font-size; }
 }
 .bd-text-2, .bd-text-3{
   &.high-contrast { @include text-contrast($font-weight-bold, $color-high-contrast); }
-  &.low-contrast { @include text-contrast($font-weight-normal, $color-low-contrast); }
+  &.low-contrast { @include text-contrast($font-weight-normal, $color-gray-high-contrast); }
 }

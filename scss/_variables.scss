@@ -131,7 +131,7 @@ $container-max-widths: (
 $color-main-black:           #1E1E1E;
 $color-accent-1:             #57DFD9;
 $color-accent-2:             #ADA2FB;
-$color-low-contrast:         #9B9E9F;
+$color-low-contrast:         #F7F8F9;
 $color-high-contrast:        $color-main-black;
 $color-gray-high-contrast:   #9B9E9F;
 
@@ -211,3 +211,23 @@ $spacer-medium:               $spacer * 5; //80px
 $spacer-large:                $spacer * 7.5; //120px
 
 $headings-color:              $mainblack !default;
+
+// Carousel
+
+$carousel-control-color:      $body-bg !default;
+$carousel-transition:         transform .6s ease !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$gutter:                      30px;
+
+// Custom container-sm
+$container-full:              100%;
+
+// opacity
+$opacity-default:            0.5;
+
+// navbar-light
+$navbar-light-color:                $color-main-black;
+$navbar-light-hover-color:          rgba($color-main-black, .7);
+$navbar-light-active-color:         rgba($color-main-black, .9);
+$navbar-light-disabled-color:       rgba($color-main-black, .3);
+$navbar-light-toggler-border-color: rgba($black, .1);
