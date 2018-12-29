@@ -6996,7 +6996,7 @@ a.text-dark:hover, a.text-dark:focus {
   .home .sec-hero .caption .caption-container {
     max-width: 360px;
     position: absolute;
-    right: -17px;
+    right: 0;
     bottom: -30px; } }
 .home .sec-hero .caption .caption-inner {
   padding: 2rem; }
