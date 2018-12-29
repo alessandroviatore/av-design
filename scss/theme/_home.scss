@@ -54,7 +54,7 @@
     }
     // Left/right controls for nav
     .caption {
-      .container {
+      .caption-container {
         @media (min-width: $breakpoint-min-sm) {
           max-width: 360px;
           position: absolute;
@@ -62,7 +62,7 @@
           bottom: -30px;
         }
       }
-      .inner {
+      .caption-inner {
         padding: $spacer * 2;
       }
       .author {
@@ -117,6 +117,8 @@
     }
     .tab-vertical {
       position: relative;
+      margin-top: auto;
+      margin-bottom: auto;
       // @media (min-width: $breakpoint-min-lg) {
       //   border-right: 1px solid #dadada;
       // }
@@ -177,9 +179,8 @@
     }
     // Skills
     .tabs-skills {
-      .block-accent {
+      .col-left-inner {
         display: none;
-        background-color: $color-accent-2;
         padding: $gutter;
         color: $white;
         height: 100%;
@@ -195,7 +196,7 @@
         }
       }
 
-      .block-details {
+      .col-right-inner {
         .list-skills {
           .item {
             text-align: left;
