@@ -413,6 +413,15 @@
 
     .cta-banner {
       color: $white;
+      .item {
+        margin-bottom: $spacer;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        @media (min-width: $breakpoint-min-sm) {
+          margin-bottom: 0;
+        }
+      }
       .title-h1 {
         font-size: $h1-font-size / 2; //88px
         @media (min-width: $breakpoint-min-md) {
@@ -420,6 +429,12 @@
         }
         @media (min-width: $breakpoint-min-lg) {
           font-size: $h1-font-size - 0.5; //88px
+        }
+      }
+      .title-h5 {
+        text-align: left;
+        @media (min-width: $breakpoint-min-sm) {
+          text-align: center;
         }
       }
       .accent-corrner {

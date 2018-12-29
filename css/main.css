@@ -7235,6 +7235,13 @@ a.text-dark:hover, a.text-dark:focus {
       margin-bottom: 0; }
   .home .sec-works .cta-banner {
     color: #fff; }
+    .home .sec-works .cta-banner .item {
+      margin-bottom: 1rem; }
+      .home .sec-works .cta-banner .item:last-child {
+        margin-bottom: 0; }
+      @media (min-width: 576px) {
+        .home .sec-works .cta-banner .item {
+          margin-bottom: 0; } }
     .home .sec-works .cta-banner .title-h1 {
       font-size: 2.75rem; }
       @media (min-width: 768px) {
@@ -7243,6 +7250,11 @@ a.text-dark:hover, a.text-dark:focus {
       @media (min-width: 992px) {
         .home .sec-works .cta-banner .title-h1 {
           font-size: 5rem; } }
+    .home .sec-works .cta-banner .title-h5 {
+      text-align: left; }
+      @media (min-width: 576px) {
+        .home .sec-works .cta-banner .title-h5 {
+          text-align: center; } }
     .home .sec-works .cta-banner .accent-corrner::before {
       top: -25px;
       left: -25px;
