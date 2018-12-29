@@ -1,5 +1,39 @@
 .home {
-  //Section Hero
+  //Global style:
+  //Indicators style
+  .carousel-indicators {
+    bottom: $gutter;
+    top: 60%;
+    @media (min-width: $breakpoint-min-sm) {
+      position: relative;
+      right: 0;
+      left: 0;
+      top: 30px;
+      margin-right: 0;
+      margin-left: 0;
+      justify-content: start;
+    }
+    @media (min-width: $breakpoint-min-md) {
+      top: 40px;
+      margin-left: 40px;
+    }
+    li {
+      background-color: rgba( $color-accent-1, .25 );
+    }
+    .active {
+      background-color: $color-accent-1;
+    }
+  }
+  //Section extra padding top/bottom
+  .section {
+    @include media-breakpoint-down(sm) {
+      padding-top: $spacer-mobile + 2;
+      padding-bottom: $spacer-mobile +2;
+    }
+  }
+
+  //Sections:
+  //Hero
   .sec-hero {
     .carousel-container {
       position: relative;
@@ -38,34 +72,20 @@
         }
       }
     }
-  }
-
-  //Indicators style
-  .carousel-indicators {
-    bottom: $gutter;
-    top: 60%;
-    @media (min-width: $breakpoint-min-sm) {
-      position: relative;
-      right: 0;
-      left: 0;
-      top: 30px;
-      margin-right: 0;
-      margin-left: 0;
-      justify-content: start;
-    }
-    @media (min-width: $breakpoint-min-md) {
-      top: 40px;
-      margin-left: 40px;
-    }
-    li {
-      background-color: rgba( $color-accent-1, .25 );
-    }
-    .active {
-      background-color: $color-accent-1;
+    // Author
+    .author {
+      .avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+      .rounded-circle {
+        width: 100%;
+      }
     }
   }
-
-  .block-text-9 {
+  //Intro
+  .sec-intro {
     .title-h1 {
       font-size: $h1-font-size / 2; //88px
       @media (min-width: $breakpoint-min-lg) {
@@ -73,26 +93,7 @@
       }
     }
   }
-
-  //Section extra padding top/bottom
-  .section {
-    @include media-breakpoint-down(sm) {
-      padding-top: $spacer-mobile + 2;
-      padding-bottom: $spacer-mobile +2;
-    }
-  }
-  // Author
-  .author {
-    .avatar {
-      width: 40px;
-      height: 40px;
-      margin-right: 15px;
-    }
-    .rounded-circle {
-      width: 100%;
-    }
-  }
-  // About me
+  //About me
   .sec-aboutme {
     background-color: $color-low-contrast;
     .tab-vertical-nav-link {
@@ -310,7 +311,7 @@
       }
     }
   }
-  // word-spacing: ;
+  //Works
   .sec-works {
     position: relative;
     .title-h1 {
@@ -464,74 +465,6 @@
             content: "\f17d"; // Dribble
             // color: #c51d60;
           }
-        }
-      }
-    }
-  }
-
-  .pre-footer {
-    .custom-container {
-      display: flex;
-      justify-content: center;
-    }
-    .wrap {
-      padding: $gutter;
-    }
-    .col-right {
-      display: flex;
-      flex-flow: row;
-    }
-    .col-left {
-      display: flex;
-      justify-content: flex-end;
-    }
-    .content {
-      margin: $gutter * 2  auto;
-    }
-  }
-
-  // Works
-  .discovery-block {
-    width: 100%;
-    .content {
-      background-color: $color-main-black;
-      padding: $gutter;
-      @media (min-width: $breakpoint-min-md) {
-        padding: $gutter * 2 $gutter * 5;
-      }
-      .title-h2 {
-        color: $white;
-      }
-      .socials-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding-left: 0;
-        margin-left: auto;
-        margin-right: auto;
-        @media (min-width: $breakpoint-min-md) {
-          max-width: 500px;
-        }
-      }
-      .item {
-        margin-right: $gutter;
-        &:hover {
-          opacity: $opacity-default;
-        }
-        a {
-          color: $color-accent-2;
-        }
-        .fab {
-          font-size: $h2-font-size / 2;
-          padding: 5px;
-          @media (min-width: $breakpoint-min-md) {
-            font-size: $h2-font-size;
-            padding: 10px;
-          }
-        }
-        .scocial-icon {
-          background-color: $white;
-          border-radius: 50%;
         }
       }
     }
