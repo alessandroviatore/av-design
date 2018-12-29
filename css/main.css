@@ -6956,30 +6956,30 @@ a.text-dark:hover, a.text-dark:focus {
       [data-aos="new-animation"].aos-animate {
         transform: translateX(0); } }
 
-.home .hero-carousel .carousel-container {
+.home .sec-hero .carousel-container {
   position: relative; }
   @media (max-width: 575.98px) {
-    .home .hero-carousel .carousel-container.spacer-medium-p-tb {
+    .home .sec-hero .carousel-container.spacer-medium-p-tb {
       padding-top: 5rem;
       padding-bottom: 0; } }
 @media (min-width: 768px) {
-  .home .hero-carousel .carousel-inner {
+  .home .sec-hero .carousel-inner {
     max-height: 550px;
     max-width: 90%; } }
-.home .hero-carousel .carousel-inner .carousel-item {
+.home .sec-hero .carousel-inner .carousel-item {
   max-height: 500px; }
-.home .hero-carousel .caption .wrap {
+.home .sec-hero .caption .wrap {
   background-color: #ADA2FB;
   padding: 40px; }
   @media (min-width: 576px) {
-    .home .hero-carousel .caption .wrap {
+    .home .sec-hero .caption .wrap {
       max-width: 360px;
       position: absolute;
       right: -17px;
       bottom: -30px; } }
-.home .hero-carousel .caption .author {
+.home .sec-hero .caption .author {
   align-items: center; }
-  .home .hero-carousel .caption .author .info {
+  .home .sec-hero .caption .author .info {
     margin-bottom: 0; }
 .home .carousel-indicators {
   bottom: 30px;
