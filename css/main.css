@@ -6992,25 +6992,24 @@ a.text-dark:hover, a.text-dark:focus {
     max-width: 90%; } }
 .home .sec-hero .carousel-inner .carousel-item {
   max-height: 500px; }
-.home .sec-hero .caption .wrap {
-  background-color: #ADA2FB;
-  padding: 40px; }
-  @media (min-width: 576px) {
-    .home .sec-hero .caption .wrap {
-      max-width: 360px;
-      position: absolute;
-      right: -17px;
-      bottom: -30px; } }
+@media (min-width: 576px) {
+  .home .sec-hero .caption .container {
+    max-width: 360px;
+    position: absolute;
+    right: -17px;
+    bottom: -30px; } }
+.home .sec-hero .caption .inner {
+  padding: 2rem; }
 .home .sec-hero .caption .author {
   align-items: center; }
+  .home .sec-hero .caption .author .avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px; }
+  .home .sec-hero .caption .author .rounded-circle {
+    width: 100%; }
   .home .sec-hero .caption .author .info {
     margin-bottom: 0; }
-.home .sec-hero .author .avatar {
-  width: 40px;
-  height: 40px;
-  margin-right: 15px; }
-.home .sec-hero .author .rounded-circle {
-  width: 100%; }
 .home .sec-intro .title-h1 {
   font-size: 2.75rem; }
   @media (min-width: 992px) {
