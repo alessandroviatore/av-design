@@ -39,3 +39,13 @@
 .bkgrd-accent-2 { background-color: $color-accent-2; }
 .bkgrd-high-contrast { background-color: $color-gray-high-contrast; }
 .bkgrd-low-contrast { background-color: $color-low-contrast; }
+
+//Common list style
+.list-default {
+  padding-left: 0;
+  margin-bottom: 0;
+  .item {
+    list-style: none;
+    margin-bottom: $gutter / 2;
+  }
+}

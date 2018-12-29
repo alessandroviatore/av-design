@@ -1,0 +1,19 @@
+.error-page {
+  .wrap {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+  }
+  .cta {
+    position: absolute;
+    bottom: -50px;
+    left:  0;
+    right: 0;
+  }
+  .visual {
+    background-image: url("../images/404.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

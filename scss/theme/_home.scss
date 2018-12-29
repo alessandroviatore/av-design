@@ -1,14 +1,4 @@
 .home {
-  //Common style
-  .list-default {
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  .item {
-    list-style: none;
-    margin-bottom: $gutter / 2;
-  }
-
   //hero-carousel
   .hero-carousel {
 
@@ -534,53 +524,4 @@
     }
   }
 
-  // Works
-  .footer {
-    background: $color-low-contrast;
-    .spacer-large-p-tb {
-      @include media-breakpoint-only(md) {
-        padding-top: $spacer-mobile;
-        padding-bottom: $spacer-mobile;
-      }
-    }
-    .socials-list {
-      display: flex;
-      .item {
-        margin-right: $gutter;
-        margin-bottom: 0;
-        &:hover {
-          opacity: $opacity-default;
-        }
-        a {
-          color: $color-main-black;
-        }
-        .fab {
-          font-size: $body-txt-1;
-          padding: 5px;
-          &:first-child {
-            padding-left: 0;
-          }
-          @media (min-width: $breakpoint-min-md) {
-            padding: 10px;
-          }
-        }
-      }
-    }
-    .contacts {
-      margin-bottom: $gutter;
-    }
-    .col-right,
-    .col-left {
-      justify-content: flex-start;
-      @media (min-width: $breakpoint-min-lg) {
-        justify-content: center;
-      }
-    }
-    .col-right {
-      background-color: transparent;
-      @media (min-width: $breakpoint-min-lg) {
-        background-color: $white;
-      }
-    }
-  }
 }
