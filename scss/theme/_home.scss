@@ -309,6 +309,7 @@
         }
       }
     }
+    //Accordion section
     .sec-accordion {
       [type=button] {
         -webkit-appearance: none;
@@ -322,13 +323,14 @@
         min-width: 0;
         word-wrap: break-word;
         background-clip: border-box;
+        border-bottom: $card-border-width solid $card-border-color;
       }
       .accordion-header {
-        max-height: 90px;
+        //Icon + 
         &::before {
           position: absolute;
-          top: 45px;
-          right: 25px;
+          top: 37px;
+          right: $gutter;
           width: 15px;
           height: 2px;
           background: url(../images/icons/acc-close.svg) center no-repeat;
@@ -344,15 +346,27 @@
             background: url(../images/icons/acc-open.svg);
           }
         }
+        &.btn {
+          padding: 0;
+          border-radius: 0;
+        }
       }
+      //Card accordion
       .card-header {
         background-color: transparent;
-        padding: $gutter;
-        // border-top: $card-border-width solid $card-border-color;
+        padding: $gutter 0;
+        border: none;
+        @media (min-width: $breakpoint-min-lg) {
+          padding: $gutter;
+        }
         .skills-info {
           display: flex;
           align-items: center;
         }
+      }
+      .card-body {
+        padding-top: 0;
+        padding-left: 75px;
       }
       .skills-head {
         display: flex;

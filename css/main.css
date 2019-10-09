@@ -9155,14 +9155,12 @@ h3 {
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
-}
-.home .sec-aboutme .sec-accordion .accordion-header {
-  max-height: 90px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .home .sec-aboutme .sec-accordion .accordion-header::before {
   position: absolute;
-  top: 45px;
-  right: 25px;
+  top: 37px;
+  right: 30px;
   width: 15px;
   height: 2px;
   background: url(../images/icons/acc-close.svg) center no-repeat;
@@ -9176,13 +9174,27 @@ h3 {
   height: 15px;
   background: url(../images/icons/acc-open.svg);
 }
+.home .sec-aboutme .sec-accordion .accordion-header.btn {
+  padding: 0;
+  border-radius: 0;
+}
 .home .sec-aboutme .sec-accordion .card-header {
   background-color: transparent;
-  padding: 30px;
+  padding: 30px 0;
+  border: none;
+}
+@media (min-width: 992px) {
+  .home .sec-aboutme .sec-accordion .card-header {
+    padding: 30px;
+  }
 }
 .home .sec-aboutme .sec-accordion .card-header .skills-info {
   display: flex;
   align-items: center;
+}
+.home .sec-aboutme .sec-accordion .card-body {
+  padding-top: 0;
+  padding-left: 75px;
 }
 .home .sec-aboutme .sec-accordion .skills-head {
   display: flex;
