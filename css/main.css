@@ -8880,7 +8880,6 @@ h3 {
 .home .sec-hero {
   position: relative;
   z-index: 0;
-  min-height: 650px;
 }
 .home .sec-hero .carousel-container {
   position: relative;
@@ -8949,9 +8948,6 @@ h3 {
 }
 .home .sec-intro .block-title .bd-text-2 {
   letter-spacing: 0;
-}
-.home .sec-aboutme {
-  background-color: #F7F8F9;
 }
 .home .sec-aboutme .tab-vertical-nav-link {
   position: relative;

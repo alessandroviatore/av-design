@@ -37,7 +37,6 @@
   .sec-hero {
     position: relative;
     z-index: 0;
-    min-height: 650px;
     .carousel-container {
       position: relative;
       &.spacer-medium-p-tb {
@@ -116,7 +115,6 @@
   }
   //About me
   .sec-aboutme {
-    background-color: $color-low-contrast;
     .tab-vertical-nav-link {
       position: relative;
       color: $color-gray-high-contrast;
@@ -401,6 +399,8 @@
         }
       }
     }
+    
+
 
   }
   //Works
