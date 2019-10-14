@@ -35,6 +35,9 @@
   //Sections:
   //Hero
   .sec-hero {
+    position: relative;
+    z-index: 0;
+    min-height: 650px;
     .carousel-container {
       position: relative;
       &.spacer-medium-p-tb {
@@ -80,6 +83,22 @@
         }
       }
     }
+    &.sec-fancy {
+      &:before {
+        bottom: 0;
+        right: 15%;
+        position: absolute;
+        width: 547px;
+        height: 543px;
+        content: "";
+        background: url(../images/fancy-me.png) center bottom no-repeat;
+      }
+    }
+    .block-info {
+      z-index: 1;
+      max-width: 50%;
+      margin: auto 0;
+    }
   }
   //Intro
   .sec-intro {
@@ -87,6 +106,11 @@
       font-size: $h1-font-size / 2; //88px
       @media (min-width: $breakpoint-min-lg) {
         font-size: $h1-font-size; //88px
+      }
+    }
+    .block-title {
+      .bd-text-2 {
+        letter-spacing: 0;
       }
     }
   }
