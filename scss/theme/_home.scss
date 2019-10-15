@@ -1,5 +1,30 @@
 .home {
   //Global style:
+  //Colors combinations
+  .bkgrd-accent-light-1 {
+    .title-h3 {
+      color: $color-accent-2;
+    }
+  }
+  .bkgrd-accent-light-2 {
+    .title-h1,
+    .title-h2 {
+      color: $color-accent-2;
+    }
+  }
+
+  //Respomsive Typography
+  h3, .title-h3 {
+    font-size: $h4-font-size;
+    line-height: $body-txt-1-line-height; //32px
+    letter-spacing: 0;
+    @media (min-width: $breakpoint-min-sm) {
+      font-size: $h3-font-size; //48px
+      letter-spacing: -1.6px;
+      line-height: $headings-line-height;
+    }
+  }
+
   //Indicators style
   .carousel-indicators {
     bottom: $gutter;
@@ -82,22 +107,85 @@
         }
       }
     }
-    &.sec-fancy {
+    // Fancy Hero
+    .sec-fancy {
       &:before {
         bottom: 0;
-        right: 15%;
+        right: 0;
         position: absolute;
         width: 547px;
         height: 543px;
         content: "";
-        background: url(../images/fancy-me.png) center bottom no-repeat;
+        background: url(../images/fancy-me-accent-light-1.png) right bottom no-repeat;
+        background-size: 70%;
+        opacity: 0.5;
+        @media (min-width: $breakpoint-min-md) {
+          opacity: 1;
+          background-size: 100%;
+        }
+        @media (min-width: $breakpoint-min-lg) {
+          right: 5%;
+        }
       }
     }
-    .block-info {
+    .block-wrapper {
       z-index: 1;
-      max-width: 50%;
-      margin: auto 0;
+      // padding: $spacer-medium;
+      width: 100%;
+      position: relative;
+      padding: $spacer-large 0;
+      @media (min-width: $breakpoint-min-lg) {
+        max-width: 50%;
+        padding: inherit;
+        margin-left: 10%;
+      }
     }
+    .block {
+      &.info {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: auto;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        @media (min-width: $breakpoint-min-md) {
+          position: absolute;
+          left: -12%;
+          top: 50%;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+      }
+      &.claim {
+        margin-left: 0;
+        .title-h1,
+        .title-h2 {
+          color: $color-main-black;
+        }
+        h1, .title-h1 {
+          font-size: $h2-font-size;
+        }
+        .title-h2 {
+          line-height: 0.5;
+        }
+        @media (min-width: $breakpoint-min-sm) {
+          h1, .title-h1 {
+            font-size: $h1-font-size;
+          }
+        }
+        @media (min-width: $breakpoint-min-md) {
+          margin-left: 10%;
+        }
+      }
+
+    }
+
   }
   //Intro
   .sec-intro {
