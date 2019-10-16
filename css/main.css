@@ -8950,7 +8950,7 @@ h3 {
   width: 547px;
   height: 543px;
   content: "";
-  background: url(../images/fancy-me-accent-light-1.png) right bottom no-repeat;
+  background: url(../images/fancy-stuff/fancy-me-accent-light-1.png) right bottom no-repeat;
   background-size: 70%;
   opacity: 0.5;
 }
@@ -9035,217 +9035,8 @@ h3 {
 .home .sec-intro .block-title .bd-text-2 {
   letter-spacing: 0;
 }
-.home .sec-aboutme .tab-vertical-nav-link {
+.home .sec-aboutme {
   position: relative;
-  color: #9B9E9F;
-}
-.home .sec-aboutme .tab-vertical-nav-link::before {
-  position: absolute;
-  top: 55%;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background-color: transparent;
-  border-radius: 50%;
-  content: " ";
-}
-.home .sec-aboutme .tab-vertical-nav-link:hover {
-  color: #1E1E1E;
-}
-.home .sec-aboutme .tab-vertical-nav-link.active::before {
-  background-color: #57DFD9;
-}
-.home .sec-aboutme .tab-vertical {
-  position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.home .sec-aboutme .nav-pills {
-  justify-content: space-between;
-}
-.home .sec-aboutme .nav-pills .nav-link {
-  width: auto;
-  border: none;
-  border-radius: 0;
-  flex-flow: row;
-}
-.home .sec-aboutme .nav-pills .nav-link.active {
-  background-color: #ADA2FB;
-}
-.home .sec-aboutme .nav-pills .nav-link.active .title-h4 {
-  color: #1E1E1E;
-}
-.home .sec-aboutme .nav-pills .nav-link.active::after {
-  overflow: hidden;
-  display: inline;
-  vertical-align: middle;
-  border-bottom: 0.15rem solid;
-}
-.home .sec-aboutme .nav-pills .nav-link.active:hover {
-  opacity: 1;
-}
-.home .sec-aboutme .nav-pills .nav-link:hover {
-  opacity: 0.5;
-}
-.home .sec-aboutme .nav-pills .nav-link .title-h4 {
-  font-weight: 400;
-  color: #9B9E9F;
-}
-@media (max-width: 575.98px) {
-  .home .sec-aboutme .nav-pills .nav-link .title-h4 {
-    font-size: 1.3rem;
-  }
-}
-.home .sec-aboutme .tab-content .ml-5 {
-  margin-left: 0;
-}
-@media (min-width: 992px) {
-  .home .sec-aboutme .tab-content .ml-5 {
-    margin-left: 3rem;
-  }
-}
-.home .sec-aboutme .tab-jobs .item .img-wrap {
-  height: 70px;
-}
-.home .sec-aboutme .tab-jobs .item .img-wrap img {
-  width: 35%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.home .sec-aboutme .tabs-skills .col-left-inner,
-.home .sec-aboutme .col-fancy .col-left-inner {
-  display: none;
-  padding: 30px;
-  color: #fff;
-  height: 100%;
-}
-@media (min-width: 992px) {
-  .home .sec-aboutme .tabs-skills .col-left-inner,
-.home .sec-aboutme .col-fancy .col-left-inner {
-    display: block;
-  }
-}
-.home .sec-aboutme .tabs-skills .col-left-inner .title-h2,
-.home .sec-aboutme .col-fancy .col-left-inner .title-h2 {
-  color: #fff;
-  font-size: 2rem;
-}
-@media (min-width: 992px) {
-  .home .sec-aboutme .tabs-skills .col-left-inner .title-h2,
-.home .sec-aboutme .col-fancy .col-left-inner .title-h2 {
-    font-size: 3rem;
-  }
-}
-.home .sec-aboutme .tabs-skills .col-right-inner .list-skills .item,
-.home .sec-aboutme .col-fancy .col-right-inner .list-skills .item {
-  text-align: left;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-.home .sec-aboutme .tabs-skills .col-right-inner .details,
-.home .sec-aboutme .col-fancy .col-right-inner .details {
-  display: inline-flex;
-}
-.home .sec-aboutme .tabs-skills .col-right-inner .software,
-.home .sec-aboutme .col-fancy .col-right-inner .software {
-  margin-left: 15px;
-  align-items: center;
-}
-.home .sec-aboutme .tabs-skills .col-right-inner .software .img-wrap,
-.home .sec-aboutme .col-fancy .col-right-inner .software .img-wrap {
-  height: 25px;
-  width: 25px;
-}
-.home .sec-aboutme .tabs-skills .col-right-inner .software .img-wrap .software-logo,
-.home .sec-aboutme .col-fancy .col-right-inner .software .img-wrap .software-logo {
-  padding: 3px;
-  border-radius: 50%;
-}
-.home .sec-aboutme .tabs-hobbies .title-h2 {
-  font-size: 2.25rem;
-}
-@media (min-width: 992px) {
-  .home .sec-aboutme .tabs-hobbies .title-h2 {
-    font-size: 3rem;
-  }
-}
-.home .sec-aboutme .carousle-control {
-  width: 100%;
-}
-.home .sec-aboutme .carousle-control .reduce-size {
-  width: 100%;
-  margin-left: 0;
-}
-@media (min-width: 768px) {
-  .home .sec-aboutme .carousle-control .reduce-size {
-    width: 80%;
-    margin-left: 20%;
-  }
-}
-.home .sec-aboutme .carousle-control .img-company {
-  display: none;
-  max-height: 700px;
-}
-@media (min-width: 768px) {
-  .home .sec-aboutme .carousle-control .img-company {
-    display: block;
-  }
-}
-.home .sec-aboutme .carousle-control .carousel-caption {
-  display: block;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-@media (min-width: 768px) {
-  .home .sec-aboutme .carousle-control .carousel-caption {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: #F7F8F9;
-    width: 500px;
-    height: 275px;
-    padding: 0;
-  }
-}
-.home .sec-aboutme .carousle-control .carousel-caption .item {
-  color: #1E1E1E;
-  text-align: left;
-  padding: 40px;
-}
-.home .sec-aboutme .carousle-control .controlers {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-@media (min-width: 768px) {
-  .home .sec-aboutme .carousle-control .controlers {
-    bottom: 175px;
-    top: auto;
-    left: 500px;
-    width: 50px;
-  }
-}
-.home .sec-aboutme .carousle-control .controlers .carousel-control {
-  height: 50px;
-  width: 50px;
-  border: none;
-}
-.home .sec-aboutme .carousle-control .controlers .carousel-control-prev,
-.home .sec-aboutme .carousle-control .controlers .carousel-control-next {
-  opacity: 1;
-  position: relative;
-}
-.home .sec-aboutme .carousle-control .controlers .carousel-control-prev:hover,
-.home .sec-aboutme .carousle-control .controlers .carousel-control-next:hover {
-  opacity: 0.8;
-}
-.home .sec-aboutme .carousle-control .controlers .carousel-control-prev {
-  background-color: #57DFD9;
-}
-.home .sec-aboutme .carousle-control .controlers .carousel-control-next {
-  background-color: #ADA2FB;
 }
 .home .sec-aboutme .sec-accordion [type=button] {
   -webkit-appearance: none;
@@ -9261,9 +9052,12 @@ h3 {
   background-clip: border-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+.home .sec-aboutme .sec-accordion .accordion-header {
+  width: 100%;
+}
 .home .sec-aboutme .sec-accordion .accordion-header::before {
   position: absolute;
-  top: 37px;
+  top: 50px;
   right: 30px;
   width: 15px;
   height: 2px;
@@ -9298,15 +9092,84 @@ h3 {
 }
 .home .sec-aboutme .sec-accordion .card-body {
   padding-top: 0;
-  padding-left: 75px;
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion .card-body {
+    padding-left: 60px;
+  }
 }
 .home .sec-aboutme .sec-accordion .skills-head {
   display: flex;
   align-items: center;
 }
-.home .sec-aboutme .sec-accordion .skills-head .title-h5 {
+.home .sec-aboutme .sec-accordion .skills-head .counter {
   margin-right: 30px;
   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item {
+    flex-flow: row;
+    border-bottom: none;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .accordion-header {
+    padding-bottom: 30px;
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .accordion-header::before {
+    top: 15px;
+    left: 0;
+  }
+}
+.home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .accordion-header .skills-head .title-h4 {
+  color: #ADA2FB;
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .card-header {
+    padding: 0;
+    min-width: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .card-body {
+    padding: 0;
+  }
+}
+.home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .skills-head {
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .skills-head {
+    padding-left: 30px;
+  }
+}
+.home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .counter {
+  align-self: center;
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .counter {
+    align-self: flex-start;
+  }
+}
+.home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .collapsed .skills-head .title-h4 {
+  color: inherit;
+}
+.home .sec-aboutme.sec-fancy::before {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 500px;
+  height: 1000px;
+  max-height: 100%;
+  content: "";
+  background: url(../images/fancy-stuff/fancy-avatar-yellow.png) right bottom no-repeat;
+  background-size: contain;
 }
 .home .sec-works {
   position: relative;

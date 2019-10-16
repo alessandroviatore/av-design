@@ -116,7 +116,7 @@
         width: 547px;
         height: 543px;
         content: "";
-        background: url(../images/fancy-me-accent-light-1.png) right bottom no-repeat;
+        background: url(../images/fancy-stuff/fancy-me-accent-light-1.png) right bottom no-repeat;
         background-size: 70%;
         opacity: 0.5;
         @media (min-width: $breakpoint-min-md) {
@@ -185,7 +185,6 @@
       }
 
     }
-
   }
   //Intro
   .sec-intro {
@@ -203,223 +202,224 @@
   }
   //About me
   .sec-aboutme {
-    .tab-vertical-nav-link {
-      position: relative;
-      color: $color-gray-high-contrast;
-      &::before {
-        position: absolute;
-        top: 55%;
-        left: 0;
-        width: 8px;
-        height: 8px;
-        background-color: transparent;
-        border-radius: 50%;
-        content: " ";
-      }
-      &:hover {
-        color: $color-main-black;
-      }
-      &.active {
-        &::before {
-          background-color: $color-accent-1;
-        }
-      }
-    }
-    .tab-vertical {
-      position: relative;
-      margin-top: auto;
-      margin-bottom: auto;
-      // @media (min-width: $breakpoint-min-lg) {
-      //   border-right: 1px solid #dadada;
-      // }
-    }
-    .nav-pills {
-      justify-content: space-between;
-      .nav-link {
-        width: auto;
-        border: none;
-        border-radius: 0;
-        flex-flow: row;
-        &.active {
-          .title-h4 {
-            color: $color-high-contrast;
-          }
-          background-color: $color-accent-2;
-          &::after {
-            overflow: hidden;
-            display: inline;
-            vertical-align: middle;
-            border-bottom: 0.15rem solid;
-          }
-          &:hover {
-            opacity: 1;
-          }
-        }
-        &:hover {
-          opacity: $opacity-default;
-        }
-        .title-h4 {
-          font-weight: $font-weight-normal;
-          color: $color-gray-high-contrast;
-          @include media-breakpoint-only(xs) {
-            font-size: 1.3rem;
-          }
-        }
-      }
-    }
-    .tab-content {
-      .ml-5 {
-        margin-left: 0;
-        @media (min-width: $breakpoint-min-lg) {
-          margin-left: 3rem;
-        }
-      }
-    }
-    .tab-jobs {
-      .item {
-        .img-wrap {
-          height: 70px;
-          img {
-            width: 35%;
-            margin-top: auto;
-            margin-bottom: auto;
-          }
-        }
-      }
-    }
-    // Skills
-    .tabs-skills,
-    .col-fancy {
-      .col-left-inner {
-        display: none;
-        padding: $gutter;
-        color: $white;
-        height: 100%;
-        @media (min-width: $breakpoint-min-lg) {
-          display: block;
-        }
-        .title-h2 {
-          color: $white;
-          font-size: 2rem;
-          @media (min-width: $breakpoint-min-lg) {
-            font-size: $h2-font-size;
-          }
-        }
-      }
-
-      .col-right-inner {
-        .list-skills {
-          .item {
-            text-align: left;
-            justify-content: space-between;
-            margin-bottom: $gutter / 2;
-          }
-        }
-        .details {
-          display: inline-flex;
-        }
-        .software {
-          margin-left: $gutter / 2;
-          align-items: center;
-          .img-wrap {
-            height: 25px;
-            width: 25px;
-            .software-logo {
-              padding: 3px;
-              border-radius: 50%;
-            }
-          }
-        }
-
-      }
-    }
-    //Hobbies
-    .tabs-hobbies {
-      .title-h2 {
-        font-size: $h3-font-size;
-        @media (min-width: $breakpoint-min-lg) {
-          font-size: $h2-font-size; //88px
-        }
-      }
-    }
-    .carousle-control {
-      width: 100%;
-
-      //Image style
-      .reduce-size {
-        width: 100%;
-        margin-left: 0;
-        @media (min-width: $breakpoint-min-md) {
-          width: 80%;
-          margin-left: 20%;
-        }
-      }
-      .img-company {
-        display: none;
-        max-height: 700px;
-        @media (min-width: $breakpoint-min-md) {
-          display: block;
-        }
-      }
-
-      //Captions style
-      .carousel-caption {
-        display: block;
-        position: relative;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        @media (min-width: $breakpoint-min-md) {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          background: $color-low-contrast;
-          width: 500px;
-          height: 275px;
-          padding: 0;
-        }
-
-        .item {
-          color: $color-main-black;
-          text-align: left;
-          padding: 40px;
-        }
-      }
-
-      //Controls
-      .controlers {
-        position: absolute;
-        right: 0;
-        top: 0;
-        @media (min-width: $breakpoint-min-md) {
-          bottom: 175px;
-          top: auto;
-          left: 500px;
-          width: 50px;
-        }
-        .carousel-control {
-          height: 50px;
-          width: 50px;
-          border: none;
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-          opacity: 1;
-          position: relative;
-          &:hover {
-            opacity: 0.8;
-          }
-        }
-
-        .carousel-control-prev {
-          background-color: $color-accent-1;
-        }
-        .carousel-control-next {
-          background-color: $color-accent-2;
-        }
-      }
-    }
-    //Accordion section
+    position: relative;
+    // .tab-vertical-nav-link {
+    //   position: relative;
+    //   color: $color-gray-high-contrast;
+    //   &::before {
+    //     position: absolute;
+    //     top: 55%;
+    //     left: 0;
+    //     width: 8px;
+    //     height: 8px;
+    //     background-color: transparent;
+    //     border-radius: 50%;
+    //     content: " ";
+    //   }
+    //   &:hover {
+    //     color: $color-main-black;
+    //   }
+    //   &.active {
+    //     &::before {
+    //       background-color: $color-accent-1;
+    //     }
+    //   }
+    // }
+    // .tab-vertical {
+    //   position: relative;
+    //   margin-top: auto;
+    //   margin-bottom: auto;
+    //   // @media (min-width: $breakpoint-min-lg) {
+    //   //   border-right: 1px solid #dadada;
+    //   // }
+    // }
+    // .nav-pills {
+    //   justify-content: space-between;
+    //   .nav-link {
+    //     width: auto;
+    //     border: none;
+    //     border-radius: 0;
+    //     flex-flow: row;
+    //     &.active {
+    //       .title-h4 {
+    //         color: $color-high-contrast;
+    //       }
+    //       background-color: $color-accent-2;
+    //       &::after {
+    //         overflow: hidden;
+    //         display: inline;
+    //         vertical-align: middle;
+    //         border-bottom: 0.15rem solid;
+    //       }
+    //       &:hover {
+    //         opacity: 1;
+    //       }
+    //     }
+    //     &:hover {
+    //       opacity: $opacity-default;
+    //     }
+    //     .title-h4 {
+    //       font-weight: $font-weight-normal;
+    //       color: $color-gray-high-contrast;
+    //       @include media-breakpoint-only(xs) {
+    //         font-size: 1.3rem;
+    //       }
+    //     }
+    //   }
+    // }
+    // .tab-content {
+    //   .ml-5 {
+    //     margin-left: 0;
+    //     @media (min-width: $breakpoint-min-lg) {
+    //       margin-left: 3rem;
+    //     }
+    //   }
+    // }
+    // .tab-jobs {
+    //   .item {
+    //     .img-wrap {
+    //       height: 70px;
+    //       img {
+    //         width: 35%;
+    //         margin-top: auto;
+    //         margin-bottom: auto;
+    //       }
+    //     }
+    //   }
+    // }
+    // // Skills
+    // .tabs-skills,
+    // .col-fancy {
+    //   .col-left-inner {
+    //     display: none;
+    //     padding: $gutter;
+    //     color: $white;
+    //     height: 100%;
+    //     @media (min-width: $breakpoint-min-lg) {
+    //       display: block;
+    //     }
+    //     .title-h2 {
+    //       color: $white;
+    //       font-size: 2rem;
+    //       @media (min-width: $breakpoint-min-lg) {
+    //         font-size: $h2-font-size;
+    //       }
+    //     }
+    //   }
+    // 
+    //   .col-right-inner {
+    //     .list-skills {
+    //       .item {
+    //         text-align: left;
+    //         justify-content: space-between;
+    //         margin-bottom: $gutter / 2;
+    //       }
+    //     }
+    //     .details {
+    //       display: inline-flex;
+    //     }
+    //     .software {
+    //       margin-left: $gutter / 2;
+    //       align-items: center;
+    //       .img-wrap {
+    //         height: 25px;
+    //         width: 25px;
+    //         .software-logo {
+    //           padding: 3px;
+    //           border-radius: 50%;
+    //         }
+    //       }
+    //     }
+    // 
+    //   }
+    // }
+    // //Hobbies
+    // .tabs-hobbies {
+    //   .title-h2 {
+    //     font-size: $h3-font-size;
+    //     @media (min-width: $breakpoint-min-lg) {
+    //       font-size: $h2-font-size; //88px
+    //     }
+    //   }
+    // }
+    // .carousle-control {
+    //   width: 100%;
+    // 
+    //   //Image style
+    //   .reduce-size {
+    //     width: 100%;
+    //     margin-left: 0;
+    //     @media (min-width: $breakpoint-min-md) {
+    //       width: 80%;
+    //       margin-left: 20%;
+    //     }
+    //   }
+    //   .img-company {
+    //     display: none;
+    //     max-height: 700px;
+    //     @media (min-width: $breakpoint-min-md) {
+    //       display: block;
+    //     }
+    //   }
+    // 
+    //   //Captions style
+    //   .carousel-caption {
+    //     display: block;
+    //     position: relative;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     @media (min-width: $breakpoint-min-md) {
+    //       position: absolute;
+    //       left: 0;
+    //       bottom: 0;
+    //       background: $color-low-contrast;
+    //       width: 500px;
+    //       height: 275px;
+    //       padding: 0;
+    //     }
+    // 
+    //     .item {
+    //       color: $color-main-black;
+    //       text-align: left;
+    //       padding: 40px;
+    //     }
+    //   }
+    // 
+    //   //Controls
+    //   .controlers {
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    //     @media (min-width: $breakpoint-min-md) {
+    //       bottom: 175px;
+    //       top: auto;
+    //       left: 500px;
+    //       width: 50px;
+    //     }
+    //     .carousel-control {
+    //       height: 50px;
+    //       width: 50px;
+    //       border: none;
+    //     }
+    //     .carousel-control-prev,
+    //     .carousel-control-next {
+    //       opacity: 1;
+    //       position: relative;
+    //       &:hover {
+    //         opacity: 0.8;
+    //       }
+    //     }
+    // 
+    //     .carousel-control-prev {
+    //       background-color: $color-accent-1;
+    //     }
+    //     .carousel-control-next {
+    //       background-color: $color-accent-2;
+    //     }
+    //   }
+    // }
+    //Section Accordion 
     .sec-accordion {
       [type=button] {
         -webkit-appearance: none;
@@ -436,10 +436,11 @@
         border-bottom: $card-border-width solid $card-border-color;
       }
       .accordion-header {
+        width: 100%;
         //Icon + 
         &::before {
           position: absolute;
-          top: 37px;
+          top: 50px;
           right: $gutter;
           width: 15px;
           height: 2px;
@@ -476,20 +477,98 @@
       }
       .card-body {
         padding-top: 0;
-        padding-left: 75px;
+        padding-left: 0;
+        @media (min-width: $breakpoint-min-md) {
+          padding-left: $gutter * 2;
+        }
       }
       .skills-head {
         display: flex;
         align-items: center;
-        .title-h5 {
+        .counter {
           margin-right: $gutter;
           margin-bottom: 0;
         }
       }
+      //Section Fancy Accordion
+      &.sec-fancy-accordion {
+        .accordion-item {
+          @media (min-width: $breakpoint-min-md) {
+            flex-flow: row;
+            border-bottom: none;
+            justify-content: space-between;
+          }
+          .accordion-header {
+            @media (min-width: $breakpoint-min-md) {
+              padding-bottom: $gutter;
+              width: auto;
+            }
+            //Icon + 
+            &::before {
+              @media (min-width: $breakpoint-min-md) {
+                top: 15px;
+                left: 0;
+              }
+            }
+            .skills-head {
+              .title-h4 {
+                color: $color-accent-2;
+              }
+            }
+          }
+          //Card accordion
+          .card-header {
+            @media (min-width: $breakpoint-min-md) {
+              padding: 0;
+              min-width: 250px;
+            }
+          }
+          .card-body {
+            @media (min-width: $breakpoint-min-md) {
+              padding: 0;
+            }
+          }
+          .skills-head {
+            padding-left: 0;
+            @media (min-width: $breakpoint-min-md) {
+              padding-left: $gutter;
+            }
+          }
+          .counter {
+            align-self: center;
+            margin-left: $gutter / 2;
+            @media (min-width: $breakpoint-min-md) {
+              align-self: flex-start;
+            }
+          }
+          .collapsed {
+            .skills-head {
+              .title-h4 {
+                color: inherit;
+              }
+            }
+          }
+        }
+      }
     }
-    
-
-
+    // Fancy Hero
+    &.sec-fancy {
+      &::before {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        width: 500px;
+        height: 1000px;
+        max-height: 100%;
+        content: "";
+        background: url(../images/fancy-stuff/fancy-avatar-yellow.png) right bottom no-repeat;
+        background-size: contain;
+        @media (min-width: $breakpoint-min-md) {
+        }
+        @media (min-width: $breakpoint-min-lg) {
+        }
+      }
+    }
   }
   //Works
   .sec-works {
@@ -649,5 +728,4 @@
       }
     }
   }
-
 }
