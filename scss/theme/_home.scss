@@ -554,16 +554,18 @@
     // Fancy Hero
     &.sec-fancy {
       &::before {
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        width: 500px;
-        height: 1000px;
-        max-height: 100%;
-        content: "";
-        background: url(../images/fancy-stuff/fancy-avatar-yellow.png) right bottom no-repeat;
-        background-size: contain;
+        display: none;
         @media (min-width: $breakpoint-min-md) {
+          display: block;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          width: 500px;
+          height: 1000px;
+          max-height: 100%;
+          content: "";
+          background: url(../images/fancy-stuff/fancy-avatar-yellow.png) right bottom no-repeat;
+          background-size: contain;
         }
         @media (min-width: $breakpoint-min-lg) {
         }
