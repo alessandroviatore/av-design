@@ -489,10 +489,24 @@
         }
       }
       .card-body {
+        display: flex;
         padding-top: 0;
         padding-left: 0;
         @media (min-width: $breakpoint-min-md) {
           padding-left: $gutter * 2;
+        }
+        .wrap-text {
+          padding-right: $gutter;
+        }
+        .card-square {
+          display: none;
+          @media (min-width: $breakpoint-min-lg) {
+            display: block;
+          }
+          .card {
+            background-color: transparent;
+            border: none;
+          }
         }
       }
       .skills-head {
@@ -520,12 +534,11 @@
             &::before {
               @media (min-width: $breakpoint-min-md) {
                 top: 15px;
-                left: 0;
+                right: 0;
               }
-            }
-            .skills-head {
-              .title-h4 {
-                color: $color-accent-2;
+              @media (min-width: $breakpoint-min-lg) {
+                top: 15px;
+                left: 17%;
               }
             }
           }
@@ -543,8 +556,8 @@
           }
           .skills-head {
             padding-left: 0;
-            @media (min-width: $breakpoint-min-md) {
-              padding-left: $gutter;
+            .title-h4 {
+              color: $color-accent-2;
             }
           }
           .counter {
@@ -552,6 +565,8 @@
             margin-left: $gutter / 2;
             @media (min-width: $breakpoint-min-md) {
               align-self: flex-start;
+              margin-left: 0;
+              margin-right: $gutter / 2;
             }
           }
           .collapsed {

@@ -9108,6 +9108,7 @@ h3 {
   align-items: center;
 }
 .home .sec-aboutme .sec-accordion .card-body {
+  display: flex;
   padding-top: 0;
   padding-left: 0;
 }
@@ -9115,6 +9116,21 @@ h3 {
   .home .sec-aboutme .sec-accordion .card-body {
     padding-left: 60px;
   }
+}
+.home .sec-aboutme .sec-accordion .card-body .wrap-text {
+  padding-right: 30px;
+}
+.home .sec-aboutme .sec-accordion .card-body .card-square {
+  display: none;
+}
+@media (min-width: 992px) {
+  .home .sec-aboutme .sec-accordion .card-body .card-square {
+    display: block;
+  }
+}
+.home .sec-aboutme .sec-accordion .card-body .card-square .card {
+  background-color: transparent;
+  border: none;
 }
 .home .sec-aboutme .sec-accordion .skills-head {
   display: flex;
@@ -9140,11 +9156,14 @@ h3 {
 @media (min-width: 768px) {
   .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .accordion-header::before {
     top: 15px;
-    left: 0;
+    right: 0;
   }
 }
-.home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .accordion-header .skills-head .title-h4 {
-  color: #ADA2FB;
+@media (min-width: 992px) {
+  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .accordion-header::before {
+    top: 15px;
+    left: 17%;
+  }
 }
 @media (min-width: 768px) {
   .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .card-header {
@@ -9160,10 +9179,8 @@ h3 {
 .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .skills-head {
   padding-left: 0;
 }
-@media (min-width: 768px) {
-  .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .skills-head {
-    padding-left: 30px;
-  }
+.home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .skills-head .title-h4 {
+  color: #ADA2FB;
 }
 .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .counter {
   align-self: center;
@@ -9172,6 +9189,8 @@ h3 {
 @media (min-width: 768px) {
   .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .counter {
     align-self: flex-start;
+    margin-left: 0;
+    margin-right: 15px;
   }
 }
 .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .collapsed .skills-head .title-h4 {
