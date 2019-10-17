@@ -8943,39 +8943,26 @@ h3 {
 .home .sec-hero .caption .author .info {
   margin-bottom: 0;
 }
-.home .sec-hero .sec-fancy:before {
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  width: 547px;
-  height: 543px;
-  content: "";
-  background: url(../images/fancy-stuff/fancy-me-accent-light-1.png) right bottom no-repeat;
-  background-size: 70%;
-  opacity: 0.5;
-}
-@media (min-width: 768px) {
-  .home .sec-hero .sec-fancy:before {
-    opacity: 1;
-    background-size: 100%;
-  }
+.home .sec-hero .hero-inner {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
 }
 @media (min-width: 992px) {
-  .home .sec-hero .sec-fancy:before {
-    right: 5%;
+  .home .sec-hero .hero-inner {
+    padding: 5rem 0;
   }
 }
 .home .sec-hero .block-wrapper {
   z-index: 1;
   width: 100%;
   position: relative;
-  padding: 7.5rem 0;
 }
 @media (min-width: 992px) {
   .home .sec-hero .block-wrapper {
     max-width: 50%;
     padding: inherit;
     margin-left: 10%;
+    padding: 7.5rem 0;
   }
 }
 .home .sec-hero .block.info {
@@ -8992,13 +8979,18 @@ h3 {
 @media (min-width: 768px) {
   .home .sec-hero .block.info {
     position: absolute;
-    left: -12%;
+    left: -9%;
     top: 50%;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+  }
+}
+@media (min-width: 992px) {
+  .home .sec-hero .block.info {
+    left: -12%;
   }
 }
 .home .sec-hero .block.claim {
@@ -9022,6 +9014,31 @@ h3 {
 @media (min-width: 768px) {
   .home .sec-hero .block.claim {
     margin-left: 10%;
+  }
+}
+.home .sec-hero.sec-fancy::before {
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  content: "";
+  background: url(../images/fancy-stuff/fancy-me-accent-light-1.png) right bottom no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .home .sec-hero.sec-fancy::before {
+    width: 400px;
+    height: 400px;
+    opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  .home .sec-hero.sec-fancy::before {
+    width: 600px;
+    height: 500px;
+    background-size: cover;
   }
 }
 .home .sec-intro .title-h1 {
@@ -9159,23 +9176,6 @@ h3 {
 }
 .home .sec-aboutme .sec-accordion.sec-fancy-accordion .accordion-item .collapsed .skills-head .title-h4 {
   color: inherit;
-}
-.home .sec-aboutme.sec-fancy::before {
-  display: none;
-}
-@media (min-width: 768px) {
-  .home .sec-aboutme.sec-fancy::before {
-    display: block;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    width: 500px;
-    height: 1000px;
-    max-height: 100%;
-    content: "";
-    background: url(../images/fancy-stuff/fancy-avatar-yellow.png) right bottom no-repeat;
-    background-size: contain;
-  }
 }
 .home .sec-works {
   position: relative;

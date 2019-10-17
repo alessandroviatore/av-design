@@ -53,7 +53,7 @@
   .section {
     @include media-breakpoint-down(sm) {
       padding-top: $spacer-mobile + 2;
-      padding-bottom: $spacer-mobile +2;
+      padding-bottom: $spacer-mobile + 2;
     }
   }
 
@@ -108,24 +108,11 @@
       }
     }
     // Fancy Hero
-    .sec-fancy {
-      &:before {
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        width: 547px;
-        height: 543px;
-        content: "";
-        background: url(../images/fancy-stuff/fancy-me-accent-light-1.png) right bottom no-repeat;
-        background-size: 70%;
-        opacity: 0.5;
-        @media (min-width: $breakpoint-min-md) {
-          opacity: 1;
-          background-size: 100%;
-        }
-        @media (min-width: $breakpoint-min-lg) {
-          right: 5%;
-        }
+    .hero-inner {
+      padding-top: $spacer-small;
+      padding-bottom: $spacer-small;
+      @media (min-width: $breakpoint-min-lg) {
+        padding: $spacer-medium 0;
       }
     }
     .block-wrapper {
@@ -133,11 +120,11 @@
       // padding: $spacer-medium;
       width: 100%;
       position: relative;
-      padding: $spacer-large 0;
       @media (min-width: $breakpoint-min-lg) {
         max-width: 50%;
         padding: inherit;
         margin-left: 10%;
+        padding: $spacer-large 0;
       }
     }
     .block {
@@ -153,13 +140,16 @@
         transform: rotate(0deg);
         @media (min-width: $breakpoint-min-md) {
           position: absolute;
-          left: -12%;
+          left: -9%;
           top: 50%;
           -webkit-transform: rotate(90deg);
           -moz-transform: rotate(90deg);
           -o-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+        }
+        @media (min-width: $breakpoint-min-lg) {
+          left: -12%;
         }
       }
       &.claim {
@@ -184,6 +174,29 @@
         }
       }
 
+    }
+    &.sec-fancy {
+      &::before {
+        bottom: 0;
+        right: 0;
+        width: 250px;
+        height: 400px;
+        position: absolute;
+        content: "";
+        background: url(../images/fancy-stuff/fancy-me-accent-light-1.png) right bottom no-repeat;
+        background-size: contain;
+        opacity: 0.5;
+        @media (min-width: $breakpoint-min-md) {
+          width: 400px;
+          height: 400px;
+          opacity: 1;
+        }
+        @media (min-width: $breakpoint-min-lg) {
+          width: 600px;
+          height: 500px;
+          background-size: cover;
+        }
+      }
     }
   }
   //Intro
@@ -548,26 +561,6 @@
               }
             }
           }
-        }
-      }
-    }
-    // Fancy Hero
-    &.sec-fancy {
-      &::before {
-        display: none;
-        @media (min-width: $breakpoint-min-md) {
-          display: block;
-          bottom: 0;
-          right: 0;
-          position: absolute;
-          width: 500px;
-          height: 1000px;
-          max-height: 100%;
-          content: "";
-          background: url(../images/fancy-stuff/fancy-avatar-yellow.png) right bottom no-repeat;
-          background-size: contain;
-        }
-        @media (min-width: $breakpoint-min-lg) {
         }
       }
     }
