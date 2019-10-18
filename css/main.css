@@ -8863,6 +8863,16 @@ h3 {
     line-height: 1.2;
   }
 }
+.home .bd-text-1 {
+  font-size: 15px;
+  line-height: 1.75rem;
+}
+@media (min-width: 576px) {
+  .home .bd-text-1 {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
 .home .carousel-indicators {
   bottom: 30px;
   top: 60%;
@@ -9041,16 +9051,11 @@ h3 {
     background-size: cover;
   }
 }
-.home .sec-intro .title-h1 {
-  font-size: 2.75rem;
+.home .sec-intro .block-body {
+  padding: 30px;
 }
-@media (min-width: 992px) {
-  .home .sec-intro .title-h1 {
-    font-size: 5.5rem;
-  }
-}
-.home .sec-intro .block-title .bd-text-2 {
-  letter-spacing: 0;
+.home .sec-intro .col-right {
+  background-color: #E0FFFF;
 }
 .home .sec-aboutme {
   position: relative;
@@ -9107,6 +9112,9 @@ h3 {
   display: flex;
   align-items: center;
 }
+.home .sec-aboutme .sec-accordion .accordion-body {
+  width: 100%;
+}
 .home .sec-aboutme .sec-accordion .card-body {
   display: flex;
   padding-top: 0;
@@ -9118,7 +9126,34 @@ h3 {
   }
 }
 .home .sec-aboutme .sec-accordion .card-body .wrap-text {
-  padding-right: 30px;
+  width: 100%;
+  padding-left: 60px;
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion .card-body .wrap-text {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+}
+.home .sec-aboutme .sec-accordion .card-body .wrap-text.carrer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .home .sec-aboutme .sec-accordion .card-body .wrap-text.carrer .item {
+    margin-right: 30px;
+  }
+  .home .sec-aboutme .sec-accordion .card-body .wrap-text.carrer .item:last-child {
+    margin-right: 0;
+  }
+}
+.home .sec-aboutme .sec-accordion .card-body .wrap-text.carrer .img-wrap {
+  min-height: 40px;
+}
+.home .sec-aboutme .sec-accordion .card-body .wrap-text.carrer .list .bd-text-2,
+.home .sec-aboutme .sec-accordion .card-body .wrap-text.carrer .list .bd-text-3 {
+  margin-bottom: 0;
 }
 .home .sec-aboutme .sec-accordion .card-body .card-square {
   display: none;
@@ -9131,6 +9166,13 @@ h3 {
 .home .sec-aboutme .sec-accordion .card-body .card-square .card {
   background-color: transparent;
   border: none;
+}
+.home .sec-aboutme .sec-accordion .card-body .item {
+  padding-bottom: 30px;
+}
+.home .sec-aboutme .sec-accordion .card-body .company-logo {
+  max-width: 100px;
+  margin: auto 0;
 }
 .home .sec-aboutme .sec-accordion .skills-head {
   display: flex;
