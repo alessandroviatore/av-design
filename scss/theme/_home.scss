@@ -142,18 +142,25 @@
   }
   //About me
   .sec-aboutme {
-    .block-text-8,
-    .block-text-10,
-    .block-text-2 {
+    .wrapped {
       @include make-container();
       @include make-container-max-widths();
       @media (min-width: $breakpoint-min-md) {
-        padding: $spacer-large $spacer-small;
+        padding: $spacer-large 1.5rem;
       }
     }
-    .block-text-2 {
+    .block-text-12 {
+      .block-intro {
+        &.spacer-large-p-b {
+          @include spacer-p ($spacer-0, $spacer-0);
+          @media (min-width: $breakpoint-min-md) {
+            @include spacer-p ($spacer-0, $spacer-medium);
+          }
+        }
+      }
       .img-wrap {
         min-height: 40px;
+        margin-right: $gutter / 2;
       }
       .company-logo {
         max-width: 100px;
@@ -166,15 +173,38 @@
         }
       }
     }
-    .card-body {
-      display: flex;
-      padding-bottom: $gutter;
-      padding-left: 0;
-      @media (min-width: $breakpoint-min-md) {
-        padding: 0;
+    .block-body {
+      margin-bottom: $gutter;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.recent {
+        &::before {
+          position: absolute;
+          left: -5px;
+          top: 11px;
+          width: 8px;
+          height: 8px;
+          background-color: transparent;
+          border-radius: 50%;
+          content: " ";
+          background-color: $color-accent-2;
+          @media (min-width: $breakpoint-min-lg) {
+            left: -15px;
+          }
+
+        }
       }
     }
-  }  //Works
+    .warp-heading {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  //Works
   .sec-works {
     position: relative;
     .title-h1 {
