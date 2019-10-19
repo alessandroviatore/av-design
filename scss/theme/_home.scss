@@ -149,11 +149,24 @@
         padding: $spacer-large 1.5rem;
       }
     }
+    .block-text-8 {
+      .col-info-small {
+        .block-info {
+          @media (min-width: $breakpoint-min-lg) {
+            &:first-child {
+              padding-top: $spacer;
+            }
+            padding-bottom: $spacer * 3;
+          }
+        }
+      }
+    }
     .block-text-12 {
-      .block-intro {
+      .block-intro,
+      .block-header {
         &.spacer-large-p-b {
           @include spacer-p ($spacer-0, $spacer-0);
-          @media (min-width: $breakpoint-min-md) {
+          @media (min-width: $breakpoint-min-lg) {
             @include spacer-p ($spacer-0, $spacer-medium);
           }
         }
@@ -166,42 +179,58 @@
         max-width: 100px;
         margin: auto 0; 
       }
-      .list {
-        .bd-text-2,
-        .bd-text-3 {
+      .block-body {
+        margin-bottom: $gutter;
+        &:last-child {
           margin-bottom: 0;
         }
-      }
-    }
-    .block-body {
-      margin-bottom: $gutter;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      &.recent {
-        &::before {
-          position: absolute;
-          left: -5px;
-          top: 11px;
-          width: 8px;
-          height: 8px;
-          background-color: transparent;
-          border-radius: 50%;
-          content: " ";
-          background-color: $color-accent-2;
-          @media (min-width: $breakpoint-min-lg) {
-            left: -15px;
+        &.recent {
+          &::before {
+            position: absolute;
+            display: none;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            background-color: transparent;
+            border-radius: 50%;
+            content: " ";
+            background-color: $color-accent-2;
+            @media (min-width: $breakpoint-min-md) {
+              display: block;
+              left: 0px;
+            }
           }
-
         }
       }
+      .warp-heading {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
     }
-    .warp-heading {
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
+    .block-text-2 {
+      .col-info {
+        order: 0;
+        @media (min-width: $breakpoint-min-lg) {
+          order: 1;
+        }
+      }
+      .col-info-small {
+        order: 1;
+        @media (min-width: $breakpoint-min-lg) {
+          order: 0;
+        }
+      }
+      .block-image {
+        .img-fluid {
+          max-height: 500px;
+          @media (min-width: $breakpoint-min-lg) {
+            max-height: 100%;
+          }
+        }
+      }
     }
   }
   //Works

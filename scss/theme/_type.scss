@@ -38,6 +38,7 @@ h5, .title-h5 {
   font-size: $h5-font-size; //11px
   letter-spacing: 1px;
   text-transform: uppercase;
+  line-height: $headings-line-height + 1;
 }
 h6, .title-h6 { font-size: $h6-font-size; }
 
