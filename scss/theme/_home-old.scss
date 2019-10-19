@@ -1,8 +1,10 @@
-.home {
+.home-old {
   //Global style:
   //Colors combinations
   .bkgrd-accent-light-1 {
-    .title-h3 {
+    .title-h2,
+    .title-h3,
+    .title-h4 {
       color: $color-accent-2;
     }
   }
@@ -776,6 +778,41 @@
           }
         }
       }
+    }
+  }
+}
+//New stuff
+.sec-aboutme {
+  .block-text-8,
+  .block-text-10,
+  .block-text-2 {
+    @include make-container();
+    @include make-container-max-widths();
+    @media (min-width: $breakpoint-min-md) {
+      padding: $spacer-large $spacer-small;
+    }
+  }
+  .block-text-2 {
+    .img-wrap {
+      min-height: 40px;
+    }
+    .company-logo {
+      max-width: 100px;
+      margin: auto 0; 
+    }
+    .list {
+      .bd-text-2,
+      .bd-text-3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .card-body {
+    display: flex;
+    padding-bottom: $gutter;
+    padding-left: 0;
+    @media (min-width: $breakpoint-min-md) {
+      padding: 0;
     }
   }
 }
