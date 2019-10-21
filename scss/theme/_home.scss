@@ -62,6 +62,14 @@
       @media (min-width: $breakpoint-min-lg) {
         padding: $spacer-medium 0;
       }
+      .claim {
+        .title-h2 {
+          letter-spacing: 0;
+          @media (min-width: $breakpoint-min-md) {
+            letter-spacing: -2px;
+          }
+        }
+      }
     }
     .block-wrapper {
       z-index: 1;
