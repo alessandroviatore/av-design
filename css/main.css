@@ -9137,160 +9137,42 @@ h3 {
     max-height: 100%;
   }
 }
-.home .sec-works {
-  position: relative;
-}
-@media (max-width: 575.98px) {
-  .home .sec-works .title-h1 {
-    font-size: 4rem;
-  }
-}
-.home .sec-works .head {
-  margin-bottom: 30px;
-}
-.home .sec-works .works-list .item {
-  position: relative;
-  margin-bottom: 5rem;
-}
-.home .sec-works .works-list .item .txt-block {
+.home .sec-projects .sorting {
   margin: auto;
 }
-.home .sec-works .works-list .item .cta .link {
-  margin-right: 15px;
-}
-.home .sec-works .works-list .item .img-block {
-  margin-bottom: 2rem;
-}
-@media (min-width: 768px) {
-  .home .sec-works .works-list .item .img-block {
-    margin-bottom: 0;
-  }
-}
-.home .sec-works .works-list .item .img-block img {
-  width: 100%;
-  height: 100%;
-}
-@media (min-width: 768px) {
-  .home .sec-works .works-list .item .img-block img {
-    object-fit: cover;
-  }
-}
-.home .sec-works .works-list .item .img-block {
-  order: 0;
-  margin-bottom: 2rem;
-}
-@media (min-width: 992px) {
-  .home .sec-works .works-list .item .img-block {
-    order: 1;
-    margin-bottom: 0;
-  }
-}
-.home .sec-works .works-list .item .txt-block {
-  order: 1;
-}
-@media (min-width: 992px) {
-  .home .sec-works .works-list .item .txt-block {
-    order: 0;
-  }
-}
-@media (min-width: 768px) {
-  .home .sec-works .works-list .even .img-block {
-    order: 0;
-  }
-}
-.home .sec-works .works-list .even .txt-block {
-  order: 0;
-}
-@media (min-width: 768px) {
-  .home .sec-works .works-list .even .txt-block {
-    order: 1;
-    padding-left: 5rem;
-  }
-}
-.home .sec-works .works-list .odd .img-block {
-  order: 0;
-}
-@media (min-width: 768px) {
-  .home .sec-works .works-list .odd .img-block {
-    order: 1;
-  }
-}
-.home .sec-works .works-list .odd .txt-block {
-  order: 0;
-}
-@media (min-width: 768px) {
-  .home .sec-works .website-list {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-}
-.home .sec-works .block-works {
-  position: relative;
-}
-.home .sec-works .block-works .carousel-indicators {
-  top: 0;
+.home .sec-projects .sorting .nav {
+  padding: 0;
   margin-left: 0;
+  margin-top: 0;
+  flex-wrap: nowrap;
+  flex-flow: column;
 }
-.home .sec-works .block-works .carousel-item {
-  position: relative;
-  margin-bottom: 0;
+.home .sec-projects .sorting .nav-item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
-.home .sec-works .cta-banner {
-  color: #fff;
+.home .sec-projects .sorting .nav-link.active {
+  color: #ADA2FB;
+  background-color: transparent;
 }
-.home .sec-works .cta-banner .item {
-  margin-bottom: 1rem;
+.home .sec-projects .row > div {
+  padding: 0 4px !important;
 }
-.home .sec-works .cta-banner .item:last-child {
-  margin-bottom: 0;
-}
-@media (min-width: 576px) {
-  .home .sec-works .cta-banner .item {
-    margin-bottom: 0;
-  }
-}
-.home .sec-works .cta-banner .title-h1 {
-  font-size: 2.75rem;
-}
-@media (min-width: 768px) {
-  .home .sec-works .cta-banner .title-h1 {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 992px) {
-  .home .sec-works .cta-banner .title-h1 {
-    font-size: 5rem;
-  }
-}
-.home .sec-works .cta-banner .title-h5 {
-  text-align: left;
-}
-@media (min-width: 576px) {
-  .home .sec-works .cta-banner .title-h5 {
-    text-align: center;
-  }
-}
-.home .sec-works .cta-banner .accent-corrner::before {
-  top: -25px;
-  left: -25px;
-  position: absolute;
-  background: #fff;
-  border-radius: 50%;
-  padding: 25px;
-  font-size: xx-large;
-}
-.home .sec-works .cta-banner .box-left,
-.home .sec-works .cta-banner .box-right {
-  position: relative;
-}
-.home .sec-works .cta-banner .box-left .accent-corrner::before {
-  content: "";
-}
-.home .sec-works .cta-banner .box-right .accent-corrner::before {
-  content: "";
+.home .sec-projects img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
+@keyframes winanim {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: "InterUI-Regular";
   src: url("fonts/InterUI-Regular.eot");
