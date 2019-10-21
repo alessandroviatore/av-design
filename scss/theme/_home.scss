@@ -16,25 +16,16 @@
   }
 
   //Respomsive Typography
-  h3, .title-h3 {
+  h2, .title-h2 {
     font-size: $h4-font-size;
     line-height: $body-txt-1-line-height; //32px
-    letter-spacing: 0;
+    line-height: $headings-line-height;
     @media (min-width: $breakpoint-min-sm) {
-      font-size: $h3-font-size; //48px
+      font-size: $h2-font-size;
       letter-spacing: -1.6px;
-      line-height: $headings-line-height;
     }
   }
-  .bd-text-1 {
-    font-size: $body-txt-2; //15px
-    line-height: $body-txt-2-line-height; //28px
-    @media (min-width: $breakpoint-min-sm) {
-      font-size: $body-txt-1; //18px
-      line-height: $body-txt-1-line-height; //32px
-    }
-  }
-
+  
   //Section extra padding top/bottom
   .section {
     @include media-breakpoint-down(sm) {
@@ -43,7 +34,23 @@
     }
   }
 
-  //Sections:
+  //Block text paddings/margins
+  .sec-text {
+    //Block intro
+    .block-intro {
+      @include spacer-p ($spacer-0, $spacer-mobile);
+      @media (min-width: $breakpoint-min-md) {
+        @include spacer-p ($spacer-0, $spacer-medium);
+      }
+    }
+    //Block Title
+    .block-title {
+      @include spacer-p ($spacer-0, $spacer-mobile);
+      @media (min-width: $breakpoint-min-md) {
+        @include spacer-p ($spacer-0, $spacer-medium);
+      }
+    }
+  }
   //Hero
   .sec-hero {
     position: relative;
@@ -140,8 +147,24 @@
       }
     }
   }
+  //intro
+  .sec-intro {
+    
+  }
   //About me
   .sec-aboutme {
+    .sec-text {
+      @include spacer-p ($spacer-mobile, $spacer-mobile);
+      @media (min-width: $breakpoint-min-md) {
+        @include spacer-p ($spacer-medium, $spacer-medium);
+      }
+      .title-h2 {
+        font-size: $h3-font-size; //36px
+        @media (min-width: $breakpoint-min-md) {
+          font-size: $h2-font-size;
+        }
+      }
+    }
     .wrapped {
       @include make-container();
       @include make-container-max-widths();
@@ -162,24 +185,20 @@
       }
     }
     .block-text-12 {
-      .block-intro,
       .block-header {
-        &.spacer-large-p-b {
-          @include spacer-p ($spacer-0, $spacer-0);
-          @media (min-width: $breakpoint-min-lg) {
-            @include spacer-p ($spacer-0, $spacer-medium);
-          }
+        @include spacer-p ($spacer-0, $spacer-mobile);
+        @media (min-width: $breakpoint-min-lg) {
+          @include spacer-p ($spacer-0, $spacer-medium);
         }
       }
-      .img-wrap {
-        min-height: 40px;
-        margin-right: $gutter / 2;
-      }
-      .company-logo {
-        max-width: 100px;
-        margin: auto 0; 
+      .block-title {
+        @include spacer-p ($spacer-0, $spacer-mobile);
+        @media (min-width: $breakpoint-min-md) {
+          @include spacer-p ($spacer-0, $spacer-large);
+        }
       }
       .block-body {
+        padding: 0 $spacer / 2;
         margin-bottom: $gutter;
         &:last-child {
           margin-bottom: 0;
@@ -201,6 +220,10 @@
             }
           }
         }
+      }
+      .img-wrap {
+        min-height: 40px;
+        margin-right: $gutter / 2;
       }
       .warp-heading {
         display: -webkit-flex;
