@@ -8870,6 +8870,12 @@ h3 {
     padding-bottom: 4rem;
   }
 }
+@media (max-width: 767.98px) {
+  .home .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
 .home .sec-text .block-intro {
   padding-top: 0;
   padding-bottom: 2rem;
@@ -9137,42 +9143,84 @@ h3 {
     max-height: 100%;
   }
 }
-.home .sec-projects .sorting {
+.home .sec-projects .filter {
+  margin: auto;
+  flex-flow: row;
+}
+.home .sec-projects .nav {
+  flex-flow: column;
+  max-width: 180px;
   margin: auto;
 }
-.home .sec-projects .sorting .nav {
-  padding: 0;
-  margin-left: 0;
-  margin-top: 0;
-  flex-wrap: nowrap;
-  flex-flow: column;
-}
-.home .sec-projects .sorting .nav-item {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-}
-.home .sec-projects .sorting .nav-link.active {
+.home .sec-projects .nav-link.active {
   color: #ADA2FB;
   background-color: transparent;
 }
-.home .sec-projects .row > div {
-  padding: 0 4px !important;
+.home .sec-projects .nav-link:hover {
+  color: #1E1E1E;
+  opacity: 0.8;
 }
-.home .sec-projects img {
-  margin-top: 8px;
-  vertical-align: middle;
+.home .sec-projects .carousel-container {
+  position: relative;
+}
+@media (max-width: 575.98px) {
+  .home .sec-projects .carousel-container.spacer-medium-p-tb {
+    padding-top: 5rem;
+    padding-bottom: 0;
+  }
+}
+.home .sec-projects .carousel-inner {
+  position: relative;
+}
+.home .sec-projects .carousel-caption {
+  background-color: #E6E6FA;
+  right: 0;
+  bottom: 0;
+  padding: 60px;
+}
+.home .sec-projects .image-wrap {
+  width: 100%;
+}
+.home .sec-projects .carousel-image {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.home .sec-projects .carousel-caption {
+  color: #1E1E1E;
+  text-align: left;
+}
+.home .sec-projects .carousel-caption .wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.home .sec-projects .carousel-indicators {
+  justify-content: start;
+  margin: 0;
+  bottom: 0;
+  padding-left: 10%;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+.home .sec-projects .carousel-indicators li {
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  display: none;
+  pointer-events: none;
+}
+.home .sec-projects .carousel-indicators li::before {
+  content: none;
+}
+.home .sec-projects .carousel-indicators li::after {
+  content: none;
+}
+.home .sec-projects .carousel-indicators .active {
+  display: block;
 }
 
-@keyframes winanim {
-  0% {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  50% {
-    opacity: 1;
-  }
-}
 @font-face {
   font-family: "InterUI-Regular";
   src: url("fonts/InterUI-Regular.eot");

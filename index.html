@@ -328,66 +328,270 @@
       <!-- /About me -->
 
       <!-- Works -->
-      <section id="projects" class="section sec-projects spacer-large-p-tb bkgrd-accent-light-3">
-
+      <section id="projects" class="section sec-projects spacer-large-p-tb">
         <div class="container">
-          <div class="row justify-content-center">
-            
-            <div class="col sorting">
-              <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="title-h2 nav-link active" id="showall-tab" data-toggle="pill" href="#showall" role="tab" aria-controls="showall" aria-selected="true">All</a>
-                  <span class="title-h5 counter">25</span>
-                </li>
-                <li class="nav-item">
-                  <a class="title-h2 nav-link" id="Cars-tab" data-toggle="pill" href="#Cars" role="tab" aria-controls="Cars" aria-selected="false">App</a>
-                   <span class="title-h5 counter">25</span>
-                </li>
-                <li class="nav-item">
-                  <a class="title-h2 nav-link" id="City-tab" data-toggle="pill" href="#City" role="tab" aria-controls="City" aria-selected="false">Branding</a>
-                  <span class="title-h5 counter">25</span>
-                </li>
-                <li class="nav-item">
-                  <a class="title-h2 nav-link" id="Forest-tab" data-toggle="pill" href="#Forest" role="tab" aria-controls="Forest" aria-selected="false">Website</a>
-                   <span class="title-h5 counter">25</span>
-                </li>
-              </ul>
+          <div class="row">
+            <div class="col block-title">
+              <h5 class="intro-text title-h5 pt-3 mb-0">Projects</h5>
+              <h2 class="title-h2">Progetti in evidenza</h2>
             </div>
-            
-            <div class="col">
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    <img src="https://www.w3schools.com/w3images/wedding.jpg"  class="img-fluid">
-                    <img src="https://www.w3schools.com/w3images/rocks.jpg"  class="img-fluid">
-                    <img src="https://www.w3schools.com/w3images/falls2.jpg"  class="img-fluid">
-                    <img src="https://www.w3schools.com/w3images/paris.jpg"  class="img-fluid">
-                    <img src="https://www.w3schools.com/w3images/nature.jpg"  class="img-fluid">
-                    <img src="https://www.w3schools.com/w3images/mist.jpg"  class="img-fluid">
-                    <img src="https://www.w3schools.com/w3images/paris.jpg"  class="img-fluid">
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="Cars" role="tabpanel" aria-labelledby="Cars-tab">
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Car 1</div></div>
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Car 2</div></div>
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Car 3</div></div>
-                </div>
-                <div class="tab-pane fade" id="City" role="tabpanel" aria-labelledby="City-tab">
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">City 1</div></div>
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">City 2</div></div>
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">City 3</div></div>
-                </div>
-                <div class="tab-pane fade" id="Forest" role="tabpanel" aria-labelledby="Forest-tab">
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Forest 1</div></div>
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Forest 2</div></div>
-                  <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Forest 3</div></div>
-                </div>
-              </div>
-            </div>
-          
           </div>
         </div>
 
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 filter">
+              <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link title-h2 active" id="App-tab" data-toggle="pill" href="#App" role="tab" aria-controls="App" aria-selected="false">App</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link title-h2 " id="Webiste-tab" data-toggle="pill" href="#Website" role="tab" aria-controls="Website" aria-selected="false">Website</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link title-h2 " id="Varie-tab" data-toggle="pill" href="#Varie" role="tab" aria-controls="Varie" aria-selected="false">Varie</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-8 tab-content gallery" id="pills-tabContent">
+              
+              <!-- App-tab-->
+              <div class="carousel-container container-full spacer-medium-p-tb tab-pane fade show active" id="App" role="tabpanel" aria-labelledby="App">
+                
+                <div id="carouselApp" class="carousel slide carousel-fade container-fluid" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                   <li data-target="#carouselApp" data-slide-to="0" class="active title-h5 low-contrast mb-0">
+                     <b class="title-h4 accent-2">1</b> / 2
+                   </li>
+                   <li data-target="#carouselApp" data-slide-to="1" class="title-h5 low-contrast mb-0">
+                     <b class="title-h4 accent-2">2</b> / 2
+                   </li>
+                  </ol>
+                  
+                  <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                      <div class="image-wrap">
+                        <a href="#">
+                          <img class="d-block image-fluid carousel-image" src="images/cover-parallax.jpg" alt="Parallax">
+                        </a>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="wrapper">
+                          <div class="col">
+                            <h3>Parallax iOS</h3>
+                          </div>
+                          <div class="col text-left">
+                            <p class="title-h5 low-contrast">Feb-2016</p>
+                            <p class="bd-text-3">Moderno UI kit, basato su e-commerce</p>
+                            <div class="cta">
+                              <a href="https://www.behance.net/gallery/33976438/PARALLAX" target="_blank" class="link">Vedi progetto</a>
+                              <a href="https://ui8.net/products/parallax-ios-screen" target="_blank" class="link accent-2">Buy it 🎉 </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <a href="#works" class="image-wrap">
+                        <img class="d-block image-fluid carousel-image" src="images/cover-maven.jpg" alt="Parallax">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="wrapper">
+                          <div class="col">
+                            <h3>Maven iOS</h3>
+                          </div>
+                          <div class="col ">
+                            <p class="title-h5 low-contrast">Feb-2017</p>
+                            <p class="bd-text-3">Moderno UI kit, basta su piattafarma Social Advertising</p>
+                            <div class="cta">
+                              <a href="https://www.behance.net/gallery/33976438/PARALLAX" target="_blank" class="link">Vedi progetto</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#carouselApp" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselApp" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                
+              </div>
+              
+              <!-- Webiste-tab-->
+              <div class="carousel-container container-full spacer-medium-p-tb tab-pane fade" id="Website" role="tabpanel" aria-labelledby="Website">
+                
+                <div id="carouselWebsite" class="carousel slide carousel-fade container-fluid" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                   <li data-target="#carouselApp" data-slide-to="0" class="active"></li>
+                   <li data-target="#carouselApp" data-slide-to="1"></li>
+                   <li data-target="#carouselApp" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                      <a href="#works" class="image-wrap">
+                        <img class="d-block image-fluid carousel-image" src="images/cover-parallax.jpg" alt="Parallax">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="wrapper">
+                          <div class="col">
+                            <h3>Parallax iOS</h3>
+                          </div>
+                          <div class="col text-left">
+                            <p class="title-h5 low-contrast">Feb-2016</p>
+                            <p class="bd-text-3">Moderno UI kit, basato su e-commerce</p>
+                            <div class="cta">
+                              <a href="https://www.behance.net/gallery/33976438/PARALLAX" target="_blank" class="link">Vedi progetto</a>
+                              <a href="https://ui8.net/products/parallax-ios-screen" target="_blank" class="link accent-2">Buy it 🎉 </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <a href="#works" class="image-wrap">
+                        <img class="d-block image-fluid carousel-image" src="images/cover-maven.jpg" alt="Parallax">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="wrapper">
+                          <div class="col">
+                            <h3>Maven iOS</h3>
+                          </div>
+                          <div class="col ">
+                            <p class="title-h5 low-contrast">Feb-2017</p>
+                            <p class="bd-text-3">Moderno UI kit, basta su piattafarma Social Advertising</p>
+                            <div class="cta">
+                              <a href="https://www.behance.net/gallery/33976438/PARALLAX" target="_blank" class="link">Vedi progetto</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <a href="#works" class="image-wrap">
+                        <img class="d-block image-fluid carousel-image" src="images/cover-100ui.jpg" alt="100 Daily UI">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="wrapper">
+                          <div class="col">
+                            <h3>Daili UI <span class="title-h5 low-contrast">Part 1</span></h3>
+                          </div>
+                          <div class="col ">
+                            <p class="title-h5 low-contrast">Feb-2016</p>
+                            <p class="bd-text-3">100 giorni, 100 diverse UI/UX</p>
+                            <div class="cta">
+                              <a href="https://www.behance.net/gallery/33552849/Daily-UI-challenge-part-2" target="_blank" class="link">Vedi progetto</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselWebsite" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselWebsite" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                
+              </div>
+              
+              <!-- Varie-tab-->
+              <div class="carousel-container container-full spacer-medium-p-tb tab-pane fade" id="Varie" role="tabpanel" aria-labelledby="Varie">
+                
+                <div id="carouselBranding" class="carousel slide carousel-fade container-fluid" data-ride="carousel">
+                  <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                      <a href="#works" class="image-wrap">
+                        <img class="d-block w-100" src="images/cover-karem.jpg" alt="Parallax">
+                      </a>
+                      <div class="caption">
+                        <div class="caption-container text-left ml-auto bkgrd-accent-2">
+                          <div class="caption-inner">
+                            <p class="text">Benvenuto nel mio sito, ecco alcuni dei miei lavori</p>
+                            <div class="author d-flex">
+                              <div class="avatar">
+                                <img class="rounded-circle" src="images/me-avatar.png" alt="">
+                              </div>
+                              <h5 class="info">
+                                Alessandro Viatore <br>Designer UI
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <a href="#works" class="image-wrap">
+                        <img class="d-block image-fluid carousel-image" src="images/cover-100ui.jpg" alt="100 Daily UI">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="wrapper">
+                          <div class="col">
+                            <h3>Daili UI <span class="title-h5 low-contrast">Part 1</span></h3>
+                          </div>
+                          <div class="col ">
+                            <p class="title-h5 low-contrast">Feb-2016</p>
+                            <p class="bd-text-3">100 giorni, 100 diverse UI/UX</p>
+                            <div class="cta">
+                              <a href="https://www.behance.net/gallery/33552849/Daily-UI-challenge-part-2" target="_blank" class="link">Vedi progetto</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <a href="#works">
+                        <img class="d-block w-100" src="images/cover-100ui.jpg" alt="100 Daily UI">
+                      </a>
+                      <div class="caption">
+                        <div class="caption-container text-left ml-auto bkgrd-accent-2">
+                          <div class="caption-inner">
+                            <p class="text">Benvenuto nel mio sito, ecco alcuni dei miei lavori</p>
+                            <div class="author d-flex">
+                              <div class="avatar">
+                                <img class="rounded-circle" src="images/me-avatar.png" alt="">
+                              </div>
+                              <h5 class="info">
+                                Alessandro Viatore <br>Designer UI
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselHero" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselHero" data-slide-to="1"></li>
+                    <li data-target="#carouselHero" data-slide-to="2"></li>
+                  </ol>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- /Works -->
       

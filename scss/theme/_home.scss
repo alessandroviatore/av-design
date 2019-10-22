@@ -25,7 +25,16 @@
       letter-spacing: -1.6px;
     }
   }
-  
+  //Section extra padding top/bottom
+  .section {
+    @include media-breakpoint-down(sm) {
+      padding-top: $spacer-mobile + 2;
+      padding-bottom: $spacer-mobile +2;
+    }
+  }
+
+//Sections:
+
   //Section extra padding top/bottom
   .section {
     @include media-breakpoint-down(sm) {
@@ -263,42 +272,88 @@
   }
   //Works
   .sec-projects {
-    .sorting {
+    .filter {
       margin: auto;
-      .nav {
-        padding: 0;
-        margin-left: 0;
-        margin-top: 0;
-        flex-wrap: nowrap;
-        flex-flow: column;
+      flex-flow: row;
+    }
+    .nav {
+      flex-flow: column;
+      max-width: 180px;
+      margin: auto;
+    }
+    .nav-link {
+      &.active {
+        color: $color-accent-2;
+        background-color: transparent;
       }
-      .nav-item {
+      &:hover {
+        color: $color-main-black;
+        opacity: 0.8;
+      }
+    }
+    .carousel-container {
+      position: relative;
+      &.spacer-medium-p-tb {
+        @include media-breakpoint-only(xs) {
+          @include spacer-p ($spacer-medium, $spacer-0);
+        }
+      }
+    }
+    .carousel-inner {
+      position: relative;
+    }
+    .carousel-caption {
+      background-color: $color-accent-light-2;
+      right: 0;
+      bottom: 0;
+      padding: $gutter *2;
+    }
+    .image-wrap {
+      width: 100%;
+    }
+    .carousel-image {
+      width: 100%;
+      padding-bottom: 5%;
+    }
+    .carousel-caption {
+      color: $color-main-black;
+      text-align: left;
+      .wrapper {
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
-      }
-      .nav-link {
-        &.active {
-          color: $color-accent-2;
-          background-color: transparent;
-        }
-        &.counter {
-          
-        }
+        justify-content: space-between;
       }
     }
-    .row > div {
-      padding: 0 4px !important;
-    }
-    img {
-      margin-top: 8px;
-      vertical-align: middle;
+    .carousel-indicators {
+      justify-content: start;
+      margin: 0;
+      bottom: 0;
+      padding-left: 10%;
+      left: 0;
+      width: auto;
+      height: auto;
+      li {
+        width: auto;
+        height: auto;
+        text-indent: 0;
+        display: none;
+        pointer-events: none;
+
+        // Use pseudo classes to increase the hit area by 10px on top and bottom.
+        &::before {
+          content: none;
+        }
+        &::after {
+          content: none;
+        }
+      }
+
+      .active {
+        display: block;
+      }
+
     }
   }
 }
 
-@keyframes winanim {
-    0%{opacity:0;transform:scale3d(.3,.3,.3)}
-    50%{opacity:1}
-    
-}
