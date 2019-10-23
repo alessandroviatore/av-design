@@ -9172,22 +9172,24 @@ h3 {
 .home .sec-projects .carousel-inner {
   position: relative;
 }
-.home .sec-projects .carousel-caption {
-  background-color: #E6E6FA;
-  right: 0;
-  bottom: 0;
-  padding: 60px;
-}
 .home .sec-projects .image-wrap {
-  width: 100%;
+  width: 90%;
+  margin-left: 10%;
+  height: auto;
 }
 .home .sec-projects .carousel-image {
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 }
 .home .sec-projects .carousel-caption {
+  background-color: #ffffff;
+  right: 0;
+  bottom: 0;
+  left: -55px;
+  padding: 60px;
   color: #1E1E1E;
   text-align: left;
+  max-width: 500px;
 }
 .home .sec-projects .carousel-caption .wrapper {
   display: -webkit-flex;
@@ -9198,8 +9200,8 @@ h3 {
 .home .sec-projects .carousel-indicators {
   justify-content: start;
   margin: 0;
-  bottom: 0;
-  padding-left: 10%;
+  top: 50%;
+  padding-left: 30px;
   left: 0;
   width: auto;
   height: auto;
@@ -9219,6 +9221,7 @@ h3 {
 }
 .home .sec-projects .carousel-indicators .active {
   display: block;
+  background-color: transparent;
 }
 
 @font-face {
