@@ -9057,41 +9057,41 @@ h3 {
   }
 }
 @media (min-width: 992px) {
-  .home .sec-aboutme .block-text-8 .col-info-small .block-info {
+  .home .sec-aboutme .sec-text-8 .col-info-small .block-info {
     padding-bottom: 3rem;
   }
-  .home .sec-aboutme .block-text-8 .col-info-small .block-info:first-child {
+  .home .sec-aboutme .sec-text-8 .col-info-small .block-info:first-child {
     padding-top: 1rem;
   }
 }
-.home .sec-aboutme .block-text-12 .block-header {
+.home .sec-aboutme .sec-text-12 .block-header {
   padding-top: 0;
   padding-bottom: 2rem;
 }
 @media (min-width: 992px) {
-  .home .sec-aboutme .block-text-12 .block-header {
+  .home .sec-aboutme .sec-text-12 .block-header {
     padding-top: 0;
     padding-bottom: 5rem;
   }
 }
-.home .sec-aboutme .block-text-12 .block-title {
+.home .sec-aboutme .sec-text-12 .block-title {
   padding-top: 0;
   padding-bottom: 2rem;
 }
 @media (min-width: 768px) {
-  .home .sec-aboutme .block-text-12 .block-title {
+  .home .sec-aboutme .sec-text-12 .block-title {
     padding-top: 0;
     padding-bottom: 7.5rem;
   }
 }
-.home .sec-aboutme .block-text-12 .block-body {
+.home .sec-aboutme .sec-text-12 .block-body {
   padding: 0 0.5rem;
   margin-bottom: 30px;
 }
-.home .sec-aboutme .block-text-12 .block-body:last-child {
+.home .sec-aboutme .sec-text-12 .block-body:last-child {
   margin-bottom: 0;
 }
-.home .sec-aboutme .block-text-12 .block-body.recent::before {
+.home .sec-aboutme .sec-text-12 .block-body.recent::before {
   position: absolute;
   display: none;
   top: 8px;
@@ -9103,43 +9103,43 @@ h3 {
   background-color: #ADA2FB;
 }
 @media (min-width: 768px) {
-  .home .sec-aboutme .block-text-12 .block-body.recent::before {
+  .home .sec-aboutme .sec-text-12 .block-body.recent::before {
     display: block;
     left: 0px;
   }
 }
-.home .sec-aboutme .block-text-12 .img-wrap {
+.home .sec-aboutme .sec-text-12 .img-wrap {
   min-height: 40px;
   margin-right: 15px;
 }
-.home .sec-aboutme .block-text-12 .warp-heading {
+.home .sec-aboutme .sec-text-12 .warp-heading {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.home .sec-aboutme .block-text-2 .col-info {
+.home .sec-aboutme .sec-text-2 .col-info {
   order: 0;
 }
 @media (min-width: 992px) {
-  .home .sec-aboutme .block-text-2 .col-info {
+  .home .sec-aboutme .sec-text-2 .col-info {
     order: 1;
   }
 }
-.home .sec-aboutme .block-text-2 .col-info-small {
+.home .sec-aboutme .sec-text-2 .col-info-small {
   order: 1;
 }
 @media (min-width: 992px) {
-  .home .sec-aboutme .block-text-2 .col-info-small {
+  .home .sec-aboutme .sec-text-2 .col-info-small {
     order: 0;
   }
 }
-.home .sec-aboutme .block-text-2 .block-image .img-fluid {
+.home .sec-aboutme .sec-text-2 .block-image .img-fluid {
   max-height: 500px;
 }
 @media (min-width: 992px) {
-  .home .sec-aboutme .block-text-2 .block-image .img-fluid {
+  .home .sec-aboutme .sec-text-2 .block-image .img-fluid {
     max-height: 100%;
   }
 }
@@ -9222,6 +9222,47 @@ h3 {
 .home .sec-projects .carousel-indicators .active {
   display: block;
   background-color: transparent;
+}
+.home.home-v2 {
+  background-color: #DDF6FF;
+}
+.home.home-v2 .title-h1, .home.home-v2 .title-h2, .home.home-v2 .title-h3, .home.home-v2 .title-h4, .home.home-v2 .title-h5, .home.home-v2 .title-h6 {
+  color: #0E2DEA;
+}
+.home.home-v2 .bd-text-1, .home.home-v2 .bd-text-2, .home.home-v2 .bd-text-3 {
+  color: #0E2DEA;
+}
+.home.home-v2 .bkgrd-accent-light-1 {
+  background-color: #DDF6FF;
+}
+.home.home-v2 .bkgrd-accent-light-1 .title-h2,
+.home.home-v2 .bkgrd-accent-light-1 .title-h3,
+.home.home-v2 .bkgrd-accent-light-1 .title-h4 {
+  color: #0E2DEA;
+}
+.home.home-v2 .bkgrd-accent-light-2 {
+  background-color: #DDF6FF;
+}
+.home.home-v2 .bkgrd-accent-light-2 .title-h1,
+.home.home-v2 .bkgrd-accent-light-2 .title-h2 {
+  color: #0E2DEA;
+}
+.home.home-v2 .separator {
+  border-bottom: 15px solid #0E2DEA;
+  border-bottom-style: dotted;
+}
+.home.home-v2 .sec-hero .block.claim .title-h1,
+.home.home-v2 .sec-hero .block.claim .title-h2 {
+  color: #0E2DEA;
+}
+.home.home-v2 .sec-aboutme {
+  padding: 7.5rem 0;
+}
+.home.home-v2 .sec-aboutme .sec-text {
+  padding: 5rem 0;
+}
+.home.home-v2 .sec-aboutme .sec-text:first-child {
+  padding-top: 0;
 }
 
 @font-face {
