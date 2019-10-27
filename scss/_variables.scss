@@ -244,3 +244,7 @@ $navbar-light-hover-color:          rgba($color-main-black, .7);
 $navbar-light-active-color:         rgba($color-main-black, .9);
 $navbar-light-disabled-color:       rgba($color-main-black, .3);
 $navbar-light-toggler-border-color: rgba($black, .1);
+
+$rotate-from:                       (0deg);
+$rotate-to:                         (359deg);
+$rotate-time:                       rotation 8s infinite linear;

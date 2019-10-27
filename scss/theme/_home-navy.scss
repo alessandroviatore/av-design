@@ -9,7 +9,6 @@
   .bd-text-1, .bd-text-2, .bd-text-3 {
     color: $color-navy-blue;
   }
-      
   
   //Override styles
   .bkgrd-accent-light-1 {
@@ -29,12 +28,84 @@
   }
   
   .separator {
-    border-bottom: 15px solid $color-navy-blue;
-    border-bottom-style: dotted;
+    width: 100%;
+    position: relative;
+    @include spacer-p ($spacer-mobile, $spacer-mobile);
+    @media (min-width: $breakpoint-min-md) {
+      @include spacer-p ($spacer-small, $spacer-small);
+    }
+    &:before{
+      content: "";
+      width: 100%;
+      height: 30px;
+      left: 0;
+      top: 50%;
+      background-position: center;
+      position: absolute;
+      background-repeat: repeat-x;
+      background-size: 10%;
+      background-image: url(../images/icons/wave.svg);
+    }
+    &:after {
+      content: "";
+      width: 105px;
+      height: 105px;
+      left: 70%;
+      bottom: -35px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+    //Fish
+    &.fancy-fish {
+      &:after {
+        left: 70%;
+        background-image: url(../images/icons/fish.svg);
+        background-repeat: no-repeat;
+        background-color: $color-navy-blue-light;
+      }
+    }
+    
   }
   
+  //Fancy stuff
+  .fancy-info {
+    &:before {
+      content: '';
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: $gutter;
+      left: $gutter;
+      background: url(../images/fancy-stuff/info-blue.svg) center center no-repeat;
+      @include spin($rotate-from, $rotate-to);
+      -webkit-animation: $rotate-time;
+    }
+  }
+  
+  //Block text paddings/margins
+  .sec-text {
+    //Block intro
+    .block-intro {
+      @include spacer-p ($spacer-0, $spacer-mobile);
+      @media (min-width: $breakpoint-min-md) {
+        @include spacer-p ($spacer-0, $spacer-medium);
+      }
+    }
+    //Block Title
+    .block-title {
+      @include spacer-p ($spacer-0, $spacer-mobile);
+      @media (min-width: $breakpoint-min-md) {
+        @include spacer-p ($spacer-0, $spacer-medium);
+      }
+    }
+  }
+
   //Hero Section
   .sec-hero {
+    max-height: 550px;
     @include spacer-p ($spacer-mobile, $spacer-mobile);
     @media (min-width: $breakpoint-min-md) {
       @include spacer-p ($spacer-large, $spacer-medium);
@@ -42,8 +113,8 @@
     &.fancy-wave {
       width: 100%;
       height: 100%;
-      // background: url(../images/fancy-stuff/wave_looper.png) center center;
-      background: url(../images/fancy-stuff/fish_looper.png) center center;
+      background: url(../images/fancy-stuff/wave_looper.png) center center;
+      // background: url(../images/fancy-stuff/fish_looper.png) center center;
       background-repeat: repeat;
     }
     .inner {
@@ -55,24 +126,21 @@
     .block-image {
       &.fancy-info {
         &:before {
-          content: '';
-          width: 150px;
-          height: 150px;
-          position: absolute;
           top: - $gutter;
           left: - $gutter;
-          background: url(../images/fancy-stuff/info-blue.svg) center center no-repeat;
-          -webkit-animation: rotation 8s infinite linear;
-          @-webkit-keyframes rotation {
-            from {
-              -webkit-transform: rotate(0deg);
-            }
-            to {
-              -webkit-transform: rotate(359deg);
-            }
-          }
         }
       }
+      &.fancy-connection {
+        &:after {
+          top: 0;
+        }
+      }
+    }
+  }
+  
+  .sec-intro {
+    .block-text {
+      position: relative;
     }
   }
   

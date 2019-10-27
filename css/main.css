@@ -9243,10 +9243,87 @@ h3 {
   color: #0E2DEA;
 }
 .home-navy .separator {
-  border-bottom: 15px solid #0E2DEA;
-  border-bottom-style: dotted;
+  width: 100%;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .home-navy .separator {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+}
+.home-navy .separator:before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  left: 0;
+  top: 50%;
+  background-position: center;
+  position: absolute;
+  background-repeat: repeat-x;
+  background-size: 10%;
+  background-image: url(../images/icons/wave.svg);
+}
+.home-navy .separator:after {
+  content: "";
+  width: 105px;
+  height: 105px;
+  left: 70%;
+  bottom: -35px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.home-navy .separator.fancy-fish:after {
+  left: 70%;
+  background-image: url(../images/icons/fish.svg);
+  background-repeat: no-repeat;
+  background-color: #DDF6FF;
+}
+.home-navy .fancy-info:before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: url(../images/fancy-stuff/info-blue.svg) center center no-repeat;
+  -webkit-animation: rotation 8s infinite linear;
+  -webkit-animation: rotation 8s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+.home-navy .sec-text .block-intro {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .home-navy .sec-text .block-intro {
+    padding-top: 0;
+    padding-bottom: 5rem;
+  }
+}
+.home-navy .sec-text .block-title {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .home-navy .sec-text .block-title {
+    padding-top: 0;
+    padding-bottom: 5rem;
+  }
 }
 .home-navy .sec-hero {
+  max-height: 550px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -9259,7 +9336,7 @@ h3 {
 .home-navy .sec-hero.fancy-wave {
   width: 100%;
   height: 100%;
-  background: url(../images/fancy-stuff/fish_looper.png) center center;
+  background: url(../images/fancy-stuff/wave_looper.png) center center;
   background-repeat: repeat;
 }
 .home-navy .sec-hero .inner {
@@ -9269,22 +9346,14 @@ h3 {
   width: 100%;
 }
 .home-navy .sec-hero .block-image.fancy-info:before {
-  content: "";
-  width: 150px;
-  height: 150px;
-  position: absolute;
   top: -30px;
   left: -30px;
-  background: url(../images/fancy-stuff/info-blue.svg) center center no-repeat;
-  -webkit-animation: rotation 8s infinite linear;
 }
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
+.home-navy .sec-hero .block-image.fancy-connection:after {
+  top: 0;
+}
+.home-navy .sec-intro .block-text {
+  position: relative;
 }
 .home-navy .sec-aboutme {
   padding: 5rem 0;
