@@ -9247,8 +9247,6 @@ h3 {
   border-bottom-style: dotted;
 }
 .home-navy .sec-hero {
-  min-height: 0;
-  max-height: 500px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -9257,6 +9255,12 @@ h3 {
     padding-top: 7.5rem;
     padding-bottom: 5rem;
   }
+}
+.home-navy .sec-hero.fancy-wave {
+  width: 100%;
+  height: 100%;
+  background: url(../images/fancy-stuff/fish_looper.png) center center;
+  background-repeat: repeat;
 }
 .home-navy .sec-hero .inner {
   align-items: center;
@@ -9736,6 +9740,23 @@ h6, .title-h6 {
   .navbar-nav {
     padding-top: 0;
   }
+}
+
+.home-navy .navbar-light {
+  background: #0E2DEA;
+}
+.home-navy .navbar-light .nav-link {
+  color: #ffffff;
+}
+.home-navy .navbar-light .nav-link:hover {
+  color: #ffffff;
+  opacity: 0.8;
+}
+.home-navy .navbar-light .nav-link.active {
+  color: #ffffff;
+}
+.home-navy .navbar-light .nav-link.active::before {
+  background-color: #DDF6FF;
 }
 
 .error-page .wrap {

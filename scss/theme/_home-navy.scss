@@ -1,48 +1,50 @@
   //Navy home
 .home-navy {
-  //New colors
-  $color-light-blue: #DDF6FF;
-  $color-blue: #0E2DEA;
-  background-color: $color-light-blue;
+  background-color: $color-navy-blue-light;
   
   //Typography color
   .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6 {
-    color: $color-blue;
+    color: $color-navy-blue;
   }
   .bd-text-1, .bd-text-2, .bd-text-3 {
-    color: $color-blue;
+    color: $color-navy-blue;
   }
       
   
   //Override styles
   .bkgrd-accent-light-1 {
-    background-color: $color-light-blue;
+    background-color: $color-navy-blue-light;
     .title-h2,
     .title-h3,
     .title-h4 {
-      color: $color-blue;
+      color: $color-navy-blue;
     }
   }
   .bkgrd-accent-light-2 {
-    background-color: $color-light-blue;
+    background-color: $color-navy-blue-light;
     .title-h1,
     .title-h2 {
-      color: $color-blue;
+      color: $color-navy-blue;
     }
   }
   
   .separator {
-    border-bottom: 15px solid $color-blue;
+    border-bottom: 15px solid $color-navy-blue;
     border-bottom-style: dotted;
   }
   
   //Hero Section
   .sec-hero {
-    min-height: 0;
-    max-height: 500px;
     @include spacer-p ($spacer-mobile, $spacer-mobile);
     @media (min-width: $breakpoint-min-md) {
       @include spacer-p ($spacer-large, $spacer-medium);
+    }
+    &.fancy-wave {
+      width: 100%;
+      height: 100%;
+      // background: url(../images/fancy-stuff/wave_looper.png) center center;
+      background: url(../images/fancy-stuff/fish_looper.png) center center;
+      background-repeat: repeat;
     }
     .inner {
       align-items: center;

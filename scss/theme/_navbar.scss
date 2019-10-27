@@ -166,3 +166,22 @@
     padding-top: 0;
   }
 }
+
+.home-navy {
+  .navbar-light {
+    background: $color-navy-blue;
+    .nav-link {
+      color: $color-main-withe;
+      &:hover {
+        color: $color-main-withe;
+        opacity: .8;
+      }
+      &.active {
+        color: $color-main-withe;
+        &::before {
+          background-color: $color-navy-blue-light;
+        }
+      }
+    }  
+  }
+}
