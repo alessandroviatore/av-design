@@ -8870,12 +8870,6 @@ h3 {
     padding-bottom: 4rem;
   }
 }
-@media (max-width: 767.98px) {
-  .home .section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
 .home .sec-text .block-intro {
   padding-top: 0;
   padding-bottom: 2rem;
@@ -9223,46 +9217,162 @@ h3 {
   display: block;
   background-color: transparent;
 }
-.home.home-v2 {
+
+.home-navy {
   background-color: #DDF6FF;
 }
-.home.home-v2 .title-h1, .home.home-v2 .title-h2, .home.home-v2 .title-h3, .home.home-v2 .title-h4, .home.home-v2 .title-h5, .home.home-v2 .title-h6 {
+.home-navy .title-h1, .home-navy .title-h2, .home-navy .title-h3, .home-navy .title-h4, .home-navy .title-h5, .home-navy .title-h6 {
   color: #0E2DEA;
 }
-.home.home-v2 .bd-text-1, .home.home-v2 .bd-text-2, .home.home-v2 .bd-text-3 {
+.home-navy .bd-text-1, .home-navy .bd-text-2, .home-navy .bd-text-3 {
   color: #0E2DEA;
 }
-.home.home-v2 .bkgrd-accent-light-1 {
+.home-navy .bkgrd-accent-light-1 {
   background-color: #DDF6FF;
 }
-.home.home-v2 .bkgrd-accent-light-1 .title-h2,
-.home.home-v2 .bkgrd-accent-light-1 .title-h3,
-.home.home-v2 .bkgrd-accent-light-1 .title-h4 {
+.home-navy .bkgrd-accent-light-1 .title-h2,
+.home-navy .bkgrd-accent-light-1 .title-h3,
+.home-navy .bkgrd-accent-light-1 .title-h4 {
   color: #0E2DEA;
 }
-.home.home-v2 .bkgrd-accent-light-2 {
+.home-navy .bkgrd-accent-light-2 {
   background-color: #DDF6FF;
 }
-.home.home-v2 .bkgrd-accent-light-2 .title-h1,
-.home.home-v2 .bkgrd-accent-light-2 .title-h2 {
+.home-navy .bkgrd-accent-light-2 .title-h1,
+.home-navy .bkgrd-accent-light-2 .title-h2 {
   color: #0E2DEA;
 }
-.home.home-v2 .separator {
+.home-navy .separator {
   border-bottom: 15px solid #0E2DEA;
   border-bottom-style: dotted;
 }
-.home.home-v2 .sec-hero .block.claim .title-h1,
-.home.home-v2 .sec-hero .block.claim .title-h2 {
-  color: #0E2DEA;
+.home-navy .sec-hero {
+  min-height: 0;
+  max-height: 500px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.home.home-v2 .sec-aboutme {
-  padding: 7.5rem 0;
+@media (min-width: 768px) {
+  .home-navy .sec-hero {
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+  }
 }
-.home.home-v2 .sec-aboutme .sec-text {
+.home-navy .sec-hero .inner {
+  align-items: center;
+}
+.home-navy .sec-hero .block-text {
+  width: 100%;
+}
+.home-navy .sec-hero .block-image.fancy-info:before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  background: url(../images/fancy-stuff/info-blue.svg) center center no-repeat;
+  -webkit-animation: rotation 8s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+.home-navy .sec-aboutme {
   padding: 5rem 0;
 }
-.home.home-v2 .sec-aboutme .sec-text:first-child {
+.home-navy .sec-aboutme .sec-text {
+  padding: 5rem 0;
+}
+.home-navy .sec-aboutme .sec-text:first-child {
   padding-top: 0;
+}
+.home-navy .sec-aboutme .block-text-10 .emphasize {
+  font-weight: 700;
+}
+.home-navy .sec-projects .filter {
+  margin: auto;
+  flex-flow: row;
+}
+.home-navy .sec-projects .nav {
+  flex-flow: column;
+  max-width: 180px;
+  margin: auto;
+}
+.home-navy .sec-projects .nav-link.active {
+  color: #ADA2FB;
+  background-color: transparent;
+}
+.home-navy .sec-projects .nav-link:hover {
+  color: #1E1E1E;
+  opacity: 0.8;
+}
+.home-navy .sec-projects .carousel-container {
+  position: relative;
+}
+@media (max-width: 575.98px) {
+  .home-navy .sec-projects .carousel-container.spacer-medium-p-tb {
+    padding-top: 5rem;
+    padding-bottom: 0;
+  }
+}
+.home-navy .sec-projects .carousel-inner {
+  position: relative;
+}
+.home-navy .sec-projects .image-wrap {
+  width: 90%;
+  margin-left: 10%;
+  height: auto;
+}
+.home-navy .sec-projects .carousel-image {
+  width: 100%;
+  padding-bottom: 10%;
+}
+.home-navy .sec-projects .carousel-caption {
+  background-color: #ffffff;
+  right: 0;
+  bottom: 0;
+  left: -55px;
+  padding: 60px;
+  color: #1E1E1E;
+  text-align: left;
+  max-width: 500px;
+}
+.home-navy .sec-projects .carousel-caption .wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.home-navy .sec-projects .carousel-indicators {
+  justify-content: start;
+  margin: 0;
+  top: 50%;
+  padding-left: 30px;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+.home-navy .sec-projects .carousel-indicators li {
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  display: none;
+  pointer-events: none;
+}
+.home-navy .sec-projects .carousel-indicators li::before {
+  content: none;
+}
+.home-navy .sec-projects .carousel-indicators li::after {
+  content: none;
+}
+.home-navy .sec-projects .carousel-indicators .active {
+  display: block;
+  background-color: transparent;
 }
 
 @font-face {
@@ -9332,7 +9442,7 @@ h5, .title-h5 {
   font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  line-height: 2.2;
+  line-height: 1.8;
 }
 
 h6, .title-h6 {

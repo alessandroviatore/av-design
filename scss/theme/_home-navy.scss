@@ -1,0 +1,180 @@
+  //Navy home
+.home-navy {
+  //New colors
+  $color-light-blue: #DDF6FF;
+  $color-blue: #0E2DEA;
+  background-color: $color-light-blue;
+  
+  //Typography color
+  .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6 {
+    color: $color-blue;
+  }
+  .bd-text-1, .bd-text-2, .bd-text-3 {
+    color: $color-blue;
+  }
+      
+  
+  //Override styles
+  .bkgrd-accent-light-1 {
+    background-color: $color-light-blue;
+    .title-h2,
+    .title-h3,
+    .title-h4 {
+      color: $color-blue;
+    }
+  }
+  .bkgrd-accent-light-2 {
+    background-color: $color-light-blue;
+    .title-h1,
+    .title-h2 {
+      color: $color-blue;
+    }
+  }
+  
+  .separator {
+    border-bottom: 15px solid $color-blue;
+    border-bottom-style: dotted;
+  }
+  
+  //Hero Section
+  .sec-hero {
+    min-height: 0;
+    max-height: 500px;
+    @include spacer-p ($spacer-mobile, $spacer-mobile);
+    @media (min-width: $breakpoint-min-md) {
+      @include spacer-p ($spacer-large, $spacer-medium);
+    }
+    .inner {
+      align-items: center;
+    }
+    .block-text {
+      width: 100%;
+    }
+    .block-image {
+      &.fancy-info {
+        &:before {
+          content: '';
+          width: 150px;
+          height: 150px;
+          position: absolute;
+          top: - $gutter;
+          left: - $gutter;
+          background: url(../images/fancy-stuff/info-blue.svg) center center no-repeat;
+          -webkit-animation: rotation 8s infinite linear;
+          @-webkit-keyframes rotation {
+            from {
+              -webkit-transform: rotate(0deg);
+            }
+            to {
+              -webkit-transform: rotate(359deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .sec-aboutme {
+    padding: $spacer-medium 0;
+    .sec-text {
+      padding: $spacer-medium 0;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    .block-text-10 {
+      .emphasize {
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+  
+  //Works
+  .sec-projects {
+    .filter {
+      margin: auto;
+      flex-flow: row;
+    }
+    .nav {
+      flex-flow: column;
+      max-width: 180px;
+      margin: auto;
+    }
+    .nav-link {
+      &.active {
+        color: $color-accent-2;
+        background-color: transparent;
+      }
+      &:hover {
+        color: $color-main-black;
+        opacity: 0.8;
+      }
+    }
+    .carousel-container {
+      position: relative;
+      &.spacer-medium-p-tb {
+        @include media-breakpoint-only(xs) {
+          @include spacer-p ($spacer-medium, $spacer-0);
+        }
+      }
+    }
+    .carousel-inner {
+      position: relative;
+    }
+    .image-wrap {
+      width: 90%;
+      margin-left: 10%;
+      height: auto;
+    }
+    .carousel-image {
+      width: 100%;
+      padding-bottom: 10%;
+    }
+    .carousel-caption {
+      background-color: $color-main-withe;
+      right: 0;
+      bottom: 0;
+      left: -55px;
+      padding: $gutter *2;
+      color: $color-main-black;
+      text-align: left;
+      max-width: 500px;
+      .wrapper {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .carousel-indicators {
+      justify-content: start;
+      margin: 0;
+      top: 50%;
+      padding-left: $gutter;
+      left: 0;
+      width: auto;
+      height: auto;
+      li {
+        width: auto;
+        height: auto;
+        text-indent: 0;
+        display: none;
+        pointer-events: none;
+
+        // Use pseudo classes to increase the hit area by 10px on top and bottom.
+        &::before {
+          content: none;
+        }
+        &::after {
+          content: none;
+        }
+      }
+      .active {
+        display: block;
+        background-color: transparent;
+      }
+
+    }
+  }
+}
+

@@ -38,7 +38,7 @@ h5, .title-h5 {
   font-size: $h5-font-size; //11px
   letter-spacing: 1px;
   text-transform: uppercase;
-  line-height: $headings-line-height + 1;
+  line-height: 1.8;
 }
 h6, .title-h6 { font-size: $h6-font-size; }
 
@@ -54,7 +54,6 @@ h6, .title-h6 { font-size: $h6-font-size; }
 //
 // Body Text
 //
-
 .bd-text-1, .bd-text-2, .bd-text-3 {
   margin-top: 0;
   margin-bottom: $paragraph-margin-bottom;

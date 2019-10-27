@@ -25,13 +25,6 @@
       letter-spacing: -1.6px;
     }
   }
-  //Section extra padding top/bottom
-  .section {
-    @include media-breakpoint-down(sm) {
-      padding-top: $spacer-mobile + 2;
-      padding-bottom: $spacer-mobile +2;
-    }
-  }
 
 //Sections:
 
@@ -355,66 +348,6 @@
         background-color: transparent;
       }
 
-    }
-  }
-  
-  //New home test
-  &.home-v2 {
-    //New colors
-    $color-light-blue: #DDF6FF;
-    $color-blue: #0E2DEA;
-    background-color: $color-light-blue;
-    
-    //Typography color
-    .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6 {
-      color: $color-blue;
-    }
-    .bd-text-1, .bd-text-2, .bd-text-3 {
-      color: $color-blue;
-    }
-
-    
-    //Override styles
-    .bkgrd-accent-light-1 {
-      background-color: $color-light-blue;
-      .title-h2,
-      .title-h3,
-      .title-h4 {
-        color: $color-blue;
-      }
-    }
-    .bkgrd-accent-light-2 {
-      background-color: $color-light-blue;
-      .title-h1,
-      .title-h2 {
-        color: $color-blue;
-      }
-    }
-    
-    .separator {
-      border-bottom: 15px solid $color-blue;
-      border-bottom-style: dotted;
-    }
-    //Hero Section
-    .sec-hero {
-      .block {
-        &.claim {
-          .title-h1,
-          .title-h2 {
-            color: $color-blue;
-          }
-        }
-      }
-    }
-    
-    .sec-aboutme {
-      padding: $spacer-large 0;
-      .sec-text {
-        padding: $spacer-medium 0;
-        &:first-child {
-          padding-top: 0;
-        }
-      }
     }
   }
 }
