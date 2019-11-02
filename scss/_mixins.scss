@@ -15,7 +15,6 @@
 }
 // Spacer Padding
 @mixin spin($rotate-from, $rotate-to){
-  -webkit-animation: $rotate-time;
   @-webkit-keyframes rotation {
     from { -webkit-transform: rotate($rotate-from); }
     to { -webkit-transform: rotate($rotate-to); }
