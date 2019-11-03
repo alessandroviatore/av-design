@@ -1,17 +1,22 @@
   //Navy home
 .home-navy {
-  background-color: $color-navy-blue-light;
+  // background-color: $color-navy-blue-light;
   
   //Typography color
   .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6 {
     color: $color-navy-blue;
-    font-family: 'Rubik', sans-serif;
   }
   .bd-text-1, .bd-text-2, .bd-text-3 {
     color: $color-navy-blue;
-    font-family: 'Rubik', sans-serif;
     font-weight: 400;
   }
+  .title-h2 {
+    @include title ($h3-font-size, $headings-line-height);
+    @media (min-width: $breakpoint-min-md) {
+      @include title ($h2-font-size, $headings-line-height);
+    }
+  }
+
   
   //Override styles  
   .separator {
@@ -77,6 +82,15 @@
     }
   }
   
+  //Fancy waves
+  .fancy-pattern {
+    width: 100%;
+    height: 100%;
+    background: url(../images/fancy-stuff/wave_looper.png) center center;
+    // background: url(../images/fancy-stuff/fish_looper.png) center center;
+    background-repeat: repeat;
+  }
+
   //Block text paddings/margins
   .sec-text {
     @include spacer-p ($spacer-mobile, $spacer-mobile);
@@ -105,29 +119,49 @@
     @media (min-width: $breakpoint-min-md) {
       @include spacer-p ($spacer-large, $spacer-medium);
     }
-    &.fancy-wave {
-      width: 100%;
-      height: 100%;
-      background: url(../images/fancy-stuff/wave_looper.png) center center;
-      // background: url(../images/fancy-stuff/fish_looper.png) center center;
-      background-repeat: repeat;
-    }
     .inner {
       align-items: center;
     }
     .block-text {
       width: 100%;
+      .claim {
+        .title-h1 {
+          font-size: 4.5rem;
+          @media (min-width: $breakpoint-min-lg) {
+            @include title ($h1-font-size, $headings-line-height);
+          }
+        }
+      }
     }
     .block-image {
+      display: flex;
       &.fancy-info {
         &:before {
-          top: - $gutter;
-          left: - $gutter;
+          top: 0;
+          left: 10%;
+          width: 100px;
+          height: 100px;
+          @media (min-width: $breakpoint-min-md) {
+            left: 10%;
+            width: 150px;
+            height: 150px;
+          }
+          @media (min-width: $breakpoint-min-lg) {
+            top: - $gutter;
+            left: - $gutter;
+          }
         }
       }
       &.fancy-connection {
         &:after {
           top: 0;
+        }
+      }
+      .img-fluid {
+        max-height: 500px;
+        margin: auto;
+        @media (min-width: $breakpoint-min-lg) {
+          max-height: 100%;
         }
       }
     }
@@ -222,28 +256,76 @@
         }
       }
     }
-
   }
   
   //Works
   .sec-projects {
+    .container-fluid {
+      @media (min-width: $breakpoint-min-sm) {
+        max-width: $breakpoint-min-sm;
+      }
+      @media (min-width: $breakpoint-min-md) {
+        max-width: $breakpoint-min-md;
+      }
+      @media (min-width: $breakpoint-min-lg) {
+        max-width: 100%;
+      }
+    }
     .filter {
       margin: auto;
+      flex-wrap: wrap;
       flex-flow: row;
+      .title-h3 {
+        @include title ($h4-font-size, $line-height-base);
+        letter-spacing: $lettering-space-base;
+        @media (min-width: $breakpoint-min-md) {
+          @include title ($h3-font-size, $line-height-base);
+          letter-spacing: $lettering-space-medium;
+        }
+      }
+      @media (min-width: $breakpoint-min-md) {
+        padding-top: 0;
+      }
     }
     .nav {
-      flex-flow: column;
-      max-width: 180px;
+      flex-wrap: wrap;
       margin: auto;
-    }
-    .nav-link {
-      &.active {
-        color: $color-accent-2;
-        background-color: transparent;
+      align-items: center;
+      justify-content: space-around;
+      @media (min-width: $breakpoint-min-lg) {
+        flex-flow: column;
+        align-items: flex-start;
+        max-width: 180px;
       }
-      &:hover {
-        color: $color-main-black;
-        opacity: 0.8;
+
+    }
+    .nav-pills {
+      .nav-link {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        &.active {
+          color: $color-navy-blue;
+          background-color: transparent;
+          &::before {
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            width: 8px;
+            height: 8px;
+            background-color: transparent;
+            border-radius: 50%;
+            content: " ";
+            background: $color-navy-blue;
+          }
+        }
+        &:hover {
+          color: $color-navy-blue;
+          opacity: 0.8;
+        }
+        .bd-text-3 {
+          margin-bottom: 0;
+        }
       }
     }
     .carousel-container {
@@ -256,60 +338,101 @@
     }
     .carousel-inner {
       position: relative;
+      .controllers-warp {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        @media (min-width: $breakpoint-min-md) {
+          height: 252px;
+          width: 500px;
+        }
+        .carousel-indicators {
+          display: none;
+          @media (min-width: $breakpoint-min-md) {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            overflow: visible;
+            bottom: 0;
+            left: 0;
+            margin-left: 0;
+            margin-right: 75px;
+            position: absolute;
+            z-index: 0;
+            justify-content: flex-end;
+            li {
+              width: auto;
+              height: auto;
+              text-indent: 0;
+              display: none;
+              pointer-events: none;
+
+              // Use pseudo classes to increase the hit area by 10px on top and bottom.
+              &::before {
+                content: none;
+              }
+              &::after {
+                content: none;
+              }
+            }
+          }
+          .active {
+            display: block;
+            background-color: transparent;
+          }
+        }
+        .carousel-control-wrap {
+          z-index: 1;
+          position: absolute;
+          flex-flow: column;
+          left: 0;
+          top: 0;
+          @media (min-width: $breakpoint-min-md) {
+            display: flex;
+            flex-flow: row;
+          }
+          .carousel-control-prev,
+          .carousel-control-next {
+            background-color: $color-navy-blue;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            position: relative;
+          }
+        }
+      }
     }
     .image-wrap {
-      width: 90%;
-      margin-left: 10%;
-      height: auto;
+      width: 100%;
+      margin-left: 0%;
+      @media (min-width: $breakpoint-min-md) {
+        width: 90%;
+        margin-left: 10%;
+        height: auto;
+      }
     }
     .carousel-image {
       width: 100%;
-      padding-bottom: 10%;
+      padding-bottom: 0%;
+      @media (min-width: $breakpoint-min-md) {
+        padding-bottom: 10%;
+      }
     }
     .carousel-caption {
-      background-color: $color-main-withe;
       right: 0;
       bottom: 0;
-      left: -55px;
-      padding: $gutter *2;
-      color: $color-main-black;
-      text-align: left;
-      max-width: 500px;
+      left: -60px;
+      width: 500px;
+      padding: 0;
+      padding-left: $gutter *2;
       .wrapper {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        justify-content: space-between;
+        background-color: $color-main-withe;
+        text-align: left;
+        padding: $gutter;
       }
-    }
-    .carousel-indicators {
-      justify-content: start;
-      margin: 0;
-      top: 50%;
-      padding-left: $gutter;
-      left: 0;
-      width: auto;
-      height: auto;
-      li {
-        width: auto;
-        height: auto;
-        text-indent: 0;
-        display: none;
-        pointer-events: none;
-
-        // Use pseudo classes to increase the hit area by 10px on top and bottom.
-        &::before {
-          content: none;
-        }
-        &::after {
-          content: none;
-        }
-      }
-      .active {
-        display: block;
-        background-color: transparent;
-      }
-
     }
   }
 }

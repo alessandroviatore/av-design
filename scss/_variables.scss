@@ -144,8 +144,10 @@ $color-gray-high-contrast:   #9B9E9F;
 // Navy-home
 //
 
-$color-navy-blue-light: #DDF6FF;
-$color-navy-blue: #0E2DEA;
+$color-navy-blue-light:      #DDF6FF;
+$color-navy-blue:            #0E2DEA;
+$color-accent-4:             $color-navy-blue;
+$color-accent-light-4:       $color-navy-blue-light;
 
 // Body
 //
@@ -175,7 +177,7 @@ $spacer:                      1rem !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-inter-ui:        'Inter UI', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-inter-ui:        'Rubik', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-base:            $font-family-inter-ui !default;
 // stylelint-enable value-keyword-case
 
@@ -199,6 +201,11 @@ $h3-font-size:                $font-size-base * 2.25 !default; //36px
 $h4-font-size:                $font-size-base * 1.5 !default; //24px
 $h5-font-size:                $font-small-title !default; //11px
 $h6-font-size:                $font-size-base !default;
+
+$lettering-space-base:        1px;
+$lettering-space-small:       -0.8px;
+$lettering-space-medium:      -1.6px;
+$lettering-space-large:       -2px;
 
 // Title Variables
 $headings-margin-bottom:      ($spacer / 2) !default;

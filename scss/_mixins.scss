@@ -3,6 +3,10 @@
   font-weight: $font-weight;
   color: $color;
 }
+@mixin title($font-size, $headings-line-height){
+  font-size: $font-size;
+  line-height: $headings-line-height;
+}
 // Spacer Padding
 @mixin spacer-p($spacer-top, $spacer-bottom){
   padding-top: $spacer-top;
