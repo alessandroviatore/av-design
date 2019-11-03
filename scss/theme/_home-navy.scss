@@ -61,10 +61,9 @@
         left: 70%;
         background-image: url(../images/icons/fish.svg);
         background-repeat: no-repeat;
-        background-color: $color-navy-blue-light;
+        background-color: $color-main-withe;
       }
     }
-    
   }
   
   //Fancy stuff
@@ -113,6 +112,11 @@
     }
   }
   
+  //main-content
+  .main-content {
+    padding-top: 56px;
+  }
+  
   //Hero Section
   .sec-hero {
     @include spacer-p ($spacer-mobile, $spacer-mobile);
@@ -126,7 +130,10 @@
       width: 100%;
       .claim {
         .title-h1 {
-          font-size: 4.5rem;
+          font-size: 3.5rem;
+          @media (min-width: $breakpoint-min-md) {
+            font-size: 4.5rem;
+          }
           @media (min-width: $breakpoint-min-lg) {
             @include title ($h1-font-size, $headings-line-height);
           }
@@ -138,7 +145,7 @@
       &.fancy-info {
         &:before {
           top: 0;
-          left: 10%;
+          left: 15px;
           width: 100px;
           height: 100px;
           @media (min-width: $breakpoint-min-md) {
@@ -256,6 +263,17 @@
         }
       }
     }
+    .sec-hobbies {
+      .block-image {
+        .img-fluid {
+          max-height: 500px;
+          margin: auto;
+          @media (min-width: $breakpoint-min-lg) {
+            max-height: 100%;
+          }
+        }
+      }
+    }
   }
   
   //Works
@@ -286,6 +304,12 @@
       @media (min-width: $breakpoint-min-md) {
         padding-top: 0;
       }
+      .social {
+        display: none;
+        @media (min-width: $breakpoint-min-md) {
+          display: block;
+        }
+      }
     }
     .nav {
       flex-wrap: wrap;
@@ -309,7 +333,7 @@
           background-color: transparent;
           &::before {
             position: absolute;
-            top: 50%;
+            top: 15px;
             left: -15px;
             width: 8px;
             height: 8px;
@@ -317,6 +341,9 @@
             border-radius: 50%;
             content: " ";
             background: $color-navy-blue;
+            @media (min-width: $breakpoint-min-md) {
+              top: 50%;
+            }
           }
         }
         &:hover {
@@ -328,14 +355,6 @@
         }
       }
     }
-    .carousel-container {
-      position: relative;
-      &.spacer-medium-p-tb {
-        @include media-breakpoint-only(xs) {
-          @include spacer-p ($spacer-medium, $spacer-0);
-        }
-      }
-    }
     .carousel-inner {
       position: relative;
       .controllers-warp {
@@ -343,8 +362,8 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: 100px;
         @media (min-width: $breakpoint-min-md) {
           height: 252px;
           width: 500px;

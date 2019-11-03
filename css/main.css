@@ -9279,7 +9279,7 @@ h3 {
   left: 70%;
   background-image: url(../images/icons/fish.svg);
   background-repeat: no-repeat;
-  background-color: #DDF6FF;
+  background-color: #ffffff;
 }
 .home-navy .fancy-info:before {
   content: "";
@@ -9335,6 +9335,9 @@ h3 {
     padding-bottom: 5rem;
   }
 }
+.home-navy .main-content {
+  padding-top: 56px;
+}
 .home-navy .sec-hero {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -9352,7 +9355,12 @@ h3 {
   width: 100%;
 }
 .home-navy .sec-hero .block-text .claim .title-h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
+}
+@media (min-width: 768px) {
+  .home-navy .sec-hero .block-text .claim .title-h1 {
+    font-size: 4.5rem;
+  }
 }
 @media (min-width: 992px) {
   .home-navy .sec-hero .block-text .claim .title-h1 {
@@ -9365,7 +9373,7 @@ h3 {
 }
 .home-navy .sec-hero .block-image.fancy-info:before {
   top: 0;
-  left: 10%;
+  left: 15px;
   width: 100px;
   height: 100px;
 }
@@ -9479,6 +9487,15 @@ h3 {
   text-align: left;
   margin-bottom: 0;
 }
+.home-navy .sec-aboutme .sec-hobbies .block-image .img-fluid {
+  max-height: 500px;
+  margin: auto;
+}
+@media (min-width: 992px) {
+  .home-navy .sec-aboutme .sec-hobbies .block-image .img-fluid {
+    max-height: 100%;
+  }
+}
 @media (min-width: 576px) {
   .home-navy .sec-projects .container-fluid {
     max-width: 576px;
@@ -9516,6 +9533,14 @@ h3 {
     padding-top: 0;
   }
 }
+.home-navy .sec-projects .filter .social {
+  display: none;
+}
+@media (min-width: 768px) {
+  .home-navy .sec-projects .filter .social {
+    display: block;
+  }
+}
 .home-navy .sec-projects .nav {
   flex-wrap: wrap;
   margin: auto;
@@ -9540,7 +9565,7 @@ h3 {
 }
 .home-navy .sec-projects .nav-pills .nav-link.active::before {
   position: absolute;
-  top: 50%;
+  top: 15px;
   left: -15px;
   width: 8px;
   height: 8px;
@@ -9549,21 +9574,17 @@ h3 {
   content: " ";
   background: #0E2DEA;
 }
+@media (min-width: 768px) {
+  .home-navy .sec-projects .nav-pills .nav-link.active::before {
+    top: 50%;
+  }
+}
 .home-navy .sec-projects .nav-pills .nav-link:hover {
   color: #0E2DEA;
   opacity: 0.8;
 }
 .home-navy .sec-projects .nav-pills .nav-link .bd-text-3 {
   margin-bottom: 0;
-}
-.home-navy .sec-projects .carousel-container {
-  position: relative;
-}
-@media (max-width: 575.98px) {
-  .home-navy .sec-projects .carousel-container.spacer-medium-p-tb {
-    padding-top: 5rem;
-    padding-bottom: 0;
-  }
 }
 .home-navy .sec-projects .carousel-inner {
   position: relative;
@@ -9573,8 +9594,8 @@ h3 {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 100px;
 }
 @media (min-width: 768px) {
   .home-navy .sec-projects .carousel-inner .controllers-warp {
@@ -9934,7 +9955,7 @@ h6, .title-h6 {
   padding: 0.125rem;
 }
 .navbar-light .u-hamburger:hover .u-hamburger-inner, .navbar-light .u-hamburger:hover .u-hamburger-inner::before, .navbar-light .u-hamburger:hover .u-hamburger-inner::after {
-  background-color: #57DFD9;
+  background-color: #DDF6FF;
 }
 .navbar-light .u-hamburger-box {
   width: 1.375rem;
@@ -9950,7 +9971,7 @@ h6, .title-h6 {
 .navbar-light .u-hamburger-inner, .navbar-light .u-hamburger-inner::before, .navbar-light .u-hamburger-inner::after {
   width: 1.375rem;
   height: 0.15rem;
-  background-color: #9B9E9F;
+  background-color: #DDF6FF;
   position: absolute;
   transition-property: -webkit-transform;
   transition-property: transform;
