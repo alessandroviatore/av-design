@@ -1,6 +1,6 @@
 // Footer
 .sec-footer {
-  background: $color-low-contrast;
+  background: $color-navy-blue;
   .spacer-large-p-tb {
     @include media-breakpoint-only(md) {
       padding-top: $spacer-mobile;
@@ -16,7 +16,7 @@
         opacity: $opacity-default;
       }
       a {
-        color: $color-main-black;
+        color: $color-navy-blue;
       }
       .fab {
         font-size: $body-txt-1;

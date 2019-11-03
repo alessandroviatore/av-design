@@ -9692,6 +9692,10 @@ h3 {
   text-align: left;
   padding: 30px;
 }
+.home-navy .sec-footer .col-left .title-h3,
+.home-navy .sec-footer .col-left .title-h5 {
+  color: #DDF6FF;
+}
 
 h1, h2, h3, h4, h5, h6,
 .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6 {
@@ -10074,7 +10078,7 @@ h6, .title-h6 {
 }
 
 .sec-footer {
-  background: #F7F8F9;
+  background: #0E2DEA;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .sec-footer .spacer-large-p-tb {
@@ -10093,7 +10097,7 @@ h6, .title-h6 {
   opacity: 0.5;
 }
 .sec-footer .socials-list .item a {
-  color: #1E1E1E;
+  color: #0E2DEA;
 }
 .sec-footer .socials-list .item .fab {
   font-size: 1.125rem;

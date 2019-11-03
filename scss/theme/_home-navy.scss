@@ -454,5 +454,15 @@
       }
     }
   }
+  
+  //footer
+  .sec-footer {
+    .col-left {
+      .title-h3,
+      .title-h5 {
+        color: $color-navy-blue-light;
+      }
+    }
+  }
 }
 
