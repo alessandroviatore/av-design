@@ -357,6 +357,33 @@
     }
     .carousel-inner {
       position: relative;
+      .carousel-control-wrap {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-flow: column;
+        right: 0;
+        bottom: 0;
+        @media (min-width: $breakpoint-min-md) {
+          right: 0;
+          bottom: 122px;
+        }
+        @media (min-width: $breakpoint-min-lg) {
+          display: flex;
+          flex-flow: column;
+          left: 440px;
+          bottom: 0;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          background-color: $color-navy-blue;
+          width: 50px;
+          height: 50px;
+          top: 50%;
+          position: relative;
+        }
+      }
+      
       .controllers-warp {
         z-index: 1;
         position: absolute;
@@ -365,20 +392,25 @@
         width: auto;
         height: 100px;
         @media (min-width: $breakpoint-min-md) {
-          height: 252px;
-          width: 500px;
+          height: auto;
+          width: 100%;
         }
-        .carousel-indicators {
+        @media (min-width: $breakpoint-min-lg) {
+          height: 252px;
+          width: 440px;
+        }
+        //numbers counter
+        .numbers-counters {
           display: none;
           @media (min-width: $breakpoint-min-md) {
             display: -webkit-flex;
             display: -ms-flex;
             display: flex;
             overflow: visible;
-            bottom: 0;
+            bottom: $gutter;
             left: 0;
             margin-left: 0;
-            margin-right: 75px;
+            margin-right: 0;
             position: absolute;
             z-index: 0;
             justify-content: flex-end;
@@ -398,28 +430,14 @@
               }
             }
           }
+          @media (min-width: $breakpoint-min-lg) {
+            right: 0;
+            margin-right: $gutter;
+            bottom: 0;
+          }
           .active {
             display: block;
             background-color: transparent;
-          }
-        }
-        .carousel-control-wrap {
-          z-index: 1;
-          position: absolute;
-          flex-flow: column;
-          left: 0;
-          top: 0;
-          @media (min-width: $breakpoint-min-md) {
-            display: flex;
-            flex-flow: row;
-          }
-          .carousel-control-prev,
-          .carousel-control-next {
-            background-color: $color-navy-blue;
-            width: 50px;
-            height: 50px;
-            top: 50%;
-            position: relative;
           }
         }
       }
@@ -427,7 +445,7 @@
     .image-wrap {
       width: 100%;
       margin-left: 0%;
-      @media (min-width: $breakpoint-min-md) {
+      @media (min-width: $breakpoint-min-lg) {
         width: 90%;
         margin-left: 10%;
         height: auto;
@@ -435,18 +453,21 @@
     }
     .carousel-image {
       width: 100%;
-      padding-bottom: 0%;
-      @media (min-width: $breakpoint-min-md) {
-        padding-bottom: 10%;
-      }
     }
     .carousel-caption {
-      right: 0;
-      bottom: 0;
-      left: -60px;
-      width: 500px;
+      position: relative;
+      left: 0;
+      width: 100%;
       padding: 0;
-      padding-left: $gutter *2;
+      @media (min-width: $breakpoint-min-lg) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: -60px;
+        width: 500px;
+        padding: 0;
+        padding-left: $gutter *2;
+      }
       .wrapper {
         background-color: $color-main-withe;
         text-align: left;

@@ -9589,6 +9589,36 @@ h3 {
 .home-navy .sec-projects .carousel-inner {
   position: relative;
 }
+.home-navy .sec-projects .carousel-inner .carousel-control-wrap {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  right: 0;
+  bottom: 0;
+}
+@media (min-width: 768px) {
+  .home-navy .sec-projects .carousel-inner .carousel-control-wrap {
+    right: 0;
+    bottom: 122px;
+  }
+}
+@media (min-width: 992px) {
+  .home-navy .sec-projects .carousel-inner .carousel-control-wrap {
+    display: flex;
+    flex-flow: column;
+    left: 440px;
+    bottom: 0;
+  }
+}
+.home-navy .sec-projects .carousel-inner .carousel-control-wrap .carousel-control-prev,
+.home-navy .sec-projects .carousel-inner .carousel-control-wrap .carousel-control-next {
+  background-color: #0E2DEA;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  position: relative;
+}
 .home-navy .sec-projects .carousel-inner .controllers-warp {
   z-index: 1;
   position: absolute;
@@ -9599,71 +9629,63 @@ h3 {
 }
 @media (min-width: 768px) {
   .home-navy .sec-projects .carousel-inner .controllers-warp {
-    height: 252px;
-    width: 500px;
+    height: auto;
+    width: 100%;
   }
 }
-.home-navy .sec-projects .carousel-inner .controllers-warp .carousel-indicators {
+@media (min-width: 992px) {
+  .home-navy .sec-projects .carousel-inner .controllers-warp {
+    height: 252px;
+    width: 440px;
+  }
+}
+.home-navy .sec-projects .carousel-inner .controllers-warp .numbers-counters {
   display: none;
 }
 @media (min-width: 768px) {
-  .home-navy .sec-projects .carousel-inner .controllers-warp .carousel-indicators {
+  .home-navy .sec-projects .carousel-inner .controllers-warp .numbers-counters {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     overflow: visible;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     margin-left: 0;
-    margin-right: 75px;
+    margin-right: 0;
     position: absolute;
     z-index: 0;
     justify-content: flex-end;
   }
-  .home-navy .sec-projects .carousel-inner .controllers-warp .carousel-indicators li {
+  .home-navy .sec-projects .carousel-inner .controllers-warp .numbers-counters li {
     width: auto;
     height: auto;
     text-indent: 0;
     display: none;
     pointer-events: none;
   }
-  .home-navy .sec-projects .carousel-inner .controllers-warp .carousel-indicators li::before {
+  .home-navy .sec-projects .carousel-inner .controllers-warp .numbers-counters li::before {
     content: none;
   }
-  .home-navy .sec-projects .carousel-inner .controllers-warp .carousel-indicators li::after {
+  .home-navy .sec-projects .carousel-inner .controllers-warp .numbers-counters li::after {
     content: none;
   }
 }
-.home-navy .sec-projects .carousel-inner .controllers-warp .carousel-indicators .active {
+@media (min-width: 992px) {
+  .home-navy .sec-projects .carousel-inner .controllers-warp .numbers-counters {
+    right: 0;
+    margin-right: 30px;
+    bottom: 0;
+  }
+}
+.home-navy .sec-projects .carousel-inner .controllers-warp .numbers-counters .active {
   display: block;
   background-color: transparent;
-}
-.home-navy .sec-projects .carousel-inner .controllers-warp .carousel-control-wrap {
-  z-index: 1;
-  position: absolute;
-  flex-flow: column;
-  left: 0;
-  top: 0;
-}
-@media (min-width: 768px) {
-  .home-navy .sec-projects .carousel-inner .controllers-warp .carousel-control-wrap {
-    display: flex;
-    flex-flow: row;
-  }
-}
-.home-navy .sec-projects .carousel-inner .controllers-warp .carousel-control-wrap .carousel-control-prev,
-.home-navy .sec-projects .carousel-inner .controllers-warp .carousel-control-wrap .carousel-control-next {
-  background-color: #0E2DEA;
-  width: 50px;
-  height: 50px;
-  top: 50%;
-  position: relative;
 }
 .home-navy .sec-projects .image-wrap {
   width: 100%;
   margin-left: 0%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .home-navy .sec-projects .image-wrap {
     width: 90%;
     margin-left: 10%;
@@ -9672,20 +9694,23 @@ h3 {
 }
 .home-navy .sec-projects .carousel-image {
   width: 100%;
-  padding-bottom: 0%;
-}
-@media (min-width: 768px) {
-  .home-navy .sec-projects .carousel-image {
-    padding-bottom: 10%;
-  }
 }
 .home-navy .sec-projects .carousel-caption {
-  right: 0;
-  bottom: 0;
-  left: -60px;
-  width: 500px;
+  position: relative;
+  left: 0;
+  width: 100%;
   padding: 0;
-  padding-left: 60px;
+}
+@media (min-width: 992px) {
+  .home-navy .sec-projects .carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: -60px;
+    width: 500px;
+    padding: 0;
+    padding-left: 60px;
+  }
 }
 .home-navy .sec-projects .carousel-caption .wrapper {
   background-color: #ffffff;
