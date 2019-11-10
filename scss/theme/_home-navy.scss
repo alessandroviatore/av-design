@@ -121,7 +121,8 @@
   .sec-hero {
     @include spacer-p ($spacer-mobile, $spacer-mobile);
     @media (min-width: $breakpoint-min-md) {
-      @include spacer-p ($spacer-large, $spacer-medium);
+      @include spacer-p ($spacer-medium, $spacer-medium);
+      max-height: 500px;
     }
     .inner {
       align-items: center;
@@ -177,7 +178,7 @@
   .sec-intro {
     @include spacer-p ($spacer-mobile, $spacer-mobile);
     @media (min-width: $breakpoint-min-md) {
-      padding-top: 0;
+      @include spacer-p ($spacer-large, $spacer-mobile);
     }
 
     .block-text {
@@ -478,10 +479,34 @@
   
   //footer
   .sec-footer {
+    @include spacer-p ($spacer-mobile, $spacer-mobile);
+    @media (min-width: $breakpoint-min-md) {
+      @include spacer-p (0, 0);
+    }
     .col-left {
       .title-h3,
       .title-h5 {
         color: $color-navy-blue-light;
+      }
+    }
+    .socials,
+    .contacts {
+      .title-h5,
+      .bd-text-1 {
+        color: $color-navy-blue-light;
+        @media (min-width: $breakpoint-min-lg) {
+          color: $color-navy-blue;
+        }
+      }
+    }
+    .socials-list {
+      .item {
+        a {
+          color: $color-navy-blue-light;
+          @media (min-width: $breakpoint-min-lg) {
+            color: $color-navy-blue;
+          }
+        }
       }
     }
   }

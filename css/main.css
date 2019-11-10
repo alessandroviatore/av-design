@@ -9344,8 +9344,9 @@ h3 {
 }
 @media (min-width: 768px) {
   .home-navy .sec-hero {
-    padding-top: 7.5rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
+    max-height: 500px;
   }
 }
 .home-navy .sec-hero .inner {
@@ -9408,7 +9409,8 @@ h3 {
 }
 @media (min-width: 768px) {
   .home-navy .sec-intro {
-    padding-top: 0;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
   }
 }
 .home-navy .sec-intro .block-text {
@@ -9717,9 +9719,41 @@ h3 {
   text-align: left;
   padding: 30px;
 }
+.home-navy .sec-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .home-navy .sec-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 .home-navy .sec-footer .col-left .title-h3,
 .home-navy .sec-footer .col-left .title-h5 {
   color: #DDF6FF;
+}
+.home-navy .sec-footer .socials .title-h5,
+.home-navy .sec-footer .socials .bd-text-1,
+.home-navy .sec-footer .contacts .title-h5,
+.home-navy .sec-footer .contacts .bd-text-1 {
+  color: #DDF6FF;
+}
+@media (min-width: 992px) {
+  .home-navy .sec-footer .socials .title-h5,
+.home-navy .sec-footer .socials .bd-text-1,
+.home-navy .sec-footer .contacts .title-h5,
+.home-navy .sec-footer .contacts .bd-text-1 {
+    color: #0E2DEA;
+  }
+}
+.home-navy .sec-footer .socials-list .item a {
+  color: #DDF6FF;
+}
+@media (min-width: 992px) {
+  .home-navy .sec-footer .socials-list .item a {
+    color: #0E2DEA;
+  }
 }
 
 h1, h2, h3, h4, h5, h6,
