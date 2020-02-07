@@ -279,24 +279,14 @@
   
   //Works
   .sec-projects {
-    .container-fluid {
-      @media (min-width: $breakpoint-min-sm) {
-        max-width: $breakpoint-min-sm;
-      }
-      @media (min-width: $breakpoint-min-md) {
-        max-width: $breakpoint-min-md;
-      }
-      @media (min-width: $breakpoint-min-lg) {
-        max-width: 100%;
-      }
-    }
     .filter {
       margin: auto;
       flex-wrap: wrap;
       flex-flow: row;
       .title-h3 {
-        @include title ($h4-font-size, $line-height-base);
+        @include title ($h5-font-size, $line-height-base);
         letter-spacing: $lettering-space-base;
+        text-transform: uppercase;
         @media (min-width: $breakpoint-min-md) {
           @include title ($h3-font-size, $line-height-base);
           letter-spacing: $lettering-space-medium;
@@ -334,7 +324,7 @@
           background-color: transparent;
           &::before {
             position: absolute;
-            top: 15px;
+            top: 5px;
             left: -15px;
             width: 8px;
             height: 8px;
@@ -343,7 +333,9 @@
             content: " ";
             background: $color-navy-blue;
             @media (min-width: $breakpoint-min-md) {
+              top: 15px;
               top: 50%;
+              @include title ($h3-font-size, $headings-line-height);
             }
           }
         }
@@ -356,23 +348,29 @@
         }
       }
     }
-    .carousel-inner {
+    .controllers {
       position: relative;
-      .carousel-control-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      width: 100%;
+      @media (min-width: $breakpoint-min-lg) {
+        height: auto;
+        width: 440px;
+      }
+      
+      //arrows
+      .control-wrap {
+        position: relative;
         z-index: 1;
-        position: absolute;
         display: flex;
-        flex-flow: column;
-        right: 0;
-        bottom: 0;
-        @media (min-width: $breakpoint-min-md) {
-          right: 0;
-          bottom: 122px;
-        }
+        flex-flow: row;
+        width: 100px;
         @media (min-width: $breakpoint-min-lg) {
-          display: flex;
+          position: absolute;
           flex-flow: column;
           left: 440px;
+          right: 0;
           bottom: 0;
         }
         .carousel-control-prev,
@@ -380,60 +378,57 @@
           background-color: $color-navy-blue;
           width: 50px;
           height: 50px;
-          top: 50%;
           position: relative;
         }
       }
       
-      .controllers-warp {
-        z-index: 1;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: auto;
-        height: 100px;
-        @media (min-width: $breakpoint-min-md) {
-          height: auto;
-          width: 100%;
-        }
+      //numbers
+      .indicators-warp {
+        position: relative;
+        height: auto;
+        width: 100%;
         @media (min-width: $breakpoint-min-lg) {
-          height: 252px;
+          position: absolute;
+          z-index: 0;
+          left: 0;
+          bottom: 0;
+          height: auto;
           width: 440px;
+        }
+        ol {
+          margin-bottom: 0;
         }
         //numbers counter
         .numbers-counters {
-          display: none;
-          @media (min-width: $breakpoint-min-md) {
-            display: -webkit-flex;
-            display: -ms-flex;
-            display: flex;
-            overflow: visible;
-            bottom: $gutter;
-            left: 0;
-            margin-left: 0;
-            margin-right: 0;
-            position: absolute;
-            z-index: 0;
-            justify-content: flex-end;
-            li {
-              width: auto;
-              height: auto;
-              text-indent: 0;
-              display: none;
-              pointer-events: none;
+          display: flex;
+          overflow: visible;
+          z-index: 0;
+          margin: auto 0;
+          justify-content: flex-start;
+          li {
+            width: auto;
+            height: auto;
+            text-indent: 0;
+            display: none;
+            pointer-events: none;
 
-              // Use pseudo classes to increase the hit area by 10px on top and bottom.
-              &::before {
-                content: none;
-              }
-              &::after {
-                content: none;
-              }
+            // Use pseudo classes to increase the hit area by 10px on top and bottom.
+            &::before {
+              content: none;
+            }
+            &::after {
+              content: none;
             }
           }
           @media (min-width: $breakpoint-min-lg) {
+            bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: flex-end;
+            bottom: $gutter;
             right: 0;
-            margin-right: $gutter;
+            margin-right: $gutter / 2;
+            margin-bottom: 0;
             bottom: 0;
           }
           .active {
@@ -445,12 +440,6 @@
     }
     .image-wrap {
       width: 100%;
-      margin-left: 0%;
-      @media (min-width: $breakpoint-min-lg) {
-        width: 90%;
-        margin-left: 10%;
-        height: auto;
-      }
     }
     .carousel-image {
       width: 100%;
@@ -461,6 +450,7 @@
       width: 100%;
       padding: 0;
       @media (min-width: $breakpoint-min-lg) {
+        min-height: 0%;
         position: absolute;
         right: 0;
         bottom: 0;
@@ -472,7 +462,10 @@
       .wrapper {
         background-color: $color-main-withe;
         text-align: left;
-        padding: $gutter;
+        padding: $gutter 0 0;
+        @media (min-width: $breakpoint-min-lg) {
+          padding: $gutter;
+        }
       }
     }
   }
