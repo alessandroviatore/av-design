@@ -1,0 +1,818 @@
+.home-old {
+  //Global style:
+  //Colors combinations
+  .bkgrd-accent-light-1 {
+    .title-h2,
+    .title-h3,
+    .title-h4 {
+      color: $color-accent-2;
+    }
+  }
+  .bkgrd-accent-light-2 {
+    .title-h1,
+    .title-h2 {
+      color: $color-accent-2;
+    }
+  }
+
+  //Respomsive Typography
+  h3, .title-h3 {
+    font-size: $h4-font-size;
+    line-height: $body-txt-1-line-height; //32px
+    letter-spacing: 0;
+    @media (min-width: $breakpoint-min-sm) {
+      font-size: $h3-font-size; //48px
+      letter-spacing: -1.6px;
+      line-height: $headings-line-height;
+    }
+  }
+  .bd-text-1 {
+    font-size: $body-txt-2; //15px
+    line-height: $body-txt-2-line-height; //28px
+    @media (min-width: $breakpoint-min-sm) {
+      font-size: $body-txt-1; //18px
+      line-height: $body-txt-1-line-height; //32px
+    }
+  }
+
+  //Indicators style
+  .carousel-indicators {
+    bottom: $gutter;
+    top: 60%;
+    @media (min-width: $breakpoint-min-sm) {
+      position: relative;
+      right: 0;
+      left: 0;
+      top: 30px;
+      margin-right: 0;
+      margin-left: 0;
+      justify-content: start;
+    }
+    @media (min-width: $breakpoint-min-md) {
+      top: 40px;
+      margin-left: 40px;
+    }
+    li {
+      background-color: rgba( $color-accent-1, .25 );
+    }
+    .active {
+      background-color: $color-accent-1;
+    }
+  }
+  //Section extra padding top/bottom
+  .section {
+    @include media-breakpoint-down(sm) {
+      padding-top: $spacer-mobile + 2;
+      padding-bottom: $spacer-mobile + 2;
+    }
+  }
+
+  //Sections:
+  //Hero
+  .sec-hero {
+    position: relative;
+    z-index: 0;
+    .carousel-container {
+      position: relative;
+      &.spacer-medium-p-tb {
+        @include media-breakpoint-only(xs) {
+          @include spacer-p ($spacer-medium, $spacer-0);
+        }
+      }
+    }
+    .carousel-inner {
+      @media (min-width: $breakpoint-min-md) {
+        max-height: 550px;
+        max-width: 90%;
+      }
+      .carousel-item {
+        max-height: 500px;
+      }
+    }
+    // Left/right controls for nav
+    .caption {
+      .caption-container {
+        @media (min-width: $breakpoint-min-sm) {
+          max-width: 360px;
+          position: absolute;
+          right: 0;
+          bottom: -30px;
+        }
+      }
+      .caption-inner {
+        padding: $spacer * 2;
+      }
+      .author {
+        align-items: center;
+        .avatar {
+          width: 40px;
+          height: 40px;
+          margin-right: 15px;
+        }
+        .rounded-circle {
+          width: 100%;
+        }
+        .info {
+          margin-bottom: 0;
+        }
+      }
+    }
+    // Fancy Hero
+    .hero-inner {
+      padding-top: $spacer-small;
+      padding-bottom: $spacer-small;
+      @media (min-width: $breakpoint-min-lg) {
+        padding: $spacer-medium 0;
+      }
+    }
+    .block-wrapper {
+      z-index: 1;
+      // padding: $spacer-medium;
+      width: 100%;
+      position: relative;
+      @media (min-width: $breakpoint-min-lg) {
+        max-width: 50%;
+        padding: inherit;
+        margin-left: 10%;
+        padding: $spacer-large 0;
+      }
+    }
+    .block {
+      &.info {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: auto;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        @media (min-width: $breakpoint-min-md) {
+          position: absolute;
+          left: -9%;
+          top: 50%;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+        @media (min-width: $breakpoint-min-lg) {
+          left: -12%;
+        }
+      }
+      &.claim {
+        margin-left: 0;
+        .title-h1,
+        .title-h2 {
+          color: $color-main-black;
+        }
+        h1, .title-h1 {
+          font-size: $h2-font-size;
+        }
+        .title-h2 {
+          line-height: 0.5;
+        }
+        @media (min-width: $breakpoint-min-sm) {
+          h1, .title-h1 {
+            font-size: $h1-font-size;
+          }
+        }
+        @media (min-width: $breakpoint-min-md) {
+          margin-left: 10%;
+        }
+      }
+
+    }
+    &.sec-fancy {
+      &::before {
+        bottom: 0;
+        right: 0;
+        width: 250px;
+        height: 400px;
+        position: absolute;
+        content: "";
+        background: url(../images/fancy-stuff/fancy-me-accent-light-1.png) right bottom no-repeat;
+        background-size: contain;
+        opacity: 0.5;
+        @media (min-width: $breakpoint-min-md) {
+          width: 400px;
+          height: 400px;
+          opacity: 1;
+        }
+        @media (min-width: $breakpoint-min-lg) {
+          width: 600px;
+          height: 500px;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  //Intro
+  .sec-intro {
+    .block-body {
+      padding: $gutter;
+    }
+    .col-right {
+      background-color: $color-accent-light-1
+    }
+  }
+  //About me
+  .sec-aboutme {
+    position: relative;
+    // .tab-vertical-nav-link {
+    //   position: relative;
+    //   color: $color-gray-high-contrast;
+    //   &::before {
+    //     position: absolute;
+    //     top: 55%;
+    //     left: 0;
+    //     width: 8px;
+    //     height: 8px;
+    //     background-color: transparent;
+    //     border-radius: 50%;
+    //     content: " ";
+    //   }
+    //   &:hover {
+    //     color: $color-main-black;
+    //   }
+    //   &.active {
+    //     &::before {
+    //       background-color: $color-accent-1;
+    //     }
+    //   }
+    // }
+    // .tab-vertical {
+    //   position: relative;
+    //   margin-top: auto;
+    //   margin-bottom: auto;
+    //   // @media (min-width: $breakpoint-min-lg) {
+    //   //   border-right: 1px solid #dadada;
+    //   // }
+    // }
+    // .nav-pills {
+    //   justify-content: space-between;
+    //   .nav-link {
+    //     width: auto;
+    //     border: none;
+    //     border-radius: 0;
+    //     flex-flow: row;
+    //     &.active {
+    //       .title-h4 {
+    //         color: $color-high-contrast;
+    //       }
+    //       background-color: $color-accent-2;
+    //       &::after {
+    //         overflow: hidden;
+    //         display: inline;
+    //         vertical-align: middle;
+    //         border-bottom: 0.15rem solid;
+    //       }
+    //       &:hover {
+    //         opacity: 1;
+    //       }
+    //     }
+    //     &:hover {
+    //       opacity: $opacity-default;
+    //     }
+    //     .title-h4 {
+    //       font-weight: $font-weight-normal;
+    //       color: $color-gray-high-contrast;
+    //       @include media-breakpoint-only(xs) {
+    //         font-size: 1.3rem;
+    //       }
+    //     }
+    //   }
+    // }
+    // .tab-content {
+    //   .ml-5 {
+    //     margin-left: 0;
+    //     @media (min-width: $breakpoint-min-lg) {
+    //       margin-left: 3rem;
+    //     }
+    //   }
+    // }
+    // .tab-jobs {
+    //   .item {
+    //     .img-wrap {
+    //       height: 70px;
+    //       img {
+    //         width: 35%;
+    //         margin-top: auto;
+    //         margin-bottom: auto;
+    //       }
+    //     }
+    //   }
+    // }
+    // // Skills
+    // .tabs-skills,
+    // .col-fancy {
+    //   .col-left-inner {
+    //     display: none;
+    //     padding: $gutter;
+    //     color: $white;
+    //     height: 100%;
+    //     @media (min-width: $breakpoint-min-lg) {
+    //       display: block;
+    //     }
+    //     .title-h2 {
+    //       color: $white;
+    //       font-size: 2rem;
+    //       @media (min-width: $breakpoint-min-lg) {
+    //         font-size: $h2-font-size;
+    //       }
+    //     }
+    //   }
+    // 
+    //   .col-right-inner {
+    //     .list-skills {
+    //       .item {
+    //         text-align: left;
+    //         justify-content: space-between;
+    //         margin-bottom: $gutter / 2;
+    //       }
+    //     }
+    //     .details {
+    //       display: inline-flex;
+    //     }
+    //     .software {
+    //       margin-left: $gutter / 2;
+    //       align-items: center;
+    //       .img-wrap {
+    //         height: 25px;
+    //         width: 25px;
+    //         .software-logo {
+    //           padding: 3px;
+    //           border-radius: 50%;
+    //         }
+    //       }
+    //     }
+    // 
+    //   }
+    // }
+    // //Hobbies
+    // .tabs-hobbies {
+    //   .title-h2 {
+    //     font-size: $h3-font-size;
+    //     @media (min-width: $breakpoint-min-lg) {
+    //       font-size: $h2-font-size; //88px
+    //     }
+    //   }
+    // }
+    // .carousle-control {
+    //   width: 100%;
+    // 
+    //   //Image style
+    //   .reduce-size {
+    //     width: 100%;
+    //     margin-left: 0;
+    //     @media (min-width: $breakpoint-min-md) {
+    //       width: 80%;
+    //       margin-left: 20%;
+    //     }
+    //   }
+    //   .img-company {
+    //     display: none;
+    //     max-height: 700px;
+    //     @media (min-width: $breakpoint-min-md) {
+    //       display: block;
+    //     }
+    //   }
+    // 
+    //   //Captions style
+    //   .carousel-caption {
+    //     display: block;
+    //     position: relative;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     @media (min-width: $breakpoint-min-md) {
+    //       position: absolute;
+    //       left: 0;
+    //       bottom: 0;
+    //       background: $color-low-contrast;
+    //       width: 500px;
+    //       height: 275px;
+    //       padding: 0;
+    //     }
+    // 
+    //     .item {
+    //       color: $color-main-black;
+    //       text-align: left;
+    //       padding: 40px;
+    //     }
+    //   }
+    // 
+    //   //Controls
+    //   .controlers {
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    //     @media (min-width: $breakpoint-min-md) {
+    //       bottom: 175px;
+    //       top: auto;
+    //       left: 500px;
+    //       width: 50px;
+    //     }
+    //     .carousel-control {
+    //       height: 50px;
+    //       width: 50px;
+    //       border: none;
+    //     }
+    //     .carousel-control-prev,
+    //     .carousel-control-next {
+    //       opacity: 1;
+    //       position: relative;
+    //       &:hover {
+    //         opacity: 0.8;
+    //       }
+    //     }
+    // 
+    //     .carousel-control-prev {
+    //       background-color: $color-accent-1;
+    //     }
+    //     .carousel-control-next {
+    //       background-color: $color-accent-2;
+    //     }
+    //   }
+    // }
+    //Section Accordion 
+    .sec-accordion {
+      [type=button] {
+        -webkit-appearance: none;
+      }
+      .accordion-item {
+        overflow-y: hidden;
+        transition: padding 500ms;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-clip: border-box;
+        border-bottom: $card-border-width solid $card-border-color;
+      }
+      .accordion-header {
+        width: 100%;
+        //Icon + 
+        &::before {
+          position: absolute;
+          top: 50px;
+          right: $gutter;
+          width: 15px;
+          height: 2px;
+          background: url(../images/icons/acc-close.svg) center no-repeat;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background-size: cover;
+          content: '';
+        }
+        &.collapsed {
+          &::before {
+            width: 15px;
+            height: 15px;
+            background: url(../images/icons/acc-open.svg);
+          }
+        }
+        &.btn {
+          padding: 0;
+          border-radius: 0;
+        }
+      }
+      //Card accordion
+      .card-header {
+        background-color: transparent;
+        padding: $gutter 0;
+        border: none;
+        @media (min-width: $breakpoint-min-lg) {
+          padding: $gutter;
+        }
+        .skills-info {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .accordion-body {
+        width: 100%;
+      }
+      .card-body {
+        display: flex;
+        padding-top: 0;
+        padding-left: 0;
+        @media (min-width: $breakpoint-min-md) {
+          padding-left: $gutter * 2;
+        }
+        .wrap-text {
+          width: 100%;
+          padding-left: $gutter * 2;
+          @media (min-width: $breakpoint-min-md) {
+            padding-left: 0;
+            padding-right: $gutter;
+          }
+          &.carrer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .item {
+              @media (min-width: $breakpoint-min-md) {
+                margin-right: $gutter;
+                &:last-child {
+                  margin-right: 0;
+                }
+              }
+            }
+            .img-wrap {
+              min-height: 40px;
+            }
+            .list {
+              .bd-text-2,
+              .bd-text-3 {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+        .card-square {
+          display: none;
+          @media (min-width: $breakpoint-min-lg) {
+            display: block;
+          }
+          .card {
+            background-color: transparent;
+            border: none;
+          }
+        }
+        .item {
+          padding-bottom: $gutter;
+        }
+        .company-logo {
+          max-width: 100px;
+          margin: auto 0; 
+        }
+      }
+      .skills-head {
+        display: flex;
+        align-items: center;
+        .counter {
+          margin-right: $gutter;
+          margin-bottom: 0;
+        }
+      }
+      //Section Fancy Accordion
+      &.sec-fancy-accordion {
+        .accordion-item {
+          @media (min-width: $breakpoint-min-md) {
+            flex-flow: row;
+            border-bottom: none;
+            justify-content: space-between;
+          }
+          .accordion-header {
+            @media (min-width: $breakpoint-min-md) {
+              padding-bottom: $gutter;
+              width: auto;
+            }
+            //Icon + 
+            &::before {
+              @media (min-width: $breakpoint-min-md) {
+                top: 15px;
+                right: 0;
+              }
+              @media (min-width: $breakpoint-min-lg) {
+                top: 15px;
+                left: 17%;
+              }
+            }
+          }
+          //Card accordion
+          .card-header {
+            @media (min-width: $breakpoint-min-md) {
+              padding: 0;
+              min-width: 250px;
+            }
+          }
+          .card-body {
+            @media (min-width: $breakpoint-min-md) {
+              padding: 0;
+            }
+          }
+          .skills-head {
+            padding-left: 0;
+            .title-h4 {
+              color: $color-accent-2;
+            }
+          }
+          .counter {
+            align-self: center;
+            margin-left: $gutter / 2;
+            @media (min-width: $breakpoint-min-md) {
+              align-self: flex-start;
+              margin-left: 0;
+              margin-right: $gutter / 2;
+            }
+          }
+          .collapsed {
+            .skills-head {
+              .title-h4 {
+                color: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //Works
+  .sec-works {
+    position: relative;
+    .title-h1 {
+      @include media-breakpoint-only(xs) {
+        font-size: 4rem;
+      }
+    }
+    .head {
+      margin-bottom: $gutter;
+    }
+    .works-list {
+      .item {
+        position: relative;
+        margin-bottom: $spacer * 5;
+        .txt-block {
+          margin: auto;
+        }
+        .cta {
+          .link {
+            margin-right: $gutter / 2;
+          }
+        }
+        .img-block {
+          margin-bottom: $spacer * 2;
+          @media (min-width: $breakpoint-min-md) {
+            margin-bottom: 0;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            @media (min-width: $breakpoint-min-md) {
+              object-fit: cover;
+            }
+          }
+        }
+        .img-block {
+          order: 0;
+          margin-bottom: $spacer * 2;
+          @media (min-width: $breakpoint-min-lg) {
+            order: 1;
+            margin-bottom: 0;
+          }
+        }
+        .txt-block {
+          order: 1;
+          @media (min-width: $breakpoint-min-lg) {
+            order: 0;
+          }
+        }
+
+      }
+      .even {
+        .img-block {
+          @media (min-width: $breakpoint-min-md) {
+            order: 0;
+          }
+        }
+        .txt-block {
+          order: 0;
+          @media (min-width: $breakpoint-min-md) {
+            order: 1;
+            padding-left: $spacer * 5;
+          }
+        }
+      }
+      .odd {
+        .img-block {
+          order: 0;
+          @media (min-width: $breakpoint-min-md) {
+            order: 1;
+          }
+        }
+        .txt-block {
+          order: 0;
+        }
+      }
+    }
+    .website-list {
+      @media (min-width: $breakpoint-min-md) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+    }
+
+    .block-works {
+      position: relative;
+      .carousel-indicators {
+        top: 0;
+        margin-left: 0;
+      }
+      .carousel-item {
+        position: relative;
+        margin-bottom: 0;
+      }
+    }
+
+    .cta-banner {
+      color: $white;
+      .item {
+        margin-bottom: $spacer;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        @media (min-width: $breakpoint-min-sm) {
+          margin-bottom: 0;
+        }
+      }
+      .title-h1 {
+        font-size: $h1-font-size / 2; //88px
+        @media (min-width: $breakpoint-min-md) {
+          font-size: $h2-font-size;
+        }
+        @media (min-width: $breakpoint-min-lg) {
+          font-size: $h1-font-size - 0.5; //88px
+        }
+      }
+      .title-h5 {
+        text-align: left;
+        @media (min-width: $breakpoint-min-sm) {
+          text-align: center;
+        }
+      }
+      .accent-corrner {
+        &::before {
+          top: -25px;
+          left: -25px;
+          position: absolute;
+          background: $white;
+          border-radius: 50%;
+          padding: 25px;
+          font-size: xx-large;
+        }
+      }
+      .box-left,
+      .box-right {
+        position: relative;
+      }
+      .box-left {
+        .accent-corrner {
+          &::before {
+            content: "\f1b4"; // Behance
+            // color: #0057ff;
+          }
+        }
+      }
+      .box-right {
+        .accent-corrner {
+          &::before {
+            content: "\f17d"; // Dribble
+            // color: #c51d60;
+          }
+        }
+      }
+    }
+  }
+}
+//New stuff
+.sec-aboutme {
+  .block-text-8,
+  .block-text-10,
+  .block-text-2 {
+    @include make-container();
+    @include make-container-max-widths();
+    @media (min-width: $breakpoint-min-md) {
+      padding: $spacer-large $spacer-small;
+    }
+  }
+  .block-text-2 {
+    .img-wrap {
+      min-height: 40px;
+    }
+    .company-logo {
+      max-width: 100px;
+      margin: auto 0; 
+    }
+    .list {
+      .bd-text-2,
+      .bd-text-3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .card-body {
+    display: flex;
+    padding-bottom: $gutter;
+    padding-left: 0;
+    @media (min-width: $breakpoint-min-md) {
+      padding: 0;
+    }
+  }
+}

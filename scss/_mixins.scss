@@ -3,6 +3,10 @@
   font-weight: $font-weight;
   color: $color;
 }
+@mixin title($font-size, $headings-line-height){
+  font-size: $font-size;
+  line-height: $headings-line-height;
+}
 // Spacer Padding
 @mixin spacer-p($spacer-top, $spacer-bottom){
   padding-top: $spacer-top;
@@ -12,6 +16,13 @@
 @mixin spacer-m($spacer-top, $spacer-bottom){
   margin-top: $spacer-top;
   margin-bottom: $spacer-bottom;
+}
+// Spacer Padding
+@mixin spin($rotate-from, $rotate-to){
+  @-webkit-keyframes rotation {
+    from { -webkit-transform: rotate($rotate-from); }
+    to { -webkit-transform: rotate($rotate-to); }
+  }
 }
 
 // Containers

@@ -129,11 +129,25 @@ $container-max-widths: (
 //
 
 $color-main-black:           #1E1E1E;
+$color-main-withe:           #ffffff;
 $color-accent-1:             #57DFD9;
+$color-accent-light-1:       #E0FFFF;
 $color-accent-2:             #ADA2FB;
+$color-accent-light-2:       #E6E6FA;
+$color-accent-3:             #FAE62D;
+$color-accent-light-3:       #FAF2AA;
 $color-low-contrast:         #F7F8F9;
 $color-high-contrast:        $color-main-black;
 $color-gray-high-contrast:   #9B9E9F;
+
+//
+// Navy-home
+//
+
+$color-navy-blue-light:      #DDF6FF;
+$color-navy-blue:            #0E2DEA;
+$color-accent-4:             $color-navy-blue;
+$color-accent-light-4:       $color-navy-blue-light;
 
 // Body
 //
@@ -163,7 +177,7 @@ $spacer:                      1rem !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-inter-ui:        'Inter UI', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-inter-ui:        'Rubik', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-base:            $font-family-inter-ui !default;
 // stylelint-enable value-keyword-case
 
@@ -177,6 +191,7 @@ $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
+$line-space-base:             1 !default;
 $dt-font-weight:              $font-weight-bold !default;
 
 // Title font-size
@@ -186,6 +201,11 @@ $h3-font-size:                $font-size-base * 2.25 !default; //36px
 $h4-font-size:                $font-size-base * 1.5 !default; //24px
 $h5-font-size:                $font-small-title !default; //11px
 $h6-font-size:                $font-size-base !default;
+
+$lettering-space-base:        1px;
+$lettering-space-small:       -0.8px;
+$lettering-space-medium:      -1.6px;
+$lettering-space-large:       -2px;
 
 // Title Variables
 $headings-margin-bottom:      ($spacer / 2) !default;
@@ -231,3 +251,7 @@ $navbar-light-hover-color:          rgba($color-main-black, .7);
 $navbar-light-active-color:         rgba($color-main-black, .9);
 $navbar-light-disabled-color:       rgba($color-main-black, .3);
 $navbar-light-toggler-border-color: rgba($black, .1);
+
+$rotate-from:                       (0deg);
+$rotate-to:                         (359deg);
+$rotate-time:                       rotation 8s infinite linear;

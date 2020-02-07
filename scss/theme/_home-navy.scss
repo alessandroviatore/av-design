@@ -1,0 +1,507 @@
+  //Navy home
+.home-navy {
+  // background-color: $color-navy-blue-light;
+  
+  //Typography color
+  .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6 {
+    color: $color-navy-blue;
+  }
+  .bd-text-1, .bd-text-2, .bd-text-3 {
+    color: $color-navy-blue;
+    font-weight: 400;
+  }
+  .title-h2 {
+    @include title ($h3-font-size, $headings-line-height);
+    @media (min-width: $breakpoint-min-md) {
+      @include title ($h2-font-size, $headings-line-height);
+    }
+  }
+
+  
+  //Override styles  
+  .separator {
+    width: 100%;
+    position: relative;
+    @include spacer-p ($spacer-mobile, $spacer-mobile);
+    @media (min-width: $breakpoint-min-md) {
+      @include spacer-p ($spacer-small, $spacer-small);
+    }
+    //waves
+    &:before{
+      content: "";
+      width: 100%;
+      height: 30px;
+      left: 0;
+      top: 50%;
+      background-position: center;
+      position: absolute;
+      background-repeat: repeat-x;
+      background-size: 10%;
+      background-image: url(../images/icons/wave.svg);
+    }
+    &:after {
+      content: "";
+      width: 105px;
+      height: 105px;
+      left: 70%;
+      bottom: -34px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+      @media (min-width: $breakpoint-min-md) {
+        bottom: -18px;
+      }
+
+    }
+
+    //Fish
+    &.fancy-fish {
+      &:after {
+        left: 70%;
+        background-image: url(../images/icons/fish.svg);
+        background-repeat: no-repeat;
+        background-color: $color-main-withe;
+      }
+    }
+  }
+  
+  //Fancy stuff
+  .fancy-info {
+    &:before {
+      content: '';
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: $gutter;
+      left: $gutter;
+      background: url(../images/fancy-stuff/info-blue.svg) center center no-repeat;
+      @include spin($rotate-from, $rotate-to);
+      -webkit-animation: $rotate-time;
+    }
+  }
+  
+  //Fancy waves
+  .fancy-pattern {
+    width: 100%;
+    height: 100%;
+    background: url(../images/fancy-stuff/wave_looper.png) center center;
+    // background: url(../images/fancy-stuff/fish_looper.png) center center;
+    background-repeat: repeat;
+  }
+
+  //Block text paddings/margins
+  .sec-text {
+    @include spacer-p ($spacer-mobile, $spacer-mobile);
+    @media (min-width: $breakpoint-min-md) {
+      @include spacer-p ($spacer-large, $spacer-medium);
+    }
+    //Block intro
+    .block-intro {
+      @include spacer-p ($spacer-0, $spacer-mobile);
+      @media (min-width: $breakpoint-min-md) {
+        @include spacer-p ($spacer-0, $spacer-medium);
+      }
+    }
+    //Block Title
+    .block-title {
+      @include spacer-p ($spacer-0, $spacer-mobile);
+      @media (min-width: $breakpoint-min-md) {
+        @include spacer-p ($spacer-0, $spacer-medium);
+      }
+    }
+  }
+  
+  //main-content
+  .main-content {
+    padding-top: 56px;
+  }
+  
+  //Hero Section
+  .sec-hero {
+    @include spacer-p ($spacer-mobile, $spacer-mobile);
+    @media (min-width: $breakpoint-min-md) {
+      @include spacer-p ($spacer-medium, $spacer-medium);
+      max-height: 500px;
+    }
+    .inner {
+      align-items: center;
+    }
+    .block-text {
+      width: 100%;
+      .claim {
+        .title-h1 {
+          font-size: 3.5rem;
+          @media (min-width: $breakpoint-min-md) {
+            font-size: 4.5rem;
+          }
+          @media (min-width: $breakpoint-min-lg) {
+            @include title ($h1-font-size, $headings-line-height);
+          }
+        }
+      }
+    }
+    .block-image {
+      display: flex;
+      &.fancy-info {
+        &:before {
+          top: 0;
+          left: 15px;
+          width: 100px;
+          height: 100px;
+          @media (min-width: $breakpoint-min-md) {
+            left: 10%;
+            width: 150px;
+            height: 150px;
+          }
+          @media (min-width: $breakpoint-min-lg) {
+            top: - $gutter;
+            left: - $gutter;
+          }
+        }
+      }
+      &.fancy-connection {
+        &:after {
+          top: 0;
+        }
+      }
+      .img-fluid {
+        max-height: 500px;
+        margin: auto;
+        @media (min-width: $breakpoint-min-lg) {
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  
+  .sec-intro {
+    @include spacer-p ($spacer-mobile, $spacer-mobile);
+    @media (min-width: $breakpoint-min-md) {
+      @include spacer-p ($spacer-large, $spacer-mobile);
+    }
+
+    .block-text {
+      position: relative;
+    }
+  }
+  
+  .sec-aboutme {
+    .sec-skills {
+      .emphasize {
+        font-weight: $font-weight-bold;
+      }
+    }
+    .sec-accordion {
+      [type=button] {
+        -webkit-appearance: none;
+      }
+      .accordion-item {
+        overflow-y: hidden;
+        transition: padding 500ms;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-clip: border-box;
+        border-bottom: $card-border-width solid $card-border-color;
+      }
+      .accordion-header {
+        width: 100%;
+        //Icon + 
+        &::before {
+          position: absolute;
+          top: 50px;
+          right: $gutter;
+          width: 15px;
+          height: 2px;
+          background: url(../images/icons/acc-close.svg) center no-repeat;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background-size: cover;
+          content: '';
+        }
+        &.collapsed {
+          &::before {
+            width: 15px;
+            height: 15px;
+            background: url(../images/icons/acc-open.svg);
+          }
+        }
+        &.btn {
+          padding: 0;
+          border-radius: 0;
+        }
+      }
+      //Card accordion
+      .card-header {
+        background-color: transparent;
+        padding: $gutter 0;
+        border: none;
+        @media (min-width: $breakpoint-min-lg) {
+          padding: $gutter;
+        }
+      }
+      .accordion-body {
+        width: 100%;
+      }
+      .card-body {
+        display: flex;
+        padding-top: 0;
+        padding-left: 0;
+        @media (min-width: $breakpoint-min-md) {
+          padding: $gutter;
+        }
+      }
+      .skills-head {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column;
+        .counter {
+          text-align: left;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .sec-hobbies {
+      .block-image {
+        .img-fluid {
+          max-height: 500px;
+          margin: auto;
+          @media (min-width: $breakpoint-min-lg) {
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+  
+  //Works
+  .sec-projects {
+    .filter {
+      margin: auto;
+      flex-wrap: wrap;
+      flex-flow: row;
+      .title-h3 {
+        @include title ($h5-font-size, $line-height-base);
+        letter-spacing: $lettering-space-base;
+        text-transform: uppercase;
+        @media (min-width: $breakpoint-min-md) {
+          @include title ($h3-font-size, $line-height-base);
+          letter-spacing: $lettering-space-medium;
+        }
+      }
+      @media (min-width: $breakpoint-min-md) {
+        padding-top: 0;
+      }
+      .social {
+        display: none;
+        @media (min-width: $breakpoint-min-md) {
+          display: block;
+        }
+      }
+    }
+    .nav {
+      flex-wrap: wrap;
+      margin: auto;
+      align-items: center;
+      justify-content: space-around;
+      @media (min-width: $breakpoint-min-lg) {
+        flex-flow: column;
+        align-items: flex-start;
+        max-width: 180px;
+      }
+
+    }
+    .nav-pills {
+      .nav-link {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        &.active {
+          color: $color-navy-blue;
+          background-color: transparent;
+          &::before {
+            position: absolute;
+            top: 5px;
+            left: -15px;
+            width: 8px;
+            height: 8px;
+            background-color: transparent;
+            border-radius: 50%;
+            content: " ";
+            background: $color-navy-blue;
+            @media (min-width: $breakpoint-min-md) {
+              top: 15px;
+              top: 50%;
+              @include title ($h3-font-size, $headings-line-height);
+            }
+          }
+        }
+        &:hover {
+          color: $color-navy-blue;
+          opacity: 0.8;
+        }
+        .bd-text-3 {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .controllers {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      width: 100%;
+      @media (min-width: $breakpoint-min-lg) {
+        height: auto;
+        width: 440px;
+      }
+      
+      //arrows
+      .control-wrap {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-flow: row;
+        width: 100px;
+        @media (min-width: $breakpoint-min-lg) {
+          position: absolute;
+          flex-flow: column;
+          left: 440px;
+          right: 0;
+          bottom: 0;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          background-color: $color-navy-blue;
+          width: 50px;
+          height: 50px;
+          position: relative;
+        }
+      }
+      
+      //numbers
+      .indicators-warp {
+        position: relative;
+        height: auto;
+        width: 100%;
+        @media (min-width: $breakpoint-min-lg) {
+          position: absolute;
+          z-index: 0;
+          left: 0;
+          bottom: 0;
+          height: auto;
+          width: 440px;
+        }
+        ol {
+          margin-bottom: 0;
+        }
+        //numbers counter
+        .numbers-counters {
+          display: flex;
+          overflow: visible;
+          z-index: 0;
+          margin: auto 0;
+          justify-content: flex-start;
+          li {
+            width: auto;
+            height: auto;
+            text-indent: 0;
+            display: none;
+            pointer-events: none;
+
+            // Use pseudo classes to increase the hit area by 10px on top and bottom.
+            &::before {
+              content: none;
+            }
+            &::after {
+              content: none;
+            }
+          }
+          @media (min-width: $breakpoint-min-lg) {
+            bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: flex-end;
+            bottom: $gutter;
+            right: 0;
+            margin-right: $gutter / 2;
+            margin-bottom: 0;
+            bottom: 0;
+          }
+          .active {
+            display: block;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .image-wrap {
+      width: 100%;
+    }
+    .carousel-image {
+      width: 100%;
+    }
+    .carousel-caption {
+      position: relative;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      @media (min-width: $breakpoint-min-lg) {
+        min-height: 0%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: -60px;
+        width: 500px;
+        padding: 0;
+        padding-left: $gutter *2;
+      }
+      .wrapper {
+        background-color: $color-main-withe;
+        text-align: left;
+        padding: $gutter 0 0;
+        @media (min-width: $breakpoint-min-lg) {
+          padding: $gutter;
+        }
+      }
+    }
+  }
+  
+  //footer
+  .sec-footer {
+    @include spacer-p ($spacer-mobile, $spacer-mobile);
+    @media (min-width: $breakpoint-min-md) {
+      @include spacer-p (0, 0);
+    }
+    .col-left {
+      .title-h3,
+      .title-h5 {
+        color: $color-navy-blue-light;
+      }
+    }
+    .socials,
+    .contacts {
+      .title-h5,
+      .bd-text-1 {
+        color: $color-navy-blue-light;
+        @media (min-width: $breakpoint-min-lg) {
+          color: $color-navy-blue;
+        }
+      }
+    }
+    .socials-list {
+      .item {
+        a {
+          color: $color-navy-blue-light;
+          @media (min-width: $breakpoint-min-lg) {
+            color: $color-navy-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
