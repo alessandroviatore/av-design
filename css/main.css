@@ -9281,6 +9281,12 @@ h3 {
   background-repeat: no-repeat;
   background-color: #ffffff;
 }
+.home-navy .separator.fancy-anchor:after {
+  left: 30%;
+  background-image: url(../images/icons/anchor.svg);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
 .home-navy .fancy-info:before {
   content: "";
   width: 150px;
@@ -9737,6 +9743,11 @@ h3 {
   .home-navy .sec-footer .socials-list .item a {
     color: #0E2DEA;
   }
+}
+
+.home-navy-light .bd-text-1,
+.home-navy-light .bd-text-3 {
+  color: #9B9E9F;
 }
 
 h1, h2, h3, h4, h5, h6,

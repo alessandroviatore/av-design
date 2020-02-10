@@ -64,6 +64,15 @@
         background-color: $color-main-withe;
       }
     }
+    //Anchor
+    &.fancy-anchor {
+      &:after {
+        left: 30%;
+        background-image: url(../images/icons/anchor.svg);
+        background-repeat: no-repeat;
+        background-color: $color-main-withe;
+      }
+    }
   }
   
   //Fancy stuff
@@ -505,3 +514,9 @@
   }
 }
 
+.home-navy-light {
+  .bd-text-1,
+  .bd-text-3 {
+    color: $color-gray-high-contrast;
+  }
+}
