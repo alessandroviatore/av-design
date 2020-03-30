@@ -9744,6 +9744,22 @@ h3 {
     color: #0E2DEA;
   }
 }
+.home-navy .gallery-cta a.gallery-link {
+  text-decoration: none;
+  color: inherit;
+}
+.home-navy .gallery-cta .wrapper {
+  padding: 30px;
+}
+.home-navy .gallery-cta .fab {
+  font-size: 5.5rem;
+}
+.home-navy .bg-behance {
+  background-color: #0057ff;
+}
+.home-navy .bg-dribble {
+  background-color: #ea4c89;
+}
 
 .home-navy-light .bd-text-1,
 .home-navy-light .bd-text-3 {

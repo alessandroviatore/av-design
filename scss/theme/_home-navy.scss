@@ -512,6 +512,28 @@
       }
     }
   }
+  
+  //gallery Section
+  .gallery-cta {
+    a.gallery-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .wrapper {
+      padding: $gutter;
+    }
+    .fab {
+      font-size: $h1-font-size;
+    }
+  }
+  
+  .bg-behance {
+    background-color: #0057ff;
+  } 
+  .bg-dribble {
+    background-color: #ea4c89;
+  } 
+
 }
 
 .home-navy-light {
