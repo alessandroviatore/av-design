@@ -64,6 +64,15 @@
         background-color: $color-main-withe;
       }
     }
+    //Anchor
+    &.fancy-anchor {
+      &:after {
+        left: 30%;
+        background-image: url(../images/icons/anchor.svg);
+        background-repeat: no-repeat;
+        background-color: $color-main-withe;
+      }
+    }
   }
   
   //Fancy stuff
@@ -503,5 +512,33 @@
       }
     }
   }
+  
+  //gallery Section
+  .gallery-cta {
+    a.gallery-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .wrapper {
+      padding: $gutter;
+    }
+    .fab {
+      font-size: $h1-font-size;
+    }
+  }
+  
+  .bg-behance {
+    background-color: #0057ff;
+  } 
+  .bg-dribble {
+    background-color: #ea4c89;
+  } 
+
 }
 
+.home-navy-light {
+  .bd-text-1,
+  .bd-text-3 {
+    color: $color-gray-high-contrast;
+  }
+}
